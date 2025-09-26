@@ -1,24 +1,55 @@
-# Vanderley Sant Anna
+# Professional Portfolio – Database Administration & Reliability
 
-Engenheiro de Software com carreira consolidada em **Administração e Confiabilidade de Bancos de Dados**, atuando há mais de 30 anos em **Oracle e SQL Server**, e mais de 20 anos em **PostgreSQL e MySQL**, além de experiência em **MongoDB, Redis e DB2**.  
+👋 Welcome!  
+This is my professional portfolio as a **Database Administrator and Reliability Engineer (DBA / DBRE)**, showcasing over 30 years of expertise in relational databases, cloud platforms, automation, and performance optimization.
 
-Especialista em **DBA, DBRE, SRE e DataOps**, com foco em **confiabilidade, automação, alta disponibilidade e tuning de SQL**.  
-Experiência em **migração de data centers**, **arquiteturas HA/DR (RAC, Data Guard, AlwaysOn)** e práticas modernas de **DevOps aplicadas a bancos de dados**.  
+---
 
-Atualmente expando meu portfólio para **Engenharia de Dados**, **Automação (Python & Bash)** e **Desenvolvimento em Python e Rust**, construindo soluções que unem experiência clássica em bancos críticos com tecnologias modernas.  
+## 🎯 Core Expertise
 
-## Áreas do Portfólio
+- **Relational Databases**  
+  - Oracle (30+ years)  
+  - SQL Server (30+ years)  
+  - PostgreSQL (21+ years)  
+  - MySQL (21+ years)  
+  - DB2 (15+ years)  
 
-- [DBA](./dba/) — Oracle, SQL Server, PostgreSQL, MySQL, DB2, MongoDB, Redis  
-- [DBRE & SRE](./dbre-sre/) — Confiabilidade, Observabilidade, HA/DR, Resposta a Incidentes  
-- [DataOps](./dataops/) — Pipelines, Versionamento de Schemas, Qualidade de Dados  
-- [Data Engineer](./data-engineer/) — ETL/ELT, Streaming, Data Lakes  
-- [Automation](./automation/) — Scripts e ferramentas em Python & Bash  
-- [Development](./development/) — Projetos em Python, Rust e Inteligência Artificial  
-- [SQL Tuning](./sql-tuning/) — Casos práticos de otimização de queries  
-- [Standards](./standards/) — Runbooks, Postmortems, Templates  
+- **NoSQL & Modern Data Stores**  
+  - MongoDB  
+  - Redis  
 
-📫 **Contato**  
-- Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
-- LinkedIn: [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna/)  
-- GitHub: [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **Cloud Platforms**  
+  - AWS (RDS, Aurora, DynamoDB, Redshift)  
+  - Azure (Azure SQL, Cosmos DB)  
+  - Google Cloud (PostgreSQL, BigQuery, DataOps pipelines)  
+  - Oracle Cloud (OCI, Autonomous Database)  
+
+- **Specialized Skills**  
+  - Advanced **SQL Tuning & Performance Optimization**  
+  - **High Availability & Disaster Recovery** (Oracle RAC, Data Guard, AlwaysOn, Replication)  
+  - **Automation & Scripting** with Python and Bash (monitoring, backups, CI/CD for databases)  
+  - **Linux Administration** (Red Hat, Ubuntu, Oracle Linux)  
+  - **Streaming & Integration** with Apache Kafka  
+
+---
+
+## 📂 Portfolio Structure
+
+This repository is organized into different areas reflecting my career and skill set:
+
+- **DBA** → Deep technical expertise in Oracle, SQL Server, PostgreSQL, MySQL, DB2, MongoDB, and Redis.  
+- **DBRE / SRE** → Reliability, observability, HA/DR strategies, performance, and incident response.  
+- **DataOps** → Pipelines, schema versioning, CI/CD for databases, data quality and governance.  
+- **SQL Tuning** → Real-world optimization cases and heuristics for high-performance systems.  
+- **Automation** → Python and Bash scripts for monitoring, operations, and task automation.  
+- **Cloud** → Deployments and solutions across AWS, Azure, Google Cloud, and Oracle Cloud.  
+- **Development** → Selected projects in **Python** and **Rust**, applied to database engineering and automation.  
+
+---
+
+## 📫 Contact
+
+- **Email**: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn**: [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna/)  
+- **GitHub**: [github.com/vandersantanna](https://github.com/vandersantanna)  
+
