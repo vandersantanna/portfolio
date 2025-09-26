@@ -1,6 +1,6 @@
 # Vanderley Sant Anna
 
-Engenheiro de Software com carreira consolidada em **Administração e Confiabilidade de Bancos de Dados**, atuando há mais de 30 anos em **Oracle e SQL Server**, 21 anos em **PostgreSQL e MySQL**, além de experiência em **MongoDB, Redis e DB2**.  
+Engenheiro de Software com carreira consolidada em **Administração e Confiabilidade de Bancos de Dados**, atuando há mais de 30 anos em **Oracle e SQL Server**, e mais de 20 anos em **PostgreSQL e MySQL**, além de experiência em **MongoDB, Redis e DB2**.  
 
 Especialista em **DBA, DBRE, SRE e DataOps**, com foco em **confiabilidade, automação, alta disponibilidade e tuning de SQL**.  
 Experiência em **migração de data centers**, **arquiteturas HA/DR (RAC, Data Guard, AlwaysOn)** e práticas modernas de **DevOps aplicadas a bancos de dados**.  
