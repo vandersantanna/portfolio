@@ -50,14 +50,19 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 ### 🔄 DataOps
 - [Pipelines, Schema Versioning & Governance](./dataops/README.md)
 
+### ☁️ Cloud
+- [AWS, Azure, GCP & Oracle Cloud](./cloud/README.md)
+
 ### 🚀 SQL Tuning
 - [Optimization Cases & Best Practices](./sql-tuning/README.md)
 
 ### 🤖 Automation
 - [Python & Bash Scripts](./automation/README.md)
 
-### ☁️ Cloud
-- [AWS, Azure, GCP & Oracle Cloud](./cloud/README.md)
+### 🖥️ Operating Systems & Administration
+- [Linux (Red Hat, Ubuntu, Oracle Linux)](./systems/linux/README.md)
+- [Windows Server](./systems/windows/windows-server/README.md)
+- [PowerShell Scripts](./systems/windows/powershell/README.md)
 
 ### 💻 Development
 - [Python Projects](./development/python/README.md)
