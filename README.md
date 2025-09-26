@@ -35,15 +35,36 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 ## 📂 Portfolio Structure
 
-This repository is organized into different areas reflecting my career and skill set:
+### 🗄️ Database Administration (DBA)
+- [Oracle](./dba/oracle/README.md)
+- [SQL Server](./dba/sqlserver/README.md)
+- [PostgreSQL](./dba/postgres/README.md)
+- [MySQL](./dba/mysql/README.md)
+- [DB2](./dba/db2/README.md)
+- [MongoDB](./dba/mongodb/README.md)
+- [Redis](./dba/redis/README.md)
 
-- **DBA** → Deep technical expertise in Oracle, SQL Server, PostgreSQL, MySQL, DB2, MongoDB, and Redis.  
-- **DBRE / SRE** → Reliability, observability, HA/DR strategies, performance, and incident response.  
-- **DataOps** → Pipelines, schema versioning, CI/CD for databases, data quality and governance.  
-- **SQL Tuning** → Real-world optimization cases and heuristics for high-performance systems.  
-- **Automation** → Python and Bash scripts for monitoring, operations, and task automation.  
-- **Cloud** → Deployments and solutions across AWS, Azure, Google Cloud, and Oracle Cloud.  
-- **Development** → Selected projects in **Python** and **Rust**, applied to database engineering and automation.  
+### ⚙️ Database Reliability Engineering / SRE
+- [DBRE & SRE Practices](./dbre-sre/README.md)
+
+### 🔄 DataOps
+- [Pipelines, Schema Versioning & Governance](./dataops/README.md)
+
+### 🚀 SQL Tuning
+- [Optimization Cases & Best Practices](./sql-tuning/README.md)
+
+### 🤖 Automation
+- [Python & Bash Scripts](./automation/README.md)
+
+### ☁️ Cloud
+- [AWS, Azure, GCP & Oracle Cloud](./cloud/README.md)
+
+### 💻 Development
+- [Python Projects](./development/python/README.md)
+- [Rust Projects](./development/rust/README.md)
+
+### 📏 Standards
+- [Best Practices & Guidelines](./standards/README.md)
 
 ---
 
