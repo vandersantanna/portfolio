@@ -10,9 +10,9 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - **Relational Databases**  
   - Oracle (30+ years)  
   - SQL Server (30+ years)  
-  - PostgreSQL (21+ years)  
-  - MySQL (21+ years)  
-  - DB2 (15+ years)  
+  - PostgreSQL (20+ years)  
+  - MySQL (20+ years)  
+  - DB2 (5+ years)  
 
 - **NoSQL & Modern Data Stores**  
   - MongoDB  
