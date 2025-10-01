@@ -36,7 +36,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 ## 📂 Portfolio Structure
 
 ### 🗄️ Database Administration (DBA)
-- [Oracle](./portfolio-oracle/README.md)
+- [Oracle]([./portfolio-oracle/README.md](https://github.com/vandersantanna/portfolio-oracle#readme))
 - [SQL Server](./dba/sqlserver/README.md)
 - [PostgreSQL](./dba/postgres/README.md)
 - [MySQL](./dba/mysql/README.md)
