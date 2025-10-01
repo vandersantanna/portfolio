@@ -37,12 +37,12 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 ### 🗄️ Database Administration (DBA)
 - [Oracle](https://github.com/vandersantanna/portfolio-oracle#readme)
-- [SQL Server](./dba/sqlserver/README.md)
-- [PostgreSQL](./dba/postgres/README.md)
-- [MySQL](./dba/mysql/README.md)
-- [DB2](./dba/db2/README.md)
-- [MongoDB](./dba/mongodb/README.md)
-- [Redis](./dba/redis/README.md)
+- [SQL Server](https://github.com/vandersantanna/portfolio-sql-server#readme)
+- [PostgreSQL]((https://github.com/vandersantanna/portfolio-postgresql#readme))
+- [MySQL]((https://github.com/vandersantanna/portfolio-mysql#readme))
+- [DB2]((https://github.com/vandersantanna/portfolio-oracle#readme))
+- [MongoDB]((https://github.com/vandersantanna/portfolio-db2#readme))
+- [Redis]((https://github.com/vandersantanna/portfolio-redis#readme))
 
 ### ⚙️ Database Reliability Engineering / SRE
 - [DBRE & SRE Practices](./dbre-sre/README.md)
