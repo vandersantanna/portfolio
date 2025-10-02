@@ -1,38 +1,38 @@
-# Portfolio Topics
+#Portfolio Topics
 
-## Database Administration → The Art of Database Uptime
+##Database Administration → The Art of Database Uptime
 
-•	DBMS installation and configuration → Setting Up Your First Production Database
-•	Backup and recovery → The 3-2-1 Rule: Why Your Backup Strategy Matters
-•	High availability and disaster recovery → Zero Downtime: Building Bulletproof Systems
-•	Data replication → Master-Slave vs Multi-Master: Choosing Your Replication Strategy
-•	Performance tuning and query optimization → Finding the Bottleneck: A Performance Detective Story
-•	Index management → Indexes: The Secret Weapon for Query Speed
-•	Table partitioning → When Tables Get Too Big: A Partitioning Guide
-•	Monitoring and alerting → Sleep Better: Setting Up Smart Database Alerts
-•	Security and access control → Locking Down Your Database: A Security Checklist
-•	User and permission management → The Principle of Least Privilege in Action
-•	Database auditing → Who Did What? Implementing Database Audit Trails
-•	Migrations and version upgrades → Upgrading Without Fear: A Step-by-Step Approach
-•	Patch management → Staying Secure: My Patch Management Workflow
-•	Tablespace and storage management → Managing Storage Before It Manages You
-•	Log and archive log management → Transaction Logs: Your Database's Black Box
+  •	DBMS installation and configuration → Setting Up Your First Production Database
+  •	Backup and recovery → The 3-2-1 Rule: Why Your Backup Strategy Matters
+  •	High availability and disaster recovery → Zero Downtime: Building Bulletproof Systems
+  •	Data replication → Master-Slave vs Multi-Master: Choosing Your Replication Strategy
+  •	Performance tuning and query optimization → Finding the Bottleneck: A Performance Detective Story
+  •	Index management → Indexes: The Secret Weapon for Query Speed
+  •	Table partitioning → When Tables Get Too Big: A Partitioning Guide
+  •	Monitoring and alerting → Sleep Better: Setting Up Smart Database Alerts
+  •	Security and access control → Locking Down Your Database: A Security Checklist
+  •	User and permission management → The Principle of Least Privilege in Action
+  •	Database auditing → Who Did What? Implementing Database Audit Trails
+  •	Migrations and version upgrades → Upgrading Without Fear: A Step-by-Step Approach
+  •	Patch management → Staying Secure: My Patch Management Workflow
+  •	Tablespace and storage management → Managing Storage Before It Manages You
+  •	Log and archive log management → Transaction Logs: Your Database's Black Box
 
  
 ## Oracle Database → Enterprise Database Powerhouse
 
 ### Architecture and Fundamentals → Understanding Oracle's DNA
 
-•	Oracle Instance architecture (SGA, PGA, Background Processes) → Inside the Oracle Instance: Memory and Processes
-•	Database architecture (Tablespaces, Datafiles, Control Files, Redo Logs) → Oracle Database Physical Structure Explained
-•	Oracle Multitenant architecture (CDB, PDB) → Multitenant: One Database, Many Tenants
-•	Automatic Storage Management (ASM) → ASM: Oracle's Answer to Storage Management
-•	Oracle Real Application Clusters (RAC) → High Availability with RAC
-•	Oracle Data Guard → Standby Databases for Disaster Recovery
-•	Oracle GoldenGate → Real-Time Data Replication
-•	Oracle Sharding → Horizontal Scaling with Sharding
+  •	Oracle Instance architecture (SGA, PGA, Background Processes) → Inside the Oracle Instance: Memory and Processes
+  •	Database architecture (Tablespaces, Datafiles, Control Files, Redo Logs) → Oracle Database Physical Structure Explained
+  •	Oracle Multitenant architecture (CDB, PDB) → Multitenant: One Database, Many Tenants
+  •	Automatic Storage Management (ASM) → ASM: Oracle's Answer to Storage Management
+  •	Oracle Real Application Clusters (RAC) → High Availability with RAC
+  •	Oracle Data Guard → Standby Databases for Disaster Recovery
+  •	Oracle GoldenGate → Real-Time Data Replication
+  •	Oracle Sharding → Horizontal Scaling with Sharding
 
-Performance and Tuning → Making Oracle Fly
+### Performance and Tuning → Making Oracle Fly
 
 •	SQL tuning and optimization → The Art of SQL Tuning in Oracle
 •	Execution plan analysis → Reading Oracle Execution Plans
