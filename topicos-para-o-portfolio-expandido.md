@@ -1,6 +1,6 @@
-Portfolio Topics
+# Portfolio Topics
 
-Database Administration → The Art of Database Uptime
+## Database Administration → The Art of Database Uptime
 
 •	DBMS installation and configuration → Setting Up Your First Production Database
 •	Backup and recovery → The 3-2-1 Rule: Why Your Backup Strategy Matters
@@ -19,9 +19,9 @@ Database Administration → The Art of Database Uptime
 •	Log and archive log management → Transaction Logs: Your Database's Black Box
 
  
-Oracle Database → Enterprise Database Powerhouse
+## Oracle Database → Enterprise Database Powerhouse
 
-Architecture and Fundamentals → Understanding Oracle's DNA
+### Architecture and Fundamentals → Understanding Oracle's DNA
 
 •	Oracle Instance architecture (SGA, PGA, Background Processes) → Inside the Oracle Instance: Memory and Processes
 •	Database architecture (Tablespaces, Datafiles, Control Files, Redo Logs) → Oracle Database Physical Structure Explained
