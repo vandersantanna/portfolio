@@ -40,7 +40,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [SQL Server Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-sql-server-linux.md)
 - [SQL Server Windows](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-sql-server-windows.md)
 - [PostgreSQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-postgresql.md)
-- [MySQL](https://github.com/vandersantanna/portfolio-mysql#readme)
+- [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-mysql.md)
 - [DB2](https://github.com/vandersantanna/portfolio-db2#readme)
 - [MongoDB](https://github.com/vandersantanna/portfolio-mongodb#readme)
 - [Redis](https://github.com/vandersantanna/portfolio-redis#readme)
