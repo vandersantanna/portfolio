@@ -78,5 +78,19 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 - **Email**: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
 - **LinkedIn**: [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna/)  
-- **GitHub**: [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **GitHub**: [github.com/vandersantanna](https://github.com/vandersantanna)
+- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
+
+---
+## 📫 Contact
+
+| Channel   | Details |
+|-----------|---------|
+| **Email** | [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com?subject=Hello%20Vanderley%20—%20Remote%20DBA%2FDBRE%20Opportunity) |
+| **LinkedIn** | [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna) |
+| **GitHub** | [github.com/vandersantanna](https://github.com/vandersantanna) |
+| **Website** | [vsantanna.dev](https://vsantanna.dev) |
+| **Location & TZ** | Blumenau, SC, Brazil — GMT-3 |
+| **Availability** | Remote (US/Canada/EU/LATAM) • B2B/Contract |
+| **Response time** | ≤ 24h on weekdays |
 
