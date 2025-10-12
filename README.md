@@ -109,4 +109,13 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 <!-- Recruiter/ATS keywords: US, United States, Canada, Mexico, Latin America, Brazil, UK, United Kingdom, Ireland, Germany, Austria, Switzerland, Netherlands, Belgium, Luxembourg, Denmark, Norway, Sweden, Finland, Spain, Portugal, France, Italy, Poland, Czechia, Slovakia, Hungary, Romania, Bulgaria, Estonia, Latvia, Lithuania, Europe-wide, EU, European Union, Remote, Contract, Contractor, Independent Contractor, B2B, 1099, C2C -->
 -- 
+**Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote
 
+<details>
+  <summary>Coverage details (countries & regions)</summary>
+  US, Canada, Mexico, Latin America; UK & Ireland; Germany, Austria, Switzerland (DACH);
+  Netherlands, Belgium, Luxembourg (Benelux); Denmark, Norway, Sweden, Finland (Nordics);
+  Spain & Portugal (Iberia); Poland, Czechia, Slovakia, Hungary, Romania, Bulgaria, Estonia,
+  Latvia, Lithuania (Central & Eastern Europe).
+</details>
+---
