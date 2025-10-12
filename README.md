@@ -12,8 +12,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
   - SQL Server (30+ years)  
   - PostgreSQL (20+ years)  
   - MySQL (20+ years)  
-  - DB2 (5+ years)  
-
+  
 - **NoSQL & Modern Data Stores**  
   - MongoDB  
   - Redis  
