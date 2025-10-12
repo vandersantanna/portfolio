@@ -74,9 +74,9 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 ---
 ## 📫 Contact
-**Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
-**LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
-**GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
-**Location & Timezone:** Blumenau, SC, Brazil — GMT-3
-**Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
+- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
 ---
