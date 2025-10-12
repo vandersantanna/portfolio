@@ -73,43 +73,10 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Best Practices & Guidelines](./standards/README.md)
 
 ---
-
 ## 📫 Contact
-
-- **Email**: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
-- **LinkedIn**: [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna/)  
-- **GitHub**: [github.com/vandersantanna](https://github.com/vandersantanna)
-- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
----
-## 📫 Contact
-
-- **Email (primary):** [hello@vsantanna.dev](mailto:hello@vsantanna.dev?subject=Intro%20call%20—%20Remote%20DBA%2FDBRE)
-- **Email (backup):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com?subject=Intro%20call%20—%20Remote%20DBA%2FDBRE)
-- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)
-- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
-- **Website:** [vsantanna.dev](https://vsantanna.dev)
-- **Book a 30-min intro call:** https://cal.com/vsantanna/intro-30
-- **Location & TZ:** Blumenau, SC, Brazil — GMT-3
-- **Availability:** Remote (US/Canada/EU/LATAM) • B2B / Independent Contractor
-- **Availability:** Remote — Americas (US/Canada/Mexico), Europe (UK/IE, DACH, Benelux, Nordics, Iberia), 
-- **Availability:** Remote — US/Canada (USD/CAD), UK/IE (GBP/EUR), DACH & Benelux (EUR/CHF), Nordics (SEK/NOK/DKK), Iberia (EUR), Israel (USD/EUR), UAE/KSA (USD). B2B/Contract. Strong timezone overlap from UTC−7 to UTC+3.
-- **Availability:** Remote — Americas & Europe (UK/IE, DACH, Benelux, Nordics, Iberia, Central & Eastern Europe)
-
----
-## 📫 Contact
-
-<img src="./assets/avatar.webp" alt="Vander Sant Anna — Senior DBA/DBRE" width="96" align="left" />
-
-**Email (primary):** [hello@vsantanna.dev](mailto:hello@vsantanna.dev)  
+**Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
 **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
 **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
-**Website:** [vsantanna.dev](https://vsantanna.dev)  
+**Location & Timezone:** Blumenau, SC, Brazil — GMT-3
 **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
-<details>
-  <summary>Coverage details (countries & regions)</summary>
-  US, Canada, Mexico, Latin America; UK & Ireland; Germany, Austria, Switzerland (DACH);
-  Netherlands, Belgium, Luxembourg (Benelux); Denmark, Norway, Sweden, Finland (Nordics);
-  Spain & Portugal (Iberia); Poland, Czechia, Slovakia, Hungary, Romania, Bulgaria, Estonia,
-  Latvia, Lithuania (Central & Eastern Europe).
-</details>
 ---
