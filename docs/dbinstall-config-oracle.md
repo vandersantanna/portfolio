@@ -1,3 +1,22 @@
+![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Database 11g](https://img.shields.io/badge/Oracle%20Database-11g-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Database 12c](https://img.shields.io/badge/Oracle%20Database-12c-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Database 18c](https://img.shields.io/badge/Oracle%20Database-18c-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Database 19c](https://img.shields.io/badge/Oracle%20Database-19c-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Database 21c](https://img.shields.io/badge/Oracle%20Database-21c-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Database 23ai](https://img.shields.io/badge/Oracle%20Database-23ai-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle RAC](https://img.shields.io/badge/Oracle%20RAC-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Data Guard](https://img.shields.io/badge/Oracle%20Data%20Guard-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Exadata](https://img.shields.io/badge/Oracle%20Exadata-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle ASM](https://img.shields.io/badge/Oracle%20ASM-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![RMAN](https://img.shields.io/badge/RMAN-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![PL/SQL](https://img.shields.io/badge/PL%2FSQL-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle SQL Developer](https://img.shields.io/badge/Oracle%20SQL%20Developer-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Enterprise Manager](https://img.shields.io/badge/Oracle%20Enterprise%20Manager-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Cloud (OCI)](https://img.shields.io/badge/Oracle%20Cloud-OCI-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Oracle Linux](https://img.shields.io/badge/Oracle%20Linux-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+
+---
 # Oracle Database 19c Installation and Configuration Guide
 
 ## Table of Contents
