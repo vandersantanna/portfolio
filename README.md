@@ -91,5 +91,22 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - **Book a 30-min intro call:** https://cal.com/vsantanna/intro-30
 - **Location & TZ:** Blumenau, SC, Brazil — GMT-3
 - **Availability:** Remote (US/Canada/EU/LATAM) • B2B / Independent Contractor
+- **Availability:** Remote — Americas (US/Canada/Mexico), Europe (UK/IE, DACH, Benelux, Nordics, Iberia), 
+- **Availability:** Remote — US/Canada (USD/CAD), UK/IE (GBP/EUR), DACH & Benelux (EUR/CHF), Nordics (SEK/NOK/DKK), Iberia (EUR), Israel (USD/EUR), UAE/KSA (USD). B2B/Contract. Strong timezone overlap from UTC−7 to UTC+3.
+- **Availability:** Remote — Americas & Europe (UK/IE, DACH, Benelux, Nordics, Iberia, Central & Eastern Europe)
 
 ---
+## 📫 Contact
+
+<img src="./assets/avatar.webp" alt="Vander Sant Anna — Senior DBA/DBRE" width="96" align="left" />
+
+**Email (primary):** [hello@vsantanna.dev](mailto:hello@vsantanna.dev)  
+**LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+**GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
+**Website:** [vsantanna.dev](https://vsantanna.dev)  
+**Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+<br clear="left" />
+
+<!-- Recruiter/ATS keywords: US, United States, Canada, Mexico, Latin America, Brazil, UK, United Kingdom, Ireland, Germany, Austria, Switzerland, Netherlands, Belgium, Luxembourg, Denmark, Norway, Sweden, Finland, Spain, Portugal, France, Italy, Poland, Czechia, Slovakia, Hungary, Romania, Bulgaria, Estonia, Latvia, Lithuania, Europe-wide, EU, European Union, Remote, Contract, Contractor, Independent Contractor, B2B, 1099, C2C -->
+-- 
+
