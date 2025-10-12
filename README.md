@@ -94,3 +94,14 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 | **Availability** | Remote (US/Canada/EU/LATAM) • B2B/Contract |
 | **Response time** | ≤ 24h on weekdays |
 
+---
+## 📫 Contact
+
+[![Email](https://img.shields.io/badge/Email-hello%40vsantanna.dev-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:hello@vsantanna.dev?subject=Intro%20call%20—%20Remote%20DBA%2FDBRE)
+[![Backup](https://img.shields.io/badge/Backup-vandersantanna%40gmail.com-DB4437?style=for-the-badge&logo=gmail&logoColor=white)](mailto:vandersantanna@gmail.com?subject=Intro%20call%20—%20Remote%20DBA%2FDBRE)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-vandersantanna-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vandersantanna)
+[![GitHub](https://img.shields.io/badge/GitHub-vandersantanna-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/vandersantanna)
+[![Website](https://img.shields.io/badge/Website-vsantanna.dev-0F172A?style=for-the-badge&logo=icloud&logoColor=white)](https://vsantanna.dev)
+[![Book a Call](https://img.shields.io/badge/Book%20a%20Call-30%20min-10B981?style=for-the-badge&logo=googlecalendar&logoColor=white)](https://cal.com/vsantanna/intro-30)
+
+**Location & TZ:** Blumenau, SC (GMT-3) • **Availability:** Remote — US/Canada/EU/LATAM
