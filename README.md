@@ -105,12 +105,6 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
 **Website:** [vsantanna.dev](https://vsantanna.dev)  
 **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
-<br clear="left" />
-
-<!-- Recruiter/ATS keywords: US, United States, Canada, Mexico, Latin America, Brazil, UK, United Kingdom, Ireland, Germany, Austria, Switzerland, Netherlands, Belgium, Luxembourg, Denmark, Norway, Sweden, Finland, Spain, Portugal, France, Italy, Poland, Czechia, Slovakia, Hungary, Romania, Bulgaria, Estonia, Latvia, Lithuania, Europe-wide, EU, European Union, Remote, Contract, Contractor, Independent Contractor, B2B, 1099, C2C -->
--- 
-**Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote
-
 <details>
   <summary>Coverage details (countries & regions)</summary>
   US, Canada, Mexico, Latin America; UK & Ireland; Germany, Austria, Switzerland (DACH);
