@@ -41,7 +41,6 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [PostgreSQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-postgresql.md)
 - [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-mysql.md)
 - [MongoDB](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-mongodb.md)
-- [DB2](https://github.com/vandersantanna/portfolio-db2#readme)
 - [Redis](https://github.com/vandersantanna/portfolio-redis#readme)
 
 ### ⚙️ Database Reliability Engineering / SRE
