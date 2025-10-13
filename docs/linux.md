@@ -1,8 +1,8 @@
 
 # Linux for DBRE - Portfolio Guide
----
-Linux Configuration Guide for DBA and DBRE
 
+Linux Configuration Guide for DBA and DBRE
+---
 ![RHEL 9](https://img.shields.io/badge/RHEL-9-EE0000?style=for-the-badge&logo=redhat&logoColor=white)
 ![Ubuntu 24.04 LTS](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
 ![Debian 12](https://img.shields.io/badge/Debian-12-A81D33?style=for-the-badge&logo=debian&logoColor=white)
