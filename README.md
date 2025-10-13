@@ -56,12 +56,13 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Optimization Cases & Best Practices](./sql-tuning/README.md)
 
 ### 🤖 Automation
-- [Python & Bash Scripts](./automation/README.md)
+- [Python](https://github.com/vandersantanna/portfolio/blob/main/docs/python.md)
+- [Bash Script](https://github.com/vandersantanna/portfolio/blob/main/docs/bash-script)
+- [PowerShell Scripts](https://github.com/vandersantanna/portfolio/blob/main/docs/powershell.md)
 
 ### 🖥️ Operating Systems & Administration
 - [Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/linux.md)
-- [Windows Server](./systems/windows/windows-server/README.md)
-- [PowerShell Scripts](./systems/windows/powershell/README.md)
+- [Windows Server](https://github.com/vandersantanna/portfolio/blob/main/docs/windows-server.md)
 
 ### 💻 Development
 - [Python Projects](./development/python/README.md)
