@@ -1,6 +1,14 @@
 
 # Linux for DBRE - Portfolio Guide
-
+---
+![RHEL 9](https://img.shields.io/badge/RHEL-9-EE0000?style=for-the-badge&logo=redhat&logoColor=white)
+![Ubuntu 24.04 LTS](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
+![Debian 12](https://img.shields.io/badge/Debian-12-A81D33?style=for-the-badge&logo=debian&logoColor=white)
+![Fedora](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
+![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=for-the-badge&logo=opensuse&logoColor=white)
+![Oracle Linux 9](https://img.shields.io/badge/Oracle%20Linux-9-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+![Rocky Linux 9](https://img.shields.io/badge/Rocky%20Linux-9-10B981?style=for-the-badge&logo=rockylinux&logoColor=white)
+![AlmaLinux 9](https://img.shields.io/badge/AlmaLinux-9-2E95EA?style=for-the-badge&logo=almalinux&logoColor=white)
 ---
 
 ## Table of Contents
