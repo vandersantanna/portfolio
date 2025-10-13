@@ -59,7 +59,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Python & Bash Scripts](./automation/README.md)
 
 ### 🖥️ Operating Systems & Administration
-- [Linux (Red Hat, Ubuntu, Oracle Linux)](https://github.com/vandersantanna/portfolio/blob/main/docs/linux.md)
+- [Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/linux.md)
 - [Windows Server](./systems/windows/windows-server/README.md)
 - [PowerShell Scripts](./systems/windows/powershell/README.md)
 
