@@ -1,4 +1,3 @@
-```markdown
 # Google Cloud Platform (GCP) — Data Platform & DBRE Portfolio
 
 **Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
@@ -222,5 +221,3 @@ bq ls --format=prettyjson
 ## Contact
 Available for remote consulting, migrations, HA/DR readiness reviews, performance tuning, cost optimization, and reliability audits.  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)
-
-```
