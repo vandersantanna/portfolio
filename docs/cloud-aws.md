@@ -1,4 +1,3 @@
-```markdown
 # Amazon Web Services (AWS) — Data Platform & DBRE Portfolio
 
 **Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
@@ -214,5 +213,3 @@ aws cloudwatch get-metric-statistics   --namespace AWS/RDS --metric-name CPUUtil
 ## Contact
 Available for remote consulting, migrations, HA/DR readiness reviews, performance tuning, cost optimization, and reliability audits.  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)
-
-```
