@@ -71,7 +71,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 ### 🤖 Automation
 - [Python](https://github.com/vandersantanna/portfolio/blob/main/docs/automation-python.md)
-- [Bash Script](https://github.com/vandersantanna/portfolio/blob/main/docs/bash-script)
+- [Bash Script](https://github.com/vandersantanna/portfolio/blob/main/docs/automation-bash-script.md)
 - [PowerShell Scripts](https://github.com/vandersantanna/portfolio/blob/main/docs/powershell.md)
 
 ### 🖥️ Operating Systems & Administration
