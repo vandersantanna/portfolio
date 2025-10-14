@@ -1,215 +1,202 @@
 # Amazon Web Services (AWS) — Data Platform & DBRE Portfolio
 
+[![AWS](https://img.shields.io/badge/AWS-Portfolio-232F3E?logo=amazon-aws&logoColor=white)](#)
+
 **Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn: [linkedin.com/in/vandersantanna](https://linkedin.com/in/vandersantanna) • GitHub: [github.com/vandersantanna](https://github.com/vandersantanna)
 
-> Last updated: October 14, 2025
+*Last updated: October 14, 2025*
 
 ## Table of Contents
 - [Executive Summary](#executive-summary)
-- [Services & Capabilities](#services--capabilities)
+- [What I Deliver](#what-i-deliver)
+- [Core Expertise](#core-expertise)
 - [Architecture Principles](#architecture-principles)
+- [Platform Services Map](#platform-services-map)
+- [Deep DB Patterns](#deep-db-patterns)
 - [Reference Architectures](#reference-architectures)
-  - [High Availability (In-Region)](#high-availability-in-region)
-  - [Disaster Recovery (Cross-Region)](#disaster-recovery-cross-region)
-  - [Zero-Downtime Deployments](#zero-downtime-deployments)
-- [Core Services Map](#core-services-map)
-- [Infrastructure as Code (IaC) & CI/CD](#infrastructure-as-code-iac--cicd)
+  - [In-Region High Availability](#in-region-high-availability)
+  - [Cross-Region Disaster Recovery](#cross-region-disaster-recovery)
+  - [Zero-Downtime Change Management](#zero-downtime-change-management)
+- [Infrastructure as Code](#infrastructure-as-code)
+  - [Repo Structure](#repo-structure)
+  - [Terraform Baseline](#terraform-baseline)
+  - [CI/CD with GitHub Actions (OIDC)](#cicd-with-github-actions-oidc)
+  - [Command-Line Essentials](#command-line-essentials)
 - [Security & Compliance Baseline](#security--compliance-baseline)
-- [Database HA/DR Patterns](#database-hadr-patterns)
 - [Observability](#observability)
+- [SLOs, Readiness & Testing](#slos-readiness--testing)
 - [FinOps & Cost Controls](#finops--cost-controls)
-- [Runbooks & Playbooks](#runbooks--playbooks)
-- [Sample Case Studies](#sample-case-studies)
-- [Checklists](#checklists)
-- [Links](#links)
+- [Runbooks](#runbooks)
+- [Case Studies (Representative)](#case-studies-representative)
+- [Links & Cross-Navigation](#links--cross-navigation)
 - [Contact](#contact)
+
 ## Executive Summary
-    Enterprise-grade delivery for mission-critical data platforms on Amazon Web Services. Focus on **HA/DR**, **security**, **performance**, and **cost-efficiency** via **automation (IaC + GitOps)** and actionable **observability**.
+Production-grade database reliability, performance, security, and cost efficiency on **AWS** with a strong focus on automation (IaC + GitOps), auditable operations, and measurable SLOs.
 
-    ## Services & Capabilities
-    - **Design & Implementation:** secure landing zone, network, identity, encryption, database services, data integration.
-    - **Reliability Engineering:** HA/DR topologies, failover automation, SLOs/SLA tracking, chaos & DR drills.
-    - **Performance & Scaling:** workload profiling, indexing/IO, storage tiers, caching, connection resiliency.
-    - **Security & Governance:** least privilege IAM, key management, secrets rotation, policy guardrails, audit trails.
-    - **FinOps:** rightsizing, reservation/commitment strategies, lifecycle & archival, showback/tagging.
-    - **Automation:** Terraform modules, GitOps pipelines, blue/green and zero-downtime deploys.
-    - **Operations:** backup/recovery, patching, capacity planning, runbooks, on-call enablement.
+## What I Deliver
+- **HA/DR design & implementation** with repeatable runbooks and automated drills.
+- **Performance engineering** (IO layout, indexing, parameter tuning, connection resiliency).
+- **Security-by-default** stacks (private endpoints, KMS, least-privilege IAM, secret hygiene).
+- **Cost optimization** with commitments, right-sizing, and storage lifecycle policies.
+- **Automation-first** environments (Terraform modules, CI/CD, policy-as-code, drift detection).
+- **Operational excellence**: backups that restore, patching pipelines, on-call readiness.
 
-    ## Architecture Principles
-    - **Secure-by-Default:** private endpoints, no public DB exposure, envelope encryption with managed keys.
-    - **Resilient-by-Design:** multi-AZ/AD and cross-region DR with proven RTO/RPO targets.
-    - **Automated & Observable:** IaC everywhere, change is reviewed/tested; golden dashboards/alerts-as-code.
-    - **Cost-Aware:** scale-to-zero where possible, right storage classes, commitments/discounts.
+## Core Expertise
+- **DB Platforms:** Oracle 19c (RAC/ADG/GoldenGate/Exadata), SQL Server 2022 (MI/AG), PostgreSQL, MySQL, Redis, MongoDB.
+- **Data Platform:** ingestion (CDC/ETL/ELT), streaming, analytics, governance.
+- **Tooling:** Terraform, Ansible, GitHub Actions, GitLab CI, Azure DevOps, Prometheus/Grafana.
 
-    ## Reference Architectures
+## Architecture Principles
+1. **Secure by Default:** private networking, managed keys, secrets rotation, no public DB endpoints.
+2. **Resilient by Design:** multi-zone/AD, cross-region DR, automated failover testing.
+3. **Automated & Observable:** everything as code; metrics, logs, traces with golden dashboards.
+4. **Cost-Aware:** choose right tiers, scale-to-zero (where possible), commitments/discounts.
 
-    ### High Availability (In-Region)
-    - Zonal failure isolation, multi-AZ/AD deployments for control and data plane.
-    - Synchronous replication where supported; async replicas for reads and rapid promotion.
-    - Health-based routing and connection retries/backoff at clients.
-
-    ### Disaster Recovery (Cross-Region)
-    - Async replication to secondary region; regular **failover drills** with documented runbooks.
-    - **Immutable backups** in object storage with lifecycle & replication; **RPO/RTO** objectives tracked on dashboards.
-
-    ### Zero-Downtime Deployments
-    - Blue/Green or Rolling with connection draining and feature flags.
-    - Schema migrations with expand/contract pattern and **backward compatibility** windows.
-
-    ## Core Services Map
+## Platform Services Map
     - **Networking:** VPC, Private Subnets, NAT, Transit Gateway, PrivateLink, ALB/NLB, Route 53
 - **Identity:** IAM, Organizations/SCPs, IAM Roles Anywhere, AWS SSO
 - **Encryption:** KMS (CMKs), Secrets Manager, Parameter Store
-- **Storage:** S3 (Standard/IA/Glacier), EBS, EFS, FSx
+- **Storage:** S3 (Std/IA/Glacier), EBS, EFS, FSx
 - **Observability:** CloudWatch (metrics/logs/alarms), CloudTrail, Config, X-Ray
-- **Databases:** RDS (Oracle, SQL Server, PostgreSQL, MySQL), **Aurora**, DynamoDB, DMS
-- **Data Analytics:** Glue, Lake Formation, EMR, Redshift, MSK/Kinesis
+- **Databases:** RDS (Oracle/SQL Server/PostgreSQL/MySQL), **Aurora**, DynamoDB, DMS
+- **Analytics:** Glue, Lake Formation, EMR, Redshift, MSK/Kinesis
 
-    ## Infrastructure as Code (IaC) & CI/CD
+## Deep DB Patterns
+    - **Aurora (PostgreSQL/MySQL):** Multi-AZ with reader endpoints; cross-region replicas for DR; automated failover.
+- **RDS Oracle/SQL Server:** Multi-AZ with synchronous standby; cross-region read replicas or DMS for DR.
+- **DynamoDB:** Global tables for multi-region active-active when applicable.
 
-    ### Terraform — Provider & Baseline
+## Reference Architectures
+
+### In-Region High Availability
+```mermaid
+flowchart LR
+  A[Client/App] --> LB[Ingress/Load Balancer]
+  LB --> P1[Primary DB - Zone A]
+  LB --> R1[HA Replica - Zone B]
+  R1 -. read-only .-> AppRO[(Read Pool)]
+  classDef db fill:#f8f8ff,stroke:#333,stroke-width:1px;
+  class P1,R1 db;
+```
+
+### Cross-Region Disaster Recovery
+```mermaid
+flowchart LR
+  P[Primary Region] === R[Secondary Region]
+  PDB[(Primary DB)] -- async replication --> RDB[(DR DB)]
+  B[(Backups:Object Storage)] -- replicated --> BR[(Backups:Secondary)]
+```
+
+### Zero-Downtime Change Management
+- Blue/Green or Rolling deployments with connection draining.
+- Schema changes with **expand/contract** and backward compatibility windows.
+- Feature flags and **retry policies** at clients.
+
+## Infrastructure as Code
+
+    ### Repo Structure
+    ```text
+    /infra
+      /modules
+        /network
+        /kms
+        /database
+      /stacks
+        /prod
+        /staging
+        /dev
+    ```
+
+    ### Terraform Baseline
     ```hcl
 terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 5.0"
-    }
-  }
+  required_providers { aws = { source = "hashicorp/aws", version = "~> 5.0" } }
 }
-
-provider "aws" {
-  region = var.region
-}
-
+provider "aws" { region = var.region }
 module "vpc" {
-  source = "terraform-aws-modules/vpc/aws"
-  name   = "dbre-vpc"
-  cidr   = "10.20.0.0/16"
-  azs    = ["${var.region}a","${var.region}b"]
+  source  = "terraform-aws-modules/vpc/aws"
+  name    = "dbre-vpc"
+  cidr    = "10.20.0.0/16"
+  azs     = ["${var.region}a","${var.region}b"]
   private_subnets = ["10.20.1.0/24","10.20.2.0/24"]
-  enable_nat_gateway = true
-}
-
-module "aurora_pg" {
-  source  = "terraform-aws-modules/rds-aurora/aws"
-  name    = "aurora-pg"
-  engine  = "aurora-postgresql"
-  subnets = module.vpc.private_subnets
-  vpc_id  = module.vpc.vpc_id
-  create_db_subnet_group = true
-  storage_encrypted = true
-  kms_key_id = aws_kms_key.this.arn
+  enable_nat_gateway = True
 }
 ```
 
     ### CI/CD with GitHub Actions (OIDC)
     ```yaml
-    name: ci-iac
-    on:
-      push:
-        branches: [ main ]
+    name: iac-plan-apply
+    on: {
+      push: { branches: [ "main" ] },
+      pull_request: { branches: [ "main" ] }
+    }
     jobs:
-      plan-and-apply:
+      tf:
         runs-on: ubuntu-latest
-        permissions:
-          id-token: write
-          contents: read
+        permissions: { id-token: write, contents: read }
         steps:
           - uses: actions/checkout@v4
-          - name: Setup Terraform
-            uses: hashicorp/setup-terraform@v3
-          - name: Auth to Cloud (OIDC)
-            run: |
-              echo "Authenticate using OIDC token to assume role / workload identity"
-          - name: Terraform Init/Plan/Apply
+          - uses: hashicorp/setup-terraform@v3
+          - name: Authenticate (OIDC)
+            run: echo "Exchange OIDC token to assume cloud workload identity"
+          - name: Terraform Init/Plan
             run: |
               terraform init
               terraform validate
               terraform plan -out tf.plan
-              terraform apply -auto-approve tf.plan
+          - name: Terraform Apply (main only)
+            if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+            run: terraform apply -auto-approve tf.plan
     ```
 
-    ### CLI Essentials
+    ### Command-Line Essentials
     ```bash
-# Assume role with SSO/OIDC (example placeholder)
 aws sts get-caller-identity
-
-# RDS snapshots
 aws rds describe-db-snapshots --db-instance-identifier prod-sql
-
-# CloudWatch metric example (average CPU)
 aws cloudwatch get-metric-statistics   --namespace AWS/RDS --metric-name CPUUtilization   --dimensions Name=DBInstanceIdentifier,Value=prod-sql   --statistics Average --period 300   --start-time $(date -u -d '-1 hour' +%FT%TZ)   --end-time $(date -u +%FT%TZ)
 ```
 
-    ## Security & Compliance Baseline
-    - **Identity:** least privilege, workload identities, JIT/PIM for admins; periodic access reviews.
-    - **Encryption:** KMS-managed keys (at-rest) + TLS in-transit; **TDE** for databases where applicable.
-    - **Secrets:** managed secret stores; short-lived tokens; rotation pipelines.
-    - **Network:** private endpoints, service endpoints/peering, **no inbound public DB**; WAF, DDoS/base controls.
-    - **Policy:** guardrails (CIS, custom), IaC policy-as-code checks in CI; drift detection and remediation.
-    - **Audit:** centralized logs/metrics/traces; immutable storage and retention with least-privilege access.
+## Security & Compliance Baseline
+- **Identity:** least privilege RBAC/ABAC; workload identities; JIT/PIM for admins; periodic access reviews.
+- **Encryption:** managed KMS keys at rest; TLS in transit; **TDE** for supported engines.
+- **Secrets:** central secret manager; rotation; short-lived credentials.
+- **Network:** private endpoints; inbound restricted; WAF/DDoS protections; egress controls.
+- **Policy-as-Code:** pre-commit & CI checks; CIS/cloud guardrails; drift detection.
+- **Audit:** centralized logs with immutable retention; alerts on anomalous activity.
 
-    ## Database HA/DR Patterns
-    - **Aurora PostgreSQL/MySQL:** Multi-AZ with reader endpoints; cross-region replicas for DR; automated failover.
-- **RDS Oracle/SQL Server:** Multi-AZ with synchronous standby; cross-region read replicas or DMS for DR.
-- **DynamoDB:** Global tables for multi-region active-active (where applicable).
+## Observability
+    - **Metrics:** CPU/Memory/IOPS, replication lag, deadlocks.
+- **Logs:** RDS/Aurora error logs to **CloudWatch Logs**; VPC Flow Logs for network diagnostics.
+- **Dashboards:** SLOs and error budgets; top slow queries; cost anomaly detection.
 
-    ## Observability
-    - **Metrics:** CPU/Memory/IOPS, buffer/cache hit ratio, replication lag, deadlocks.
-- **Logs:** RDS/Aurora error logs to CloudWatch Logs; VPC Flow Logs for network diagnostics.
-- **Dashboards:** SLOs with error budgets, storage growth, top slow queries; anomaly detection alarms.
+## SLOs, Readiness & Testing
+- **Targets (illustrative):** Availability ≥ 99.9%, RTO ≤ 15 min, RPO ≤ 30 sec (where engine supports).
+- **Readiness:** runbooks reviewed; access tested; backups restore-tested; on-call rotation active.
+- **Testing:** DR drills (quarterly), load tests before scale decisions, chaos experiments for failover paths.
 
-    ## FinOps & Cost Controls
+## FinOps & Cost Controls
     - **Savings Plans/Reserved Instances** for steady workloads; right-size instances/storage.
-- S3 lifecycle to Glacier/Deep Archive; **CUDOS/Cost Explorer** dashboards; tag-based cost allocation.
+- S3 lifecycle to Glacier/Deep Archive; **Cost Explorer/CUR** dashboards; tag-based allocation.
 
-    ## Runbooks & Playbooks
+## Runbooks
+- **Backup/Restore:** validate last backup age; restore to isolated env; verify checksums; time the restore.
+- **Failover/Failback:** promotion procedure; DNS/connection string switch; data consistency checks; rollback plan.
+- **Patching:** stage → canary → rollout; health gates; SLO watch; auto-rollback on breach.
 
-    ### Backup & Restore (Generic)
-    1. Validate RPO (last successful backup age) and RTO (estimated restore time).
-    2. Verify encryption keys and permissions to backup storage.
-    3. Restore to **isolated** environment; run consistency checks; compare checksums/row counts.
-    4. Document timings; update dashboards and lessons learned.
+## Case Studies (Representative)
+- **Cross-Region DR Enablement:** implemented async replication + automated drills; documented RTO/RPO; added dashboards/alerts.
+- **Performance Program:** IO and indexing improvements; pool sizing; retry policies; latency down significantly under peak.
+- **Cost Optimization:** commitments/reservations + storage lifecycle + right-size → sustained TCO reduction.
 
-    ### DR Drill (Generic)
-    1. Freeze writes (if needed), force checkpoint/snapshot.
-    2. Promote replica or restore from point-in-time.
-    3. Redirect traffic (DNS or connection string switch) with retry policies.
-    4. Validate SLOs; rollback criteria ready; postmortem & improvements.
+### AWS-Specific Notes
+- **SCPs** to enforce guardrails; **AWS SSO** for centralized auth; **Config** rules for compliance.
 
-    ### Patching (Generic)
-    - Stage → Canary → Broad rollout with health gates and automatic rollback on SLO breach.
-
-    ## Sample Case Studies
-    - **Cost Down:** Saved ~30% on database TCO combining reservations/commitments, storage class tuning, and query/index improvements.
-    - **Resilience Up:** Achieved RTO ≤ 15 min / RPO ≤ 30 sec with cross-region DR and automated failover testing.
-    - **Performance Boost:** 40–60% latency reduction via caching, connection pooling, and IO layout tuning.
-
-    ## Checklists
-
-    ### Go-Live
-    - [ ] Runbooks ready; on-call rotation set
-    - [ ] SLOs, dashboards, and alerts configured
-    - [ ] Backups tested; restore time known
-    - [ ] Security review passed; secrets rotated
-    - [ ] Cost budgets/alerts enabled; tagging policy enforced
-
-    ### Quarterly
-    - [ ] DR drill executed and documented
-    - [ ] Access recertification completed
-    - [ ] Cost/right-sizing review; storage lifecycle tuning
-    - [ ] Patch baseline updated; known CVEs reviewed
-## Links
-
+## Links & Cross-Navigation
 - **Multi-Cloud Landing:** `/portfolio-cloud/cloud-portfolio.md`
-- **Other Clouds:**  
-  - OCI → `/portfolio-cloud/cloud/oci.md`  
-  - AWS → `/portfolio-cloud/cloud/aws.md`  
-  - Azure → `/portfolio-cloud/cloud/azure.md`  
-  - GCP → `/portfolio-cloud/cloud/gcp.md`  
+- **Other Cloud Portfolios:** [OCI](./oci-portfolio.md) • [AWS](./aws-portfolio.md) • [Azure](./azure-portfolio.md) • [GCP](./gcp-portfolio.md)
 
 ## Contact
-Available for remote consulting, migrations, HA/DR readiness reviews, performance tuning, cost optimization, and reliability audits.  
+Available for remote consulting, migrations, HA/DR reviews, performance tuning, cost optimization, and reliability audits.  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)
