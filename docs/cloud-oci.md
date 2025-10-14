@@ -1,4 +1,3 @@
-```markdown
 # Oracle Cloud Infrastructure (OCI) — Data Platform & DBRE Portfolio
 
 **Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
@@ -211,5 +210,3 @@ oci monitoring alarm create --compartment-id $COMP_OCID   --display-name "High C
 ## Contact
 Available for remote consulting, migrations, HA/DR readiness reviews, performance tuning, cost optimization, and reliability audits.  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)
-
-```
