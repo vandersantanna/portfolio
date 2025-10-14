@@ -51,7 +51,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Cloud OCI, AWS, Azure, GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-oci-aws-azure-gcp.md)
 
 ### 🔄 DataOps
-- [Pipelines, Schema Versioning & Governance](./dataops/README.md)
+- [Pipelines, Schema Versioning & Governance](https://github.com/vandersantanna/portfolio/blob/main/docs/dataops.md)
 
 ### ☁️ Cloud
 - [AWS](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-aws.md)
