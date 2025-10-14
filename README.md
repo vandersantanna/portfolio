@@ -83,7 +83,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Rust Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-rust.md)
 
 ### 📏 Standards
-- [Best Practices & Guidelines](./standards/README.md)
+- [Best Practices & Guidelines](https://github.com/vandersantanna/portfolio/blob/main/docs/best-practices.md)
 
 ---
 ## 📫 Contact
