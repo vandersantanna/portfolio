@@ -43,8 +43,12 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [MongoDB](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-mongodb.md)
 - [Redis](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-redis.md)
 
-### ⚙️ Database Reliability Engineering / SRE
-- [DBRE & SRE Practices](./dbre-sre/README.md)
+### ⚙️ Database Reliability Engineering (DBRE) / SRE
+- [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-oracle.md)
+- [SQL Server](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-sql-server.md)
+- [PostgreSQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-postgresql.md)
+- [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-mysql.md)
+- [Cloud OCI, AWS, Azure, GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-oci-aws-azure-gcp.md)
 
 ### 🔄 DataOps
 - [Pipelines, Schema Versioning & Governance](./dataops/README.md)
