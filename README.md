@@ -63,6 +63,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-mysql.md)
 - [MongoDB](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-mongodb.md)
 - [Redis](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-redis.md)
+- [SQL Tuning & Query Optimization](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-sql.md)
 
 
 ### 🤖 Automation
