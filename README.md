@@ -79,8 +79,8 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Windows Server](https://github.com/vandersantanna/portfolio/blob/main/docs/windows-server.md)
 
 ### 💻 Development
-- [Python Projects](./development/python/README.md)
-- [Rust Projects](./development/rust/README.md)
+- [Python Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-python.md)
+- [Rust Projects]([./development/rust/README.md](https://github.com/vandersantanna/portfolio/blob/main/docs/development-rust.md))
 
 ### 📏 Standards
 - [Best Practices & Guidelines](./standards/README.md)
