@@ -54,7 +54,10 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Pipelines, Schema Versioning & Governance](./dataops/README.md)
 
 ### ☁️ Cloud
-- [AWS, Azure, GCP & Oracle Cloud](./cloud/README.md)
+- [AWS](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-aws.md)
+- [Azure](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-azure.md)
+- [GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-gcp.md)
+- [OCI](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-oci.md)
 
 ### 🚀 SQL Tuning - Optimization Cases & Best Practices
 - [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-oracle.md)
