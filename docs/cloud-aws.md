@@ -1,6 +1,6 @@
-# Amazon Web Services (AWS) — Data Platform & DBRE Portfolio
+# Microsoft Azure — Data Platform & DBRE Portfolio
 
-[![AWS](https://img.shields.io/badge/AWS-Portfolio-232F3E?logo=amazon-aws&logoColor=white)](#)
+[![Azure](https://img.shields.io/badge/Azure-Portfolio-0078D4?logo=microsoft-azure&logoColor=white)](#)
 
 **Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn: [linkedin.com/in/vandersantanna](https://linkedin.com/in/vandersantanna) • GitHub: [github.com/vandersantanna](https://github.com/vandersantanna)
@@ -33,7 +33,7 @@ Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn:
 - [Contact](#contact)
 
 ## Executive Summary
-Production-grade database reliability, performance, security, and cost efficiency on **AWS** with a strong focus on automation (IaC + GitOps), auditable operations, and measurable SLOs.
+Production-grade database reliability, performance, security, and cost efficiency on **Azure** with a strong focus on automation (IaC + GitOps), auditable operations, and measurable SLOs.
 
 ## What I Deliver
 - **HA/DR design & implementation** with repeatable runbooks and automated drills.
@@ -55,18 +55,18 @@ Production-grade database reliability, performance, security, and cost efficienc
 4. **Cost-Aware:** choose right tiers, scale-to-zero (where possible), commitments/discounts.
 
 ## Platform Services Map
-    - **Networking:** VPC, Private Subnets, NAT, Transit Gateway, PrivateLink, ALB/NLB, Route 53
-- **Identity:** IAM, Organizations/SCPs, IAM Roles Anywhere, AWS SSO
-- **Encryption:** KMS (CMKs), Secrets Manager, Parameter Store
-- **Storage:** S3 (Std/IA/Glacier), EBS, EFS, FSx
-- **Observability:** CloudWatch (metrics/logs/alarms), CloudTrail, Config, X-Ray
-- **Databases:** RDS (Oracle/SQL Server/PostgreSQL/MySQL), **Aurora**, DynamoDB, DMS
-- **Analytics:** Glue, Lake Formation, EMR, Redshift, MSK/Kinesis
+    - **Networking:** VNet, Subnets, NSG, Private Endpoints, Application Gateway, Azure DNS
+- **Identity:** Entra ID (Azure AD), PIM/JIT, RBAC, Managed Identity
+- **Encryption:** Key Vault (keys/secrets/certs), TDE (SQL)
+- **Storage:** Blob (Hot/Cool/Archive), Premium Disks, Files, Backup
+- **Observability:** Azure Monitor, Log Analytics, Application Insights, Activity Logs
+- **Databases:** Azure SQL (DB/MI), SQL Server on Azure VM, PostgreSQL/MySQL Flexible Server, Cosmos DB
+- **Data Platform:** Data Factory, Synapse, Event Hubs, Purview
 
 ## Deep DB Patterns
-    - **Aurora (PostgreSQL/MySQL):** Multi-AZ with reader endpoints; cross-region replicas for DR; automated failover.
-- **RDS Oracle/SQL Server:** Multi-AZ with synchronous standby; cross-region read replicas or DMS for DR.
-- **DynamoDB:** Global tables for multi-region active-active when applicable.
+    - **Azure SQL MI:** Zone-redundant; **Auto-Failover Groups** for DR; private endpoints & DNS.
+- **SQL Server on VM:** Always On AG across zones; Azure Backup; SRM for DR when required.
+- **PostgreSQL/MySQL Flexible:** HA zone-redundant; PITR; read replicas for scale.
 
 ## Reference Architectures
 
@@ -112,16 +112,19 @@ flowchart LR
     ### Terraform Baseline
     ```hcl
 terraform {
-  required_providers { aws = { source = "hashicorp/aws", version = "~> 5.0" } }
+  required_providers { 
+    azurerm = { 
+      source  = "hashicorp/azurerm"
+      version = "~> 3.100"
+    } 
+  }
 }
-provider "aws" { region = var.region }
-module "vpc" {
-  source  = "terraform-aws-modules/vpc/aws"
-  name    = "dbre-vpc"
-  cidr    = "10.20.0.0/16"
-  azs     = ["${var.region}a","${var.region}b"]
-  private_subnets = ["10.20.1.0/24","10.20.2.0/24"]
-  enable_nat_gateway = True
+provider "azurerm" {
+  features {}
+}
+resource "azurerm_resource_group" "rg" {
+  name     = "rg-cloud-portfolio"
+  location = var.location
 }
 ```
 
@@ -152,10 +155,10 @@ module "vpc" {
     ```
 
     ### Command-Line Essentials
-    ```bash
-aws sts get-caller-identity
-aws rds describe-db-snapshots --db-instance-identifier prod-sql
-aws cloudwatch get-metric-statistics   --namespace AWS/RDS --metric-name CPUUtilization   --dimensions Name=DBInstanceIdentifier,Value=prod-sql   --statistics Average --period 300   --start-time $(date -u -d '-1 hour' +%FT%TZ)   --end-time $(date -u +%FT%TZ)
+    ```powershell
+az account show
+az sql mi list -g rg-cloud-portfolio --output table
+az keyvault secret set --vault-name kv-portfolio --name "db-password" --value "REDACTED"
 ```
 
 ## Security & Compliance Baseline
@@ -167,9 +170,9 @@ aws cloudwatch get-metric-statistics   --namespace AWS/RDS --metric-name CPUUtil
 - **Audit:** centralized logs with immutable retention; alerts on anomalous activity.
 
 ## Observability
-    - **Metrics:** CPU/Memory/IOPS, replication lag, deadlocks.
-- **Logs:** RDS/Aurora error logs to **CloudWatch Logs**; VPC Flow Logs for network diagnostics.
-- **Dashboards:** SLOs and error budgets; top slow queries; cost anomaly detection.
+    - **Metrics/Logs:** Azure Monitor + Log Analytics; KQL queries for waits, deadlocks, IO latency.
+- **Dashboards:** Workbooks for RTO/RPO indicators, backup freshness, error budgets.
+- **Alerts:** Action Groups to Teams/Email/Webhooks; budget-based alerts.
 
 ## SLOs, Readiness & Testing
 - **Targets (illustrative):** Availability ≥ 99.9%, RTO ≤ 15 min, RPO ≤ 30 sec (where engine supports).
@@ -177,8 +180,8 @@ aws cloudwatch get-metric-statistics   --namespace AWS/RDS --metric-name CPUUtil
 - **Testing:** DR drills (quarterly), load tests before scale decisions, chaos experiments for failover paths.
 
 ## FinOps & Cost Controls
-    - **Savings Plans/Reserved Instances** for steady workloads; right-size instances/storage.
-- S3 lifecycle to Glacier/Deep Archive; **Cost Explorer/CUR** dashboards; tag-based allocation.
+    - **Reservations** and **Azure Hybrid Benefit**; tiering & auto-pause where applicable.
+- Azure Cost Management & budgets; tagging (env/app/owner/cost-center).
 
 ## Runbooks
 - **Backup/Restore:** validate last backup age; restore to isolated env; verify checksums; time the restore.
@@ -190,8 +193,8 @@ aws cloudwatch get-metric-statistics   --namespace AWS/RDS --metric-name CPUUtil
 - **Performance Program:** IO and indexing improvements; pool sizing; retry policies; latency down significantly under peak.
 - **Cost Optimization:** commitments/reservations + storage lifecycle + right-size → sustained TCO reduction.
 
-### AWS-Specific Notes
-- **SCPs** to enforce guardrails; **AWS SSO** for centralized auth; **Config** rules for compliance.
+### Azure-Specific Notes
+- **Managed Identity** everywhere; **Private Endpoints** for DBs; **Purview** for governance catalogs.
 
 ## Links & Cross-Navigation
 - **Multi-Cloud Landing:** `/portfolio-cloud/cloud-portfolio.md`
