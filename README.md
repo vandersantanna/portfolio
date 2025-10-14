@@ -56,8 +56,14 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 ### ☁️ Cloud
 - [AWS, Azure, GCP & Oracle Cloud](./cloud/README.md)
 
-### 🚀 SQL Tuning
-- [Optimization Cases & Best Practices](./sql-tuning/README.md)
+### 🚀 SQL Tuning - Optimization Cases & Best Practices
+- [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-oracle.md)
+- [SQL Server](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-sql-server.md)
+- [PostgreSQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-postgresql.md)
+- [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-mysql.md)
+- [MongoDB](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-mongodb.md)
+- [Redis](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-redis.md)
+
 
 ### 🤖 Automation
 - [Python](https://github.com/vandersantanna/portfolio/blob/main/docs/python.md)
