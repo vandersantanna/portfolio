@@ -1,14 +1,33 @@
-# Docker for DBRE / DBA / DataOps — Extended Portfolio Guide (Badges Edition)
+# Docker for DBRE / DBA / DataOps — Extended Portfolio Guide (Hero + Badges)
 
-<!-- Hero / Badges -->
+<!-- HERO -->
+<div align="center">
+  <h1>Docker for DBRE / DBA / DataOps</h1>
+  <p><em>Reproducible environments · Secure images · Observable data services · CI/CD for schema changes · DR drills on demand</em></p>
+
+  <!-- Repo Status Badges (update owner/repo if needed) -->
+  <a href="https://github.com/vandersantanna/docker-dbre-dba-dataops/actions">
+    <img alt="Build" src="https://img.shields.io/github/actions/workflow/status/vandersantanna/docker-dbre-dba-dataops/build.yml?branch=main&label=build&style=for-the-badge">
+  </a>
+  <a href="https://github.com/vandersantanna/docker-dbre-dba-dataops/releases">
+    <img alt="Release" src="https://img.shields.io/github/v/release/vandersantanna/docker-dbre-dba-dataops?style=for-the-badge">
+  </a>
+  <a href="https://github.com/vandersantanna/docker-dbre-dba-dataops/blob/main/LICENSE">
+    <img alt="License" src="https://img.shields.io/github/license/vandersantanna/docker-dbre-dba-dataops?style=for-the-badge">
+  </a>
+  <a href="#25-portfolio-showcases-hands-on-projects">
+    <img alt="Labs" src="https://img.shields.io/badge/Labs-Hands--On-blue?style=for-the-badge&logo=docker">
+  </a>
+  <br/><br/>
+</div>
+
+<!-- Tech Badges Cluster -->
 <p align="center">
   <!-- Core -->
   <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
   <img src="https://img.shields.io/badge/Compose-384D54?style=for-the-badge&logo=docker&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white" />
-  <img src="https://img.shields.io/badge/GitLab%20CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white" />
-  <img src="https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white" />
-  <img src="https://img.shields.io/badge/Ansible-EE0000?style=for-the-badge&logo=ansible&logoColor=white" />
+  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
+  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
   <!-- Supply Chain -->
   <img src="https://img.shields.io/badge/Trivy-1904DA?style=for-the-badge&logo=aqua&logoColor=white" />
   <img src="https://img.shields.io/badge/Syft-FF6F00?style=for-the-badge&logo=cyclonedx&logoColor=white" />
@@ -35,25 +54,51 @@
   <!-- Secrets -->
   <img src="https://img.shields.io/badge/HashiCorp%20Vault-000000?style=for-the-badge&logo=vault&logoColor=white" />
   <img src="https://img.shields.io/badge/SOPS-2F855A?style=for-the-badge&logo=gnuprivacyguard&logoColor=white" />
-  <!-- Orchestration -->
-  <img src="https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white" />
-  <img src="https://img.shields.io/badge/Helm-0F1689?style=for-the-badge&logo=helm&logoColor=white" />
   <!-- Clouds -->
   <img src="https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white" />
   <img src="https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white" />
   <img src="https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white" />
   <img src="https://img.shields.io/badge/OCI-C74634?style=for-the-badge&logo=oracle&logoColor=white" />
-  <!-- Langs -->
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white" />
-  <img src="https://img.shields.io/badge/PowerShell-5391FE?style=for-the-badge&logo=powershell&logoColor=white" />
-  <img src="https://img.shields.io/badge/Rust-000000?style=for-the-badge&logo=rust&logoColor=white" />
-  <!-- Meta -->
-  <img src="https://img.shields.io/badge/License-MIT-97CA00?style=for-the-badge&logo=opensourceinitiative&logoColor=white" />
-  <img src="https://img.shields.io/badge/Status-Actively%20Maintained-brightgreen?style=for-the-badge" />
 </p>
 
-A curated, hands-on portfolio page showing how I apply Docker to database reliability, operations, and data engineering workflows. Each section includes a short explanation and three concise, copy-ready examples (Dockerfiles, Compose snippets, CLI, CI, checklists).
+A curated, hands-on portfolio page showing how I apply Docker to database reliability, operations, and data engineering workflows. Each section includes a short explanation and three concise, copy-ready examples.
+
+---
+
+## Quick Links
+- 👉 **[Hands-On Labs](#25-portfolio-showcases-hands-on-projects)**
+- 🔐 **[Supply Chain Security](#6-supply-chain-security)**
+- 📦 **[Templates Library](#26-reusable-templates--snippets-library)**
+- 🧭 **[Checklists](#27-checklists-security-backupdr-perf-observability)**
+
+---
+
+## Badges by Database & Links
+Shortcuts to the most demanded stacks. Update the links to point at your repo folder structure.
+
+- **PostgreSQL**  
+  ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
+  [HA (Patroni) Lab](#postgresql-ha-lab) • [Backups & Restore](#12-backup--recovery-patterns) • [Exporters](#15-observability-for-containerized-databases)
+
+- **MySQL / MariaDB**  
+  ![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
+  [InnoDB Cluster Lab](#mysql-innodb-cluster-lab) • [XtraBackup](#12-backup--recovery-patterns) • [Monitoring](#15-observability-for-containerized-databases)
+
+- **SQL Server**  
+  ![SQL Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
+  [Dev + AG pattern](#sql-server-ag-dev-pattern) • [Backups](#12-backup--recovery-patterns) • [DACPAC CI](#21-cicd-for-database-changes)
+
+- **MongoDB**  
+  ![MongoDB](https://img.shields.io/badge/MongoDB-8.x-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+  [Replica Set](#mongodb-replica-set-lab) • [Sharding](#mongodb-sharding-lab) • [Backups](#12-backup--recovery-patterns)
+
+- **Redis**  
+  ![Redis](https://img.shields.io/badge/Redis-7.x-DC382D?style=for-the-badge&logo=redis&logoColor=white)
+  [Sentinel](#redis-sentinel-lab) • [Cluster](#redis-cluster-lab) • [Persistence RDB/AOF](#12-backup--recovery-patterns)
+
+- **Oracle**  
+  ![Oracle](https://img.shields.io/badge/Oracle-19c%2F21c%2F23ai-F80000?style=for-the-badge&logo=oracle&logoColor=white)
+  [ACFS/NFS notes](#11-storage--persistence) • [TDE overview](#13-networking--security) • [Backups](#12-backup--recovery-patterns)
 
 ---
 
@@ -92,55 +137,7 @@ A curated, hands-on portfolio page showing how I apply Docker to database reliab
 
 ---
 
-### Quick Badge Clusters (Copy/Paste into other pages)
-
-**Databases**  
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-8.x-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![SQL%20Server](https://img.shields.io/badge/SQL%20Server-2022-CC2927?style=for-the-badge&logo=microsoftsqlserver&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-8.x-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-7.x-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![Oracle](https://img.shields.io/badge/Oracle-19c%2F21c%2F23ai-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-
-**Orchestration & Observability**  
-![Docker](https://img.shields.io/badge/Docker-Engine-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Compose](https://img.shields.io/badge/Compose-3.9-384D54?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-1.30%2B-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Helm](https://img.shields.io/badge/Helm-Charts-0F1689?style=for-the-badge&logo=helm&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-Metrics-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-Dashboards-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Loki](https://img.shields.io/badge/Loki-Logs-000000?style=for-the-badge&logo=grafana&logoColor=white)
-
-**DataOps**  
-![Airflow](https://img.shields.io/badge/Airflow-Orchestration-017CEE?style=for-the-badge&logo=apacheairflow&logoColor=white)
-![dbt](https://img.shields.io/badge/dbt-Transformations-FF694B?style=for-the-badge&logo=dbt&logoColor=white)
-![Great%20Expectations](https://img.shields.io/badge/Great%20Expectations-Data%20Quality-0A6FE6?style=for-the-badge&logo=pytest&logoColor=white)
-![Debezium](https://img.shields.io/badge/Debezium-CDC-000000?style=for-the-badge&logo=apachekafka&logoColor=white)
-![Airbyte](https://img.shields.io/badge/Airbyte-ELT-615EFF?style=for-the-badge&logo=airbyte&logoColor=white)
-![Kafka](https://img.shields.io/badge/Kafka-Streaming-231F20?style=for-the-badge&logo=apachekafka&logoColor=white)
-
-**Security & Supply Chain**  
-![Trivy](https://img.shields.io/badge/Trivy-Scanner-1904DA?style=for-the-badge&logo=aqua&logoColor=white)
-![Syft](https://img.shields.io/badge/Syft-SBOM-FF6F00?style=for-the-badge&logo=cyclonedx&logoColor=white)
-![Cosign](https://img.shields.io/badge/Cosign-Signing-6DB33F?style=for-the-badge&logo=letsencrypt&logoColor=white)
-![OPA](https://img.shields.io/badge/OPA-Policies-1F1F1F?style=for-the-badge&logo=openpolicyagent&logoColor=white)
-![Vault](https://img.shields.io/badge/Vault-Secrets-000000?style=for-the-badge&logo=vault&logoColor=white)
-![SOPS](https://img.shields.io/badge/SOPS-Encryption-2F855A?style=for-the-badge&logo=gnuprivacyguard&logoColor=white)
-
-**Cloud & Languages**  
-![AWS](https://img.shields.io/badge/AWS-Cloud-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-Cloud-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-Cloud-4285F4?style=for-the-badge&logo=googlecloud&logoColor=white)
-![OCI](https://img.shields.io/badge/OCI-Cloud-C74634?style=for-the-badge&logo=oracle&logoColor=white)
-![Python](https://img.shields.io/badge/Python-Scripting-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-Automation-4EAA25?style=for-the-badge&logo=gnubash&logoColor=white)
-![PowerShell](https://img.shields.io/badge/PowerShell-Automation-5391FE?style=for-the-badge&logo=powershell&logoColor=white)
-![Rust](https://img.shields.io/badge/Rust-CLI-000000?style=for-the-badge&logo=rust&logoColor=white)
-
----
-
-> **Note:** This is the badges-enhanced edition. All technical content remains; badges can be re-used across your portfolio pages to improve visual scanning and SEO signals on GitHub.
-
+<!-- The rest of the file reuses the prior "badges edition" content verbatim for technical depth. -->
 ## 1. Executive Summary & Value Proposition
 Containerization accelerates DBRE/DBA/DataOps workflows by standardizing environments, reducing drift, and enabling reproducible builds, tests, and operations. This guide demonstrates practical patterns for secure images, persistent storage, observability, CI/CD for schema changes, and disaster recovery testing—all with minimal toil and maximum reliability.
 
