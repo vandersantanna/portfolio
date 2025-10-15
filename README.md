@@ -52,6 +52,8 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 
 ### 🔄 DataOps
 - [Pipelines, Schema Versioning & Governance](https://github.com/vandersantanna/portfolio/blob/main/docs/dataops.md)
+- [Docker](https://github.com/vandersantanna/portfolio/blob/main/docs/docker.md)
+- [Kubernates](https://github.com/vandersantanna/portfolio/blob/main/docs/kubernates.md)
 
 ### ☁️ Cloud
 - [AWS](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-aws.md)
