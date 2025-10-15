@@ -55,6 +55,8 @@ Oracle Database 19c is Oracle's current long-term release, providing enterprise-
 - **ASM**: Automatic storage management
 - **Grid Infrastructure**: Cluster management foundation
 
+[Back to top](#table-of-contents)
+
 ## Prerequisites
 
 ### Supported Operating Systems
@@ -98,6 +100,8 @@ RAM_RAC="32 GB+ per node"
 STORAGE_SHARED="Shared storage (SAN, NFS, ASM)"
 NETWORK_REDUNDANCY="Bonded interfaces recommended"
 ```
+
+[Back to top](#table-of-contents)
 
 ## System Requirements
 
@@ -153,6 +157,8 @@ grid     hard   memlock   134217728
 grid     soft   memlock   134217728
 EOF
 ```
+
+[Back to top](#table-of-contents)
 
 ## Pre-installation Tasks
 
@@ -339,6 +345,8 @@ sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
 
+[Back to top](#table-of-contents)
+
 ## Single Instance Installation
 
 ### Download and Extract Oracle Software
@@ -415,6 +423,8 @@ cd /u01/app/oracle/product/19.3.0/dbhome_1
 # 9. Summary: Review and install
 # 10. Execute Configuration Scripts as root
 ```
+
+[Back to top](#table-of-contents)
 
 ## Oracle Grid Infrastructure
 
@@ -495,6 +505,8 @@ SELECT name, state, type FROM v$asm_diskgroup;
 -- Exit
 exit
 ```
+
+[Back to top](#table-of-contents)
 
 ## Real Application Clusters (RAC)
 
@@ -669,6 +681,8 @@ sudo -u oracle srvctl start service -d RACDB -s READ_ONLY_SERVICE
 # Check service status
 sudo -u oracle srvctl status service -d RACDB
 ```
+
+[Back to top](#table-of-contents)
 
 ## Data Guard Configuration
 
@@ -890,6 +904,8 @@ chmod +x /u01/app/oracle/scripts/dg_monitor.sh
 (crontab -u oracle -l 2>/dev/null; echo "*/5 * * * * /u01/app/oracle/scripts/dg_monitor.sh") | crontab -u oracle -
 ```
 
+[Back to top](#table-of-contents)
+
 ## Database Creation
 
 ### Single Instance Database Creation
@@ -994,6 +1010,8 @@ control_files=('/u01/app/oracle/oradata/ORCL/control01.ctl','/u01/app/oracle/fas
 compatible='19.0.0'
 EOF
 ```
+
+[Back to top](#table-of-contents)
 
 ## Post-Installation Configuration
 
@@ -1168,6 +1186,8 @@ sudo systemctl start oracle
 sudo systemctl status oracle
 ```
 
+[Back to top](#table-of-contents)
+
 ## Security Configuration
 
 ### Database Security Setup
@@ -1267,6 +1287,8 @@ sudo firewall-cmd --reload
 sudo ufw allow 1521/tcp
 sudo ufw allow 5500/tcp
 ```
+
+[Back to top](#table-of-contents)
 
 ## Performance Tuning
 
@@ -1381,6 +1403,8 @@ chmod +x /u01/app/oracle/scripts/perf_monitor.sh
 # Add to crontab
 (crontab -u oracle -l 2>/dev/null; echo "*/15 * * * * /u01/app/oracle/scripts/perf_monitor.sh") | crontab -u oracle -
 ```
+
+[Back to top](#table-of-contents)
 
 ## Backup and Recovery
 
@@ -1608,6 +1632,8 @@ EOF
 
 chmod +x /u01/app/oracle/scripts/recovery_test.sh
 ```
+
+[Back to top](#table-of-contents)
 
 ## Monitoring and Maintenance
 
@@ -1889,6 +1915,8 @@ SQL_EOF
 # Access Database Express at: https://hostname:5500/em
 ```
 
+[Back to top](#table-of-contents)
+
 ## High Availability Best Practices
 
 ### RAC Best Practices
@@ -2008,6 +2036,8 @@ EOF
 
 chmod +x /u01/app/oracle/scripts/setup_fast_start_failover.sh
 ```
+
+[Back to top](#table-of-contents)
 
 ## Troubleshooting
 
@@ -2198,6 +2228,8 @@ EOF
 chmod +x /u01/app/oracle/scripts/analyze_logs.sh
 ```
 
+[Back to top](#table-of-contents)
+
 ## Final Configuration and Validation
 
 ### Complete System Validation
@@ -2317,6 +2349,8 @@ sudo -u oracle crontab /tmp/oracle_crontab
 sudo -u oracle crontab -l
 ```
 
+[Back to top](#table-of-contents)
+
 ## Documentation and Best Practices Summary
 
 ### Production Checklist
@@ -2358,3 +2392,7 @@ sudo -u oracle crontab -l
 - **Oracle University**: [Oracle Training and Certification](https://university.oracle.com)
 
 This comprehensive guide provides a complete installation and configuration framework for Oracle Database 19c with high availability features including RAC and Data Guard. Regular monitoring, maintenance, and testing ensure optimal database performance and availability.
+
+[Back to top](#table-of-contents)
+
+---
