@@ -81,6 +81,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Windows Server](https://github.com/vandersantanna/portfolio/blob/main/docs/windows-server.md)
 
 ### 💻 Development
+- [Git, GitHub, GitLab](https://github.com/vandersantanna/portfolio/blob/main/docs/git-github-gitlab.md)
 - [Python Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-python.md)
 - [Rust Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-rust.md)
 
