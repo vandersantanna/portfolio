@@ -1,0 +1,43 @@
+name: Sync Contact Footer
+
+on:
+  push:
+    paths:
+      - "CONTACT.md"
+      - "scripts/sync_contact.py"
+      - ".github/workflows/sync-contact.yml"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Run sync script
+        run: |
+          chmod +x scripts/sync_contact.py
+          python scripts/sync_contact.py
+
+      - name: Commit & push changes (if any)
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "github-actions[bot]@users.noreply.github.com"
+            git add -A
+            git commit -m "chore: sync contact footer [skip ci]"
+            git push
+          else
+            echo "Sem mudanças para commitar."
+          fi
