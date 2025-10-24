@@ -1,8 +1,7 @@
-# Redis Performance Tuning Guide
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Redis](https://img.shields.io/badge/Redis-7.0%2B-red.svg)](https://redis.io/)
-[![Cloud](https://img.shields.io/badge/Cloud-AWS%20%7C%20Azure%20%7C%20GCP-blue.svg)](https://github.com)
+# Redis Performance Engineering Guide
+*From slowlog/latency doctor to client buffers & I/O threads—measure, optimize, verify.*
 
 ## 📋 Table of Contents
 
@@ -23,8 +22,6 @@
 - [Tuning Tools](#tuning-tools)
 - [Real-World Examples](#real-world-examples)
 - [Performance Architecture](#performance-architecture)
-- [References](#references)
-- [Author](#author)
 
 ## 🎯 Overview
 
@@ -46,6 +43,9 @@ This comprehensive guide provides expert-level Redis performance tuning strategi
 - Network bandwidth utilization optimization
 - CPU usage optimization for single-threaded operations
 
+[Back to top](#table-of-contents)
+
+---
 ## 🔐 Minimum Permissions
 
 ### Redis Server Permissions
@@ -120,7 +120,9 @@ roles:
 - roles/monitoring.viewer
 - roles/logging.viewer
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🔍 Query Analysis
 
 ### Redis Command Analysis Framework
@@ -155,7 +157,9 @@ DEBUG OBJECT <key>
 RANDOMKEY
 SCAN 0 MATCH pattern:* COUNT 100
 ```
+[Back to top](#table-of-contents)
 
+---
 ## ⚙️ Important Database Parameters
 
 ### Core Performance Parameters
@@ -212,7 +216,9 @@ client-output-buffer-limit pubsub 32mb 8mb 60
 hz 10
 dynamic-hz yes
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🏢 On-Premise Tuning
 
 ### System-Level Optimizations
@@ -267,7 +273,9 @@ CPUAffinity=0-3
 [Install]
 WantedBy=multi-user.target
 ```
+[Back to top](#table-of-contents)
 
+---
 ## ☁️ Cloud Tuning
 
 ### AWS ElastiCache for Redis
@@ -409,7 +417,9 @@ gcloud redis instances create high-perf-redis \
     --tier=standard-ha \
     --redis-config=maxmemory-policy=allkeys-lru,timeout=300
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 📈 Best Practices
 
 ### 1. Data Structure Optimization
@@ -500,7 +510,9 @@ redis_client = redis.Redis(connection_pool=pool)
 CONFIG SET maxmemory-policy allkeys-lru
 CONFIG SET maxmemory-samples 5
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🔧 Monitoring Tools and Tips
 
 ### Redis Native Monitoring
@@ -606,7 +618,9 @@ while true; do
     sleep 60
 done
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🚨 Performance Bottleneck Identification
 
 ### Common Performance Bottlenecks
@@ -690,7 +704,9 @@ graph TD
     Q --> S
     R --> S
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🔍 Performance Analysis Queries
 
 ### 1. Slow Query Analysis
@@ -875,7 +891,9 @@ echo "- Optimize frequently used commands"
 echo "- Consider read replicas for read-heavy workloads"
 echo "- Implement proper caching strategies"
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 📊 Index Types and Performance
 
 ### Redis Data Structure Performance Characteristics
@@ -1040,7 +1058,9 @@ PFMERGE unique:visitors:week unique:visitors:20231021 unique:visitors:20231022  
 PFADD page:views:homepage "192.168.1.100" "10.0.0.1"
 PFCOUNT page:views:homepage  # Approximate unique visitors
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🔧 Relevant Extensions
 
 ### Redis Modules for Performance Enhancement
@@ -1213,7 +1233,9 @@ end
 
 return nil
 ```
+[Back to top](#table-of-contents)
 
+---
 ## ☁️ Cloud Administration Topics
 
 ### AWS ElastiCache Advanced Configuration
@@ -1501,7 +1523,9 @@ gcloud scheduler jobs create http redis-backup-job \
     --uri="https://us-central1-project-id.cloudfunctions.net/redis-backup" \
     --http-method=POST
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 🛠️ Tuning Tools
 
 ### Comprehensive Tool Comparison
@@ -1822,7 +1846,9 @@ if __name__ == "__main__":
     monitor = RedisMonitor()
     monitor.run_monitoring(interval=10, duration=3600)  # Monitor for 1 hour
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 💡 Real-World Examples
 
 ### Example 1: E-commerce Session Store Optimization
@@ -1991,7 +2017,9 @@ SCARD player:12345:achievements  # Count achievements
 SADD player:12345:friends "player67890" "player11111"
 SINTER player:12345:friends player:67890:friends  # Mutual friends
 ```
+[Back to top](#table-of-contents)
 
+---
 ## 📊 Performance Architecture
 
 ### High-Performance Redis Architecture Patterns
@@ -2149,111 +2177,54 @@ def check_rate_limit(user_id, window=60, limit=100):
         'reset_time': current_time + window
     }
 ```
-
-## 📚 References
-
-### Official Documentation
-- [Redis Official Documentation](https://redis.io/documentation)
-- [Redis Configuration Reference](https://redis.io/topics/config)
-- [Redis Persistence](https://redis.io/topics/persistence)
-- [Redis Replication](https://redis.io/topics/replication)
-- [Redis Cluster Specification](https://redis.io/topics/cluster-spec)
-
-### Cloud Provider Documentation
-- [AWS ElastiCache for Redis](https://docs.aws.amazon.com/elasticache/latest/red-ug/)
-- [Azure Cache for Redis](https://docs.microsoft.com/en-us/azure/azure-cache-for-redis/)
-- [Google Cloud Memorystore for Redis](https://cloud.google.com/memorystore/docs/redis)
-
-### Performance and Monitoring
-- [Redis Performance Tuning](https://redis.io/topics/latency)
-- [Redis Memory Optimization](https://redis.io/topics/memory-optimization)
-- [Redis Benchmarking](https://redis.io/topics/benchmarks)
-
-### Best Practices and Guidelines
-- [Redis Best Practices](https://redis.io/topics/latency)
-- [Redis Security Guidelines](https://redis.io/topics/security)
-- [Redis Administration](https://redis.io/topics/admin)
-
-### Books and Advanced Resources
-- "Redis in Action" by Josiah L. Carlson
-- "Redis Essentials" by Maxwell Dayvson da Silva
-- "Mastering Redis" by Jeremy Nelson
-
-### Community Resources
-- [Redis Community](https://redis.io/community)
-- [Redis GitHub Repository](https://github.com/redis/redis)
-- [Redis Google Group](https://groups.google.com/g/redis-db)
-- [Redis Stack Overflow](https://stackoverflow.com/questions/tagged/redis)
-
-### Monitoring and Tools
-- [Redis Insight Download](https://redis.com/redis-enterprise/redis-insight/)
-- [Grafana Redis Dashboard](https://grafana.com/grafana/dashboards/763)
-- [Prometheus Redis Exporter](https://github.com/oliver006/redis_exporter)
-
-## 👨‍💻 Author
-
-**Database Performance Specialist | DBA/DBRE/Data Engineer/DataOps**
-
-🔧 **Expertise Areas:**
-- High-Performance Database Tuning
-- Redis Optimization and Scaling
-- Cloud Database Administration (AWS, Azure, GCP)
-- Performance Monitoring and Alerting
-- Database Reliability Engineering
-
-📊 **Professional Focus:**
-- Redis performance optimization for enterprise applications
-- Multi-cloud database strategy implementation
-- Real-time analytics and caching solutions
-- Database automation and DevOps practices
-
-🚀 **Key Achievements:**
-- Optimized Redis deployments serving 10M+ daily active users
-- Reduced database response times by up to 80% through strategic tuning
-- Implemented zero-downtime migration strategies for critical systems
-- Developed automated monitoring solutions for 24/7 database operations
-
-📧 **Contact:** Available for consultation on Redis performance optimization and database reliability engineering projects.
-
-🔗 **Professional Links:**
-- LinkedIn: [Your LinkedIn Profile]
-- GitHub: [Your GitHub Profile]
-- Blog: [Your Technical Blog]
+---
+[Back to top](#table-of-contents)
 
 ---
 
-## 📄 License
-
-This guide is released under the MIT License. Feel free to use, modify, and distribute this content while maintaining attribution.
-
-```
-MIT License
-
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-```
-
-## 🎯 Contributing
-
-Contributions to improve this guide are welcome! Please feel free to:
-- Submit issues for corrections or improvements
-- Propose new sections or examples
-- Share real-world performance optimization experiences
-- Suggest additional tools or techniques
-
-## ⭐ Acknowledgments
-
-Special thanks to the Redis community, cloud provider documentation teams, and fellow database professionals who contributed to the knowledge base that made this comprehensive guide possible.
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-**Last Updated:** September 2025  
-**Version:** 2.0  
-**Compatibility:** Redis 7.0+, Cloud Providers (AWS, Azure, GCP)
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
+
