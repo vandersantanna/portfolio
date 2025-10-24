@@ -1,6 +1,5 @@
 # Microsoft Azure — Data Platform & DBRE Portfolio
 
-[![Azure](https://img.shields.io/badge/Azure-Portfolio-0078D4?logo=microsoft-azure&logoColor=white)](#)
 
 **Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
 Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn: [linkedin.com/in/vandersantanna](https://linkedin.com/in/vandersantanna) • GitHub: [github.com/vandersantanna](https://github.com/vandersantanna)
