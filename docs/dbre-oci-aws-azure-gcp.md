@@ -1,10 +1,7 @@
-# Cloud DBRE Portfolio — Complete README (AWS • Azure • GCP • OCI)
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-A **single-file, copy-paste** README for a **Database Reliability Engineering (DBRE)** portfolio focused on **multi-cloud** (AWS, Azure, GCP, OCI). It shows strategy, architecture, operations, and *hands-on* execution with **code for all four clouds in every major section** (IaC, HA/DR, observability, CI/CD, security, cost, and governance).
-
-_All code fences use `~~~` so you can copy the entire file in one go._
-
----
+# Multi-Cloud Reliability Engineering for Databases — AWS • Azure • GCP • OCI
+*From landing zones and observability to cross-region DR—secure, automatable, measured.*
 
 ## Table of Contents
 - [1. Executive Summary](#1-executive-summary)
@@ -936,11 +933,53 @@ flowchart LR
   classDef g fill:#ffe,stroke:#aa0,stroke-width:2px;
   classDef o fill:#fee,stroke:#c33,stroke-width:2px;
 ~~~
+---
+[Back to top](#table-of-contents)
 
-## How to Use & Customize
+---
 
-- Replace placeholders (<id>, passwords, project/compartment IDs) and align regions/AZs.
-- Keep DR drills and restore tests on a schedule with recorded RTO/RPO.
-- Link your live dashboards, runbooks, and cost reports in sections above.
-- Treat SLOs and guardrails as living documents—review quarterly.
-- Note: Code samples are illustrative baselines; tune sizes, versions, and parameters to your workloads and organizational policies.
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
