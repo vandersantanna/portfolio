@@ -1,5 +1,4 @@
-# 🐬 MySQL Installation and Configuration Guide
- <img src="https://www.mysql.com/common/logos/logo-mysql-170x115.png" alt="MySQL" height="28" style="vertical-align:middle;margin-right:8px;">
+# MySQL Installation and Configuration Guide
 
 *Complete installation and configuration guide for MySQL 8.0 across multiple platforms*
 
