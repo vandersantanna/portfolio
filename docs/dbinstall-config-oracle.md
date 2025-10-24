@@ -1,4 +1,7 @@
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
+
 # Oracle Database 19c Installation and Configuration Guide
+*Install once, configure right, run mission-critical.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -2377,14 +2380,20 @@ This comprehensive guide provides a complete installation and configuration fram
 [Back to top](#table-of-contents)
 
 ---
+
 **[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+
 ---
+## Author & Maintainer
+**Vanderley Sant Anna (vsantanna)** — Senior Database Engineer (DBE) / Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer  
+**Education:** B.Sc. in Software Engineering  
+**Certifications:** Oracle OCP; MongoDB University — M102: MongoDB for DBAs; IBM Certified Database Associate — DB2 9 Fundamentals  
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
 ## 📫 Contact
 - **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
-- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
-- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
-- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
 ---
 ## Trademarks
 All product names, logos, and brands are property of their respective owners.
