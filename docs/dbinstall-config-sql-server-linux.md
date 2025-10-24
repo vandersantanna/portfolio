@@ -40,6 +40,8 @@ Microsoft SQL Server 2022 brings enterprise-grade database capabilities to Linux
 - High availability and disaster recovery
 - Cross-platform development
 
+[Back to top](#table-of-contents)
+
 ## Prerequisites
 
 ### Supported Linux Distributions
@@ -63,6 +65,7 @@ Microsoft SQL Server 2022 brings enterprise-grade database capabilities to Linux
 - python3
 - openssl
 ```
+[Back to top](#table-of-contents)
 
 ## System Requirements
 
@@ -92,6 +95,8 @@ RAM_PROD="8 GB or more"
 STORAGE_TYPE="SSD recommended"
 NETWORK_SPEED="Gigabit Ethernet"
 ```
+
+[Back to top](#table-of-contents)
 
 ## Red Hat Enterprise Linux Installation
 
@@ -190,6 +195,8 @@ sudo systemctl status mssql-server
 sudo netstat -tulnp | grep 1433
 ```
 
+[Back to top](#table-of-contents)
+
 ## Ubuntu Installation
 
 ### Step 1: System Preparation
@@ -269,6 +276,7 @@ sudo systemctl status mssql-server
 # Verify listening ports
 sudo ss -tulnp | grep 1433
 ```
+[Back to top](#table-of-contents)
 
 ## Initial Configuration
 
@@ -322,6 +330,8 @@ sudo /opt/mssql/bin/mssql-conf set memory.minservermemory 1024
 # Restart service
 sudo systemctl restart mssql-server
 ```
+
+[Back to top](#table-of-contents)
 
 ## SQL Server Tools Installation
 
@@ -405,6 +415,7 @@ Import-Module SqlServer
 # Test connection
 Invoke-Sqlcmd -ServerInstance "localhost" -Database "master" -Query "SELECT @@VERSION"
 ```
+[Back to top](#table-of-contents)
 
 ## Security Configuration
 
@@ -483,6 +494,7 @@ sudo /opt/mssql/bin/mssql-conf set network.forceencryption 1
 # Restart SQL Server
 sudo systemctl restart mssql-server
 ```
+[Back to top](#table-of-contents)
 
 ## Network Configuration
 
@@ -523,6 +535,8 @@ sqlcmd -S server_ip,1433 -U SA -P 'YourPassword123!'
 # Use telnet to test port connectivity
 telnet localhost 1433
 ```
+
+[Back to top](#table-of-contents)
 
 ## Database Configuration
 
@@ -629,6 +643,8 @@ ON Employees (Email);
 GO
 ```
 
+[Back to top](#table-of-contents)
+
 ## Performance Tuning
 
 ### System-Level Optimizations
@@ -707,6 +723,8 @@ WHERE ips.avg_fragmentation_in_percent > 10
 ORDER BY ips.avg_fragmentation_in_percent DESC;
 GO
 ```
+
+[Back to top](#table-of-contents)
 
 ## Monitoring and Maintenance
 
@@ -847,6 +865,8 @@ sudo tee /etc/logrotate.d/mssql-server << EOF
 EOF
 ```
 
+[Back to top](#table-of-contents)
+
 ## SSL/TLS Configuration
 
 ### Production SSL Certificate Setup
@@ -884,6 +904,7 @@ sudo systemctl restart mssql-server
 # Test SSL connection
 sqlcmd -S localhost -U SA -P 'YourPassword123!' -N -C
 ```
+[Back to top](#table-of-contents)
 
 ## High Availability Setup
 
@@ -929,6 +950,8 @@ sudo pcs cluster setup --name sqlcluster node1 node2 node3
 sudo pcs cluster start --all
 sudo pcs cluster enable --all
 ```
+
+[Back to top](#table-of-contents)
 
 ## Troubleshooting
 
@@ -1057,6 +1080,7 @@ DBCC CHECKDB('LinuxCompanyDB', REPAIR_ALLOW_DATA_LOSS);
 ALTER DATABASE LinuxCompanyDB SET MULTI_USER;
 "
 ```
+[Back to top](#table-of-contents)
 
 ## Best Practices
 
@@ -1192,6 +1216,7 @@ EOF
 
 chmod +x /opt/mssql/scripts/dr_test.sh
 ```
+[Back to top](#table-of-contents)
 
 ## Advanced Configuration
 
@@ -1454,6 +1479,7 @@ chmod +x /opt/mssql/scripts/health_check.sh
 # Add to cron for regular health checks
 (crontab -l 2>/dev/null; echo "*/5 * * * * /opt/mssql/scripts/health_check.sh") | crontab -
 ```
+[Back to top](#table-of-contents)
 
 ## Migration and Upgrade
 
@@ -1531,6 +1557,7 @@ sqlcmd -S localhost -U SA -P 'YourPassword123!' -Q "
 ALTER DATABASE [LinuxCompanyDB] SET COMPATIBILITY_LEVEL = 160;  -- SQL Server 2022
 "
 ```
+[Back to top](#table-of-contents)
 
 ## Final Notes and Resources
 
@@ -1605,5 +1632,15 @@ WHERE waiting_tasks_count > 0
     )
 ORDER BY wait_time_ms DESC;
 ```
-
-This completes the comprehensive SQL Server 2022 installation and configuration guide for Linux Red Hat and Ubuntu distributions. The guide covers everything from initial installation to advanced configuration, monitoring, and troubleshooting specific to Linux environments.
+---
+[Back to top](#table-of-contents)
+---
+**[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+---
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
+- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
