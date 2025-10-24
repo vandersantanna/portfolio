@@ -1628,17 +1628,37 @@ ORDER BY wait_time_ms DESC;
 [Back to top](#table-of-contents)
 
 ---
+
 **[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+
 ---
+## Author & Maintainer
+**Vanderley Sant Anna** — Senior Database Engineer (DBE) / Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer  
+**Preferred name:** Vander  
+**Education:** 
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+**Certifications:** 
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
 ## 📫 Contact
 - **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
-- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
-- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
-- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
----
-## Trademarks
-All product names, logos, and brands are property of their respective owners.
-Use of these names is for identification purposes only and does not imply endorsement or affiliation.
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
 
 ---
+
+
