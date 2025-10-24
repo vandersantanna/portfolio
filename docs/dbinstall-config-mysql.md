@@ -1,4 +1,5 @@
-# 🐬 MySQL Installation and Configuration Guide
+# 🐬 MySQL Installation and Configuration Guide 
+# <img src="https://redis.io/favicon.ico" height="24"> MySQL Installation and Configuration Guide 
 
 *Complete installation and configuration guide for MySQL 8.0 across multiple platforms*
 
