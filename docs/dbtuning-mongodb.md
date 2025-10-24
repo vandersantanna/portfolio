@@ -1,17 +1,7 @@
-# 🍃 MongoDB Performance Tuning - Professional Portfolio
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
+
+# MongoDB Performance Engineering Guide
 *Advanced NoSQL Database Performance Optimization & Cloud Administration*
-
-[![MongoDB](https://img.shields.io/badge/-MongoDB-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
-[![AWS DocumentDB](https://img.shields.io/badge/-AWS%20DocumentDB-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/documentdb/)
-[![Azure Cosmos DB](https://img.shields.io/badge/-Azure%20Cosmos%20DB-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/services/cosmos-db/)
-[![Google Cloud Firestore](https://img.shields.io/badge/-Google%20Firestore-4285F4?style=flat-square&logo=google-cloud&logoColor=white)](https://cloud.google.com/firestore)
-[![MongoDB Atlas](https://img.shields.io/badge/-MongoDB%20Atlas-47A248?style=flat-square&logo=mongodb&logoColor=white)](https://www.mongodb.com/atlas)
-[![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
-[![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)](https://docker.com/)
-
-> **Expert-level MongoDB performance optimization for enterprise-scale production environments**, including advanced query optimization, sharding strategies, replica set configuration, and comprehensive cloud-native database administration across AWS, Azure, and GCP platforms.
-
----
 
 ## 📋 Table of Contents
 
@@ -28,12 +18,12 @@
 - [💼 Real-World Case Studies](#-real-world-case-studies)
 - [📊 Performance Monitoring Tools](#-performance-monitoring-tools)
 - [🎯 Best Practices](#-best-practices)
-- [📚 References & Resources](#-references--resources)
-- [👨‍💼 Professional Profile](#-professional-profile)
 
 ---
 
 ## 🎯 Performance Tuning Objectives
+
+> **Expert-level MongoDB performance optimization for enterprise-scale production environments**, including advanced query optimization, sharding strategies, replica set configuration, and comprehensive cloud-native database administration across AWS, Azure, and GCP platforms.
 
 ### Primary Performance Goals
 - **Query Response Time**: < 50ms for read operations (95th percentile)
@@ -92,6 +82,7 @@ db.collection.aggregate([
     { $indexStats: {} }
 ]);
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -204,6 +195,7 @@ db.adminCommand({
     ]
 }
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -288,6 +280,7 @@ db.adminCommand("connPoolStats");
 // Lock information
 db.adminCommand("lockInfo");
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -419,6 +412,7 @@ setParameter:
   connPoolMaxConnsPerHost: 200
   ShardingTaskExecutorPoolMaxSize: 4
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -525,6 +519,7 @@ db.collection.insertMany(
     }
 );
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -737,6 +732,7 @@ db.collection('users')
     .orderBy('created_date', 'desc')
     .limit(100);
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -899,6 +895,7 @@ db.currentOp({
     "waitingForLock": true
 });
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1174,6 +1171,7 @@ db.system.profile.aggregate([
 // collections with high avgLockWait values. Consider query optimization,
 // index improvements, or schema design changes to reduce lock duration.
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1427,6 +1425,7 @@ db.currentOp({
     "command.createIndexes": { $exists: true }
 });
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1708,6 +1707,7 @@ db.logs.bulkWrite(
     }
 );
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1979,6 +1979,8 @@ db.posts.aggregate([
 - **Scalability**: Linear scaling to 500M+ posts daily
 - **Global performance**: Sub-200ms response times across all regions
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 📊 Performance Monitoring Tools
@@ -2016,8 +2018,9 @@ db.posts.aggregate([
 | **PyMongo Profiler** | Library | Python + MongoDB | Python-based performance monitoring |
 | **Node.js Profiler** | Library | Node.js + MongoDB | JavaScript performance monitoring |
 
----
+[Back to top](#table-of-contents)
 
+---
 ## 🎯 Best Practices
 
 ### Database Design Best Practices
@@ -2404,331 +2407,52 @@ function checkAlerts() {
     return alerts;
 }
 ```
+---
+[Back to top](#table-of-contents)
 
 ---
 
-## 📚 References & Resources
-
-### Official MongoDB Documentation
-- **MongoDB Performance Best Practices**: https://docs.mongodb.com/manual/administration/production-notes/
-- **MongoDB Indexing Strategies**: https://docs.mongodb.com/manual/applications/indexes/
-- **MongoDB Aggregation Pipeline Optimization**: https://docs.mongodb.com/manual/core/aggregation-pipeline-optimization/
-- **MongoDB Sharding Guide**: https://docs.mongodb.com/manual/sharding/
-- **MongoDB Replica Sets**: https://docs.mongodb.com/manual/replication/
-- **MongoDB Atlas Documentation**: https://docs.atlas.mongodb.com/
-
-### Cloud Platform Resources
-- **AWS DocumentDB Best Practices**: https://docs.aws.amazon.com/documentdb/latest/developerguide/best_practices.html
-- **Azure Cosmos DB MongoDB API**: https://docs.microsoft.com/en-us/azure/cosmos-db/mongodb-introduction
-- **Google Cloud Firestore**: https://cloud.google.com/firestore/docs/best-practices
-- **MongoDB Atlas on AWS**: https://docs.atlas.mongodb.com/reference/amazon-aws/
-- **MongoDB Atlas on Azure**: https://docs.atlas.mongodb.com/reference/microsoft-azure/
-- **MongoDB Atlas on GCP**: https://docs.atlas.mongodb.com/reference/google-gcp/
-
-### Performance Tuning Resources
-- **MongoDB Performance Tuning**: https://university.mongodb.com/courses/M201/about
-- **MongoDB Schema Design Patterns**: https://www.mongodb.com/blog/post/building-with-patterns-a-summary
-- **MongoDB Aggregation Framework**: https://university.mongodb.com/courses/M121/about
-- **MongoDB for DBAs**: https://university.mongodb.com/courses/M102/about
-- **MongoDB Optimization Techniques**: https://www.mongodb.com/presentations/mongodb-performance-tuning
-
-### Professional Certifications
-- **MongoDB Certified Developer**: https://university.mongodb.com/certification/developer
-- **MongoDB Certified DBA**: https://university.mongodb.com/certification/dba
-- **AWS Certified Database - Specialty**: https://aws.amazon.com/certification/certified-database-specialty/
-- **Microsoft Azure Cosmos DB Developer**: https://docs.microsoft.com/en-us/learn/certifications/azure-cosmos-db-developer-specialty/
-- **Google Cloud Professional Database Engineer**: https://cloud.google.com/certification/cloud-database-engineer
-
-### Tools and Utilities
-- **MongoDB Compass**: https://www.mongodb.com/products/compass
-- **Studio 3T**: https://studio3t.com/
-- **NoSQLBooster**: https://nosqlbooster.com/
-- **Percona Monitoring and Management**: https://www.percona.com/software/database-tools/percona-monitoring-and-management
-- **MongoDB Atlas CLI**: https://docs.atlas.mongodb.com/atlas-cli/
-- **MongoDB Database Tools**: https://docs.mongodb.com/database-tools/
-
-### Community Resources
-- **MongoDB Community Forums**: https://developer.mongodb.com/community/forums/
-- **Stack Overflow MongoDB**: https://stackoverflow.com/questions/tagged/mongodb
-- **Reddit r/MongoDB**: https://www.reddit.com/r/mongodb/
-- **MongoDB User Groups**: https://www.mongodb.com/user-groups
-- **LinkedIn MongoDB Groups**: https://www.linkedin.com/groups/
-
-### Learning Resources
-- **MongoDB University**: https://university.mongodb.com/
-- **MongoDB Blog**: https://www.mongodb.com/blog
-- **MongoDB YouTube Channel**: https://www.youtube.com/c/MongoDBofficial
-- **Pluralsight MongoDB Courses**: https://www.pluralsight.com/browse/data-professional/mongodb
-- **Udemy MongoDB Training**: https://www.udemy.com/topic/mongodb/
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-## 👨‍💼 Professional Profile
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
 
-### About the Author
+**Preferred name:** Vander  
 
-**Senior NoSQL Database Administrator & Cloud Architect**  
-*12+ Years of MongoDB and NoSQL Database Expertise*
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
 
-### Professional Experience & Expertise
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
 
-#### Core Competencies
-- **NoSQL Database Administration**: MongoDB 3.x through 7.x, DocumentDB, Cosmos DB
-- **Cloud Platforms**: MongoDB Atlas, AWS DocumentDB, Azure Cosmos DB, Google Firestore
-- **Performance Optimization**: Query tuning, index strategies, aggregation pipeline optimization
-- **Scalability Solutions**: Sharding strategies, replica sets, horizontal scaling
-- **DevOps & Automation**: Infrastructure as Code, CI/CD pipelines, monitoring automation
-- **Data Architecture**: Schema design, data modeling, migration strategies
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
 
-#### Professional Achievements
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
 
-**Performance Optimization Results**:
-- Achieved 80-95% query performance improvements across 150+ production databases
-- Reduced infrastructure costs by 50-70% through strategic cloud optimization
-- Implemented auto-scaling solutions supporting 10x traffic growth
-- Successfully migrated 100+ TB of data to cloud platforms with zero downtime
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
 
-**Industry Experience**:
-- **E-commerce**: High-volume transaction systems, real-time inventory management
-- **IoT & Analytics**: Time-series data processing, real-time dashboards, sensor data platforms
-- **Social Media**: Content management systems, user behavior analytics, recommendation engines
-- **Financial Technology**: Payment processing, fraud detection, compliance reporting
-- **Healthcare**: Patient data systems, HIPAA compliance, medical record management
+<details>
+  <summary><strong>Trademarks</strong></summary>
 
-**Technical Leadership**:
-- Led database engineering teams of 8-20 engineers across multiple time zones
-- Architected and implemented database solutions for Fortune 500 companies
-- Mentored 30+ junior developers and database administrators
-- Established MongoDB best practices and standards for enterprise organizations
-
-#### Certifications & Training
-
-**MongoDB Certifications**:
-- MongoDB Certified Developer Associate
-- MongoDB Certified Database Administrator
-- MongoDB Atlas Certified Professional
-- MongoDB Performance Tuning Specialist
-
-**Cloud Certifications**:
-- AWS Certified Database - Specialty
-- Microsoft Azure Database Administrator Associate
-- Google Cloud Professional Database Engineer
-- MongoDB Atlas on Multi-Cloud Certified
-
-**Additional Qualifications**:
-- Certified Kubernetes Administrator (CKA)
-- AWS Solutions Architect Professional
-- Docker Certified Associate
-- Terraform Associate Certification
-
-#### Technical Skills Matrix
-
-| **Technology** | **Experience Level** | **Years** |
-|----------------|---------------------|-----------|
-| MongoDB Administration | Expert | 12+ |
-| NoSQL Performance Tuning | Expert | 12+ |
-| MongoDB Atlas | Expert | 8+ |
-| AWS DocumentDB | Advanced | 6+ |
-| Azure Cosmos DB | Advanced | 5+ |
-| Google Firestore | Intermediate | 4+ |
-| Kubernetes & Docker | Advanced | 7+ |
-| Python & Node.js | Advanced | 10+ |
-| Infrastructure as Code | Advanced | 6+ |
-| Monitoring & Alerting | Expert | 12+ |
-
-#### Professional Projects Portfolio
-
-**Project Highlights**:
-
-1. **Global E-commerce Platform Modernization**
-   - Migrated legacy RDBMS to MongoDB Atlas across 15 regions
-   - Achieved 89% improvement in page load times
-   - Implemented auto-scaling supporting Black Friday traffic spikes
-
-2. **IoT Data Platform Architecture**
-   - Designed time-series data platform processing 1B+ events daily
-   - Reduced data processing latency from minutes to milliseconds
-   - Implemented real-time analytics with sub-100ms response times
-
-3. **Social Media Analytics Engine**
-   - Built recommendation engine serving 50M+ users
-   - Optimized aggregation pipelines for real-time trend analysis
-   - Achieved 92% cost reduction through query optimization
-
-4. **Financial Services Compliance System**
-   - Designed audit-compliant document management system
-   - Implemented encryption-at-rest and field-level security
-   - Achieved 99.99% uptime with automatic failover
-
-#### Open Source Contributions
-
-**MongoDB Community Contributions**:
-- **Performance Monitoring Tools**: Created open-source MongoDB monitoring dashboard
-- **Migration Utilities**: Developed tools for RDBMS to MongoDB migration
-- **Best Practice Documentation**: Authored performance tuning guides adopted by 1000+ developers
-- **Conference Speaking**: Presented at MongoDB World, AWS re:Invent, KubeCon
-
-#### Professional Services
-
-**Consulting Expertise**:
-- MongoDB performance audits and optimization
-- Cloud migration strategy and implementation  
-- High availability and disaster recovery design
-- Team training and knowledge transfer
-- Architecture review and scalability planning
-
-**Client Testimonials**:
-*"Exceptional MongoDB expertise that transformed our database performance. The optimization work delivered measurable improvements that exceeded our expectations."* - CTO, Global E-commerce Platform
-
-*"Deep technical knowledge combined with practical experience. The migration to MongoDB Atlas was seamless and delivered immediate cost savings."* - VP Engineering, FinTech Startup
-
-#### Contact Information
-
-📧 **Professional Email**: [mongodb.expert@email.com]  
-🔗 **LinkedIn**: [linkedin.com/in/mongodb-database-expert]  
-🐙 **GitHub**: [github.com/mongodb-performance-expert]  
-📝 **Technical Blog**: [mongodb-optimization-blog.com]  
-🎤 **Speaking**: Available for conferences and technical presentations  
-💼 **Consulting**: Open for MongoDB architecture and optimization projects
-
----
-
-### 🏆 Portfolio Highlights
-
-This repository demonstrates comprehensive expertise in:
-
-✅ **Enterprise-Scale NoSQL Database Administration**  
-✅ **Advanced MongoDB Performance Optimization**  
-✅ **Multi-Cloud Database Architecture**  
-✅ **Real-Time Analytics and Time-Series Processing**  
-✅ **High Availability and Disaster Recovery**  
-✅ **DevOps and Infrastructure Automation**  
-✅ **Security and Compliance Implementation**  
-
----
-
-**Repository Statistics**:
-- **Code Examples**: 100+ production-ready MongoDB scripts and queries
-- **Real-World Cases**: 3 detailed enterprise implementation studies
-- **Performance Queries**: 30+ optimization and monitoring scripts
-- **Cloud Platforms**: Complete coverage of Atlas, AWS, Azure, GCP
-- **Best Practices**: Comprehensive guidelines for production deployments
-
----
-
-### 🚀 Key Achievements Summary
-
-**Performance Optimization Impact**:
-- **Query Performance**: 80-95% improvement in response times
-- **Infrastructure Costs**: 50-70% reduction through optimization
-- **Scalability**: Linear scaling to 100x original capacity
-- **Availability**: 99.99%+ uptime with automatic failover
-- **Data Volume**: Successfully managed 100+ TB databases
-
-**Technology Leadership**:
-- **Team Management**: Led cross-functional database teams of 20+ engineers
-- **Architecture Design**: Designed MongoDB solutions for 50+ enterprise clients
-- **Knowledge Transfer**: Trained 200+ developers in MongoDB best practices
-- **Innovation**: Pioneered performance optimization techniques adopted industry-wide
-
----
-
-### 📈 Performance Metrics Dashboard
-
-#### Key Performance Indicators (KPIs) Summary
-
-```mermaid
-graph TB
-    A[MongoDB Performance KPIs] --> B[Query Optimization]
-    A --> C[Infrastructure Efficiency]
-    A --> D[Scalability Metrics]
-    A --> E[Availability Stats]
-    
-    B --> B1["Response Time: <50ms (95th %ile)"]
-    B --> B2["Index Hit Ratio: >99%"]
-    B --> B3["Collection Scan Ratio: <5%"]
-    
-    C --> C1["Cost Reduction: 50-70%"]
-    C --> C2["Resource Utilization: <70%"]
-    C --> C3["Storage Efficiency: 70% improvement"]
-    
-    D --> D1["Throughput: 100K+ ops/sec"]
-    D --> D2["Linear Scaling: 100x capacity"]
-    D --> D3["Auto-scaling: 10x traffic spikes"]
-    
-    E --> E1["Uptime: 99.99%+"]
-    E --> E2["Failover Time: <30s"]
-    E --> E3["Zero Downtime Migrations"]
-```
-
-#### Measurable Business Impact
-
-| **Metric Category** | **Before Optimization** | **After Optimization** | **Improvement** |
-|-------------------|------------------------|----------------------|-----------------|
-| **Query Response Time** | 2.8 seconds | 320 milliseconds | 89% faster |
-| **Database Throughput** | 15,000 ops/sec | 75,000 ops/sec | 400% increase |
-| **Infrastructure Cost** | $50,000/month | $15,000/month | 70% reduction |
-| **Storage Efficiency** | 5TB raw data | 1.5TB compressed | 70% savings |
-| **Page Load Time** | 8 seconds | 200 milliseconds | 96% improvement |
-| **Concurrent Users** | 15,000 users | 45,000 users | 200% increase |
-| **System Availability** | 99.5% uptime | 99.99% uptime | 0.49% improvement |
-| **Deployment Time** | 4 hours downtime | Zero downtime | 100% improvement |
-
-#### Technology Stack Expertise
-
-```mermaid
-pie title MongoDB Technology Stack Proficiency
-    "MongoDB Core" : 35
-    "Cloud Platforms" : 25
-    "Performance Tuning" : 20
-    "DevOps & Automation" : 12
-    "Monitoring & Security" : 8
-```
-
-### Global Impact and Recognition
-
-**Industry Recognition**:
-- **MongoDB World Speaker**: 2022, 2023, 2024
-- **AWS re:Invent Presenter**: Database Performance Track
-- **Technical Publications**: 15+ articles in MongoDB Blog and industry publications
-- **Community Contributions**: 5,000+ GitHub stars across MongoDB projects
-- **Certification Achievement**: Top 1% MongoDB certified professionals globally
-
-**Enterprise Clients Served**:
-- **Fortune 500 Companies**: 25+ implementations
-- **Startup Scale-ups**: 100+ successful migrations
-- **Global Deployments**: 50+ countries across 6 continents
-- **Industry Verticals**: Finance, Healthcare, E-commerce, IoT, Media & Entertainment
-
----
-
-## 🎯 Next Steps and Continuous Learning
-
-### Emerging Technologies Integration
-- **MongoDB 7.x Features**: Time-series collections, queryable encryption, Atlas Search enhancements
-- **AI/ML Integration**: Vector search, machine learning pipelines, real-time analytics
-- **Kubernetes Native**: MongoDB Operator, cloud-native deployments, service mesh integration
-- **Edge Computing**: MongoDB Mobile, IoT data processing, distributed architectures
-
-### Professional Development Goals
-- **Advanced Certifications**: MongoDB 7.x certifications, multi-cloud architect credentials
-- **Research & Development**: Contributing to MongoDB core, performance optimization research
-- **Thought Leadership**: Technical conference speaking, industry whitepaper publication
-- **Team Development**: Mentoring next-generation database engineers, knowledge sharing initiatives
-
----
-
-*This portfolio represents a dedication to MongoDB excellence and continuous innovation in the rapidly evolving landscape of NoSQL database technologies and cloud-native architectures.*
-
-**Last Updated**: September 2025  
-**MongoDB Versions**: 3.0 through 7.x  
-**Cloud Platforms**: Atlas, AWS DocumentDB, Azure Cosmos DB, Google Firestore  
-**Deployment Models**: On-premise, Cloud, Hybrid, Multi-cloud
-
----
-
-*Ready to optimize your MongoDB performance? Let's connect and discuss how these proven strategies can transform your database architecture and deliver measurable business results.*
-
-**Contact for Consulting**: [mongodb.expert@email.com]  
-**Schedule a Performance Audit**: [calendly.com/mongodb-expert]  
-**Download Performance Toolkit**: [github.com/mongodb-performance-expert/toolkit]
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
