@@ -1,7 +1,7 @@
 <small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
 # Oracle Database 19c Installation and Configuration Guide
-*Install once, configure right, run mission-critical.
+*Install once, configure right, run mission-critical.*
 
 ## Table of Contents
 - [Overview](#overview)
