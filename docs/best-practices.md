@@ -42,7 +42,7 @@
 - [14. Cost Optimization](#14-cost-optimization)
 - [15. Templates & Reusable Artifacts](#15-templates--reusable-artifacts)
 - [16. Checklists](#16-checklists)
-- [17. References & Further Reading](#17-references--further-reading)
+
 
 ---
 
