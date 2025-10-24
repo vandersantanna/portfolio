@@ -1,10 +1,7 @@
-# PostgreSQL DBRE Portfolio — Complete README
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-A **single-file, copy-paste** README for a **Database Reliability Engineering (DBRE)** portfolio focused on **PostgreSQL** (self-managed and managed variants). It demonstrates strategy, architecture, operations, and hands-on execution with **extensive code**: SQL/psql, Bash, Ansible/Terraform (illustrative), Patroni/repmgr, pgBackRest/Barman, Prometheus/Grafana, Flyway/Liquibase/Sqitch, and Kubernetes operators.
-
-_All fences use `~~~` for easy copy/paste._
-
----
+# PostgreSQL Reliability Engineering Guide
+*From baselines and error budgets to failovers—secure, observable, automatable, security, and safe releases at scale.*
 
 ## Table of Contents
 - [1. Executive Summary](#1-executive-summary)
@@ -881,14 +878,54 @@ flowchart TB
 - **RLS:** Row-Level Security  
 - **FDW:** Foreign Data Wrapper  
 - **CFR:** Change Failure Rate
+---
+[Back to top](#table-of-contents)
 
 ---
 
-## How to Use & Customize
-1. Replace placeholders (hosts, networks, secrets, IDs) and align regions/AZs.  
-2. Expand **Case Studies** with your KPIs and diagrams.  
-3. Link live **dashboards**, **runbooks**, and **cost reports** to the sections above.  
-4. Treat **SLOs** and **guardrails** as living documents—review quarterly.  
-5. Automate **restore tests** and **DR drills**; publish results in **KPIs**.
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
-> **Note:** Samples are baselines; tune sizes, versions, and parameters to your workloads and organizational policies.
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
+
