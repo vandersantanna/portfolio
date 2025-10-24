@@ -1,14 +1,8 @@
-# 🔷 Complete SQL Server Performance Tuning Guide
-*Database Performance Optimization - Professional Portfolio*
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-[![SQL Server](https://img.shields.io/badge/-SQL%20Server-CC2927?style=flat-square&logo=microsoft-sql-server&logoColor=white)](https://www.microsoft.com/sql-server/)
-[![Azure SQL](https://img.shields.io/badge/-Azure%20SQL-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/services/sql-database/)
-[![AWS RDS](https://img.shields.io/badge/-AWS%20RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/rds/sqlserver/)
-[![Google Cloud SQL](https://img.shields.io/badge/-Cloud%20SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white)](https://cloud.google.com/sql/)
+# 🔷 SQL Server Performance Engineering Guide
+*DMVs, Query Store, and wait stats to diagnose, fix, and verify—on-prem and cloud.*
 
-> **Expert-level SQL Server performance optimization for mission-critical production environments**, including advanced configuration, query analysis, index tuning, and scalable solutions implementation across on-premise and cloud platforms.
-
----
 
 ## 📋 Table of Contents
 
@@ -28,6 +22,8 @@
 ---
 
 ## 🎯 Objectives
+
+> **Expert-level SQL Server performance optimization for mission-critical production environments**, including advanced configuration, query analysis, index tuning, and scalable solutions implementation across on-premise and cloud platforms.
 
 ### Performance Targets
 - **Latency**: < 50ms for 95% of queries
@@ -1527,143 +1523,53 @@ EXEC dbo.sp_add_jobserver
 | **Google Database Migration Service** | Cloud Migration | GCP | Paid |
 
 ---
-
-## 📚 References
-
-### Official Documentation
-- **Microsoft SQL Server Documentation**: https://docs.microsoft.com/sql/
-- **Azure SQL Documentation**: https://docs.microsoft.com/azure/azure-sql/
-- **SQL Server Performance Tuning**: https://docs.microsoft.com/sql/relational-databases/performance/
-- **Query Store**: https://docs.microsoft.com/sql/relational-databases/performance/monitoring-performance-by-using-the-query-store
-- **Extended Events**: https://docs.microsoft.com/sql/relational-databases/extended-events/
-- **Always On Availability Groups**: https://docs.microsoft.com/sql/database-engine/availability-groups/windows/
-
-### Performance Tuning Resources
-- **SQL Server Central**: https://www.sqlservercentral.com/
-- **Brent Ozar Unlimited**: https://www.brentozar.com/
-- **SQL Skills**: https://www.sqlskills.com/
-- **Simple Talk**: https://www.red-gate.com/simple-talk/databases/sql-server/
-- **SQLShack**: https://www.sqlshack.com/
-- **MSSQLTips**: https://www.mssqltips.com/
-
-### Best Practices Guides
-- **SQL Server Best Practices**: https://docs.microsoft.com/sql/sql-server/install/hardware-and-software-requirements-for-installing-sql-server
-- **Index Design Guidelines**: https://docs.microsoft.com/sql/relational-databases/sql-server-index-design-guide
-- **Memory Management**: https://docs.microsoft.com/sql/relational-databases/memory-management-architecture-guide
-- **Security Best Practices**: https://docs.microsoft.com/sql/relational-databases/security/
-- **Backup and Recovery**: https://docs.microsoft.com/sql/relational-databases/backup-restore/
-
-### Cloud-Specific Resources
-- **Azure SQL Best Practices**: https://docs.microsoft.com/azure/azure-sql/database/performance-guidance
-- **AWS RDS SQL Server**: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_SQLServer.html
-- **Google Cloud SQL Server**: https://cloud.google.com/sql/docs/sqlserver
-
-### Monitoring and Alerting
-- **Performance Monitoring**: https://docs.microsoft.com/sql/relational-databases/performance/monitor-and-tune-for-performance
-- **Dynamic Management Views**: https://docs.microsoft.com/sql/relational-databases/system-dynamic-management-views/
-- **SQL Server Agent**: https://docs.microsoft.com/sql/ssms/agent/sql-server-agent
-- **PowerShell for SQL Server**: https://docs.microsoft.com/sql/powershell/
-
-### Advanced Topics
-- **Resource Governor**: https://docs.microsoft.com/sql/relational-databases/resource-governor/
-- **Partitioning**: https://docs.microsoft.com/sql/relational-databases/partitions/
-- **Columnstore Indexes**: https://docs.microsoft.com/sql/relational-databases/indexes/columnstore-indexes-overview
-- **In-Memory OLTP**: https://docs.microsoft.com/sql/relational-databases/in-memory-oltp/
-- **Temporal Tables**: https://docs.microsoft.com/sql/relational-databases/tables/temporal-tables
-
-### Certification and Training
-- **Microsoft Learn SQL Server**: https://docs.microsoft.com/learn/browse/?products=sql-server
-- **SQL Server Certifications**: https://docs.microsoft.com/learn/certifications/browse/?products=sql-server
-- **Pluralsight SQL Server Courses**: https://www.pluralsight.com/browse/data-professional/sql-server
-- **Udemy SQL Server Training**: https://www.udemy.com/topic/microsoft-sql-server/
-- **Coursera Database Courses**: https://www.coursera.org/courses?query=sql%20server
-
-### Community and Forums
-- **Stack Overflow SQL Server**: https://stackoverflow.com/questions/tagged/sql-server
-- **Reddit r/SQLServer**: https://www.reddit.com/r/SQLServer/
-- **Database Administrators Stack Exchange**: https://dba.stackexchange.com/
-- **SQL Server Community**: https://www.sqlservercommunity.com/
-- **PASS (Professional Association for SQL Server)**: https://www.pass.org/
-
-### Tools and Utilities
-- **sp_Blitz Scripts**: https://www.brentozar.com/blitz/
-- **SQL Server First Responder Kit**: https://github.com/BrentOzarULTD/SQL-Server-First-Responder-Kit
-- **Tiger Toolbox**: https://github.com/Microsoft/tigertoolbox
-- **dbatools PowerShell Module**: https://dbatools.io/
-- **Ola Hallengren Maintenance Scripts**: https://ola.hallengren.com/
+[Back to top](#table-of-contents)
 
 ---
 
-## 📝 About This Guide
-
-### Author Information
-**Created by**: Senior Database Administrator & Performance Specialist  
-**Experience**: 15+ years in SQL Server optimization and architecture  
-**Specializations**: 
-- High-performance OLTP and OLAP systems
-- Cloud migration strategies (Azure, AWS, GCP)
-- Enterprise-scale database architecture
-- Performance troubleshooting and optimization
-- Disaster recovery and high availability solutions
-
-### Certifications & Expertise
-- Microsoft Certified Solutions Expert (MCSE): Data Platform
-- Microsoft Certified Database Administrator (MCDBA)
-- Azure Database Administrator Associate
-- AWS Certified Database - Specialty
-- Google Cloud Professional Database Engineer
-
-### Portfolio Highlights
-- **Performance Improvements**: Consistently achieved 70-95% performance gains across diverse workloads
-- **Cost Optimization**: Reduced infrastructure costs by 40-60% through efficient resource utilization
-- **High Availability**: Designed and implemented 99.99% uptime solutions for mission-critical systems
-- **Cloud Migrations**: Successfully migrated 500+ TB databases to cloud platforms with zero downtime
-- **Team Leadership**: Led database teams of 5-15 engineers across multiple geographic locations
-
-### Professional Experience
-- **Enterprise Implementations**: Fortune 500 companies across finance, healthcare, e-commerce, and manufacturing
-- **Scale Experience**: Databases ranging from 100GB to 50TB+ with 1K-100K+ concurrent users
-- **Industry Compliance**: HIPAA, SOX, PCI-DSS, GDPR compliance implementations
-- **Technology Stack**: SQL Server 2008-2022, Azure SQL, AWS RDS, Google Cloud SQL, Always On, Failover Clustering
-
-### Contact & Collaboration
-📧 **Professional Inquiries**: Available for consulting and architecture reviews  
-🔗 **LinkedIn**: [Professional Profile]  
-🐙 **GitHub**: [Database optimization repositories and scripts]  
-📝 **Technical Blog**: [Performance tuning articles and case studies]  
-🎯 **Speaking**: Available for conferences and technical presentations
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-*This comprehensive guide represents years of hands-on experience optimizing SQL Server environments across diverse industries and scales. Each technique and recommendation has been tested in production environments and proven to deliver measurable results.*
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
 
-**Last updated**: September 2025  
-**SQL Server versions**: 2017, 2019, 2022  
-**Tested environments**: On-premise, Azure SQL Database, AWS RDS, Google Cloud SQL
+**Preferred name:** Vander  
 
----
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
 
-### 🎯 Key Takeaways
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
 
-**Performance Optimization Framework**:
-1. **Assess** current performance using comprehensive monitoring
-2. **Analyze** bottlenecks through systematic investigation
-3. **Optimize** based on data-driven insights
-4. **Monitor** continuously to maintain optimal performance
-5. **Iterate** improvements based on changing workload patterns
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
 
-**Critical Success Factors**:
-- **Proactive Monitoring**: Implement comprehensive alerting before problems occur
-- **Index Strategy**: Design indexes based on actual query patterns, not assumptions
-- **Resource Management**: Balance memory, CPU, and I/O resources effectively
-- **Cloud Optimization**: Leverage cloud-native features for enhanced performance
-- **Documentation**: Maintain detailed documentation of all optimizations and configurations
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
 
-**Measurable Outcomes**:
-- **Query Performance**: 70-95% reduction in execution times
-- **System Throughput**: 200-500% increase in transaction capacity
-- **Resource Utilization**: 40-60% reduction in infrastructure costs
-- **Availability**: 99.9%+ uptime through proper configuration and monitoring
-- **Scalability**: Seamless handling of 10x growth in data and user load
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
 
-This guide serves as a comprehensive reference for SQL Server performance optimization, providing practical, tested solutions for real-world database challenges. Each section can be implemented independently or as part of a holistic performance improvement strategy.
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
+
