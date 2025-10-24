@@ -1633,7 +1633,9 @@ WHERE waiting_tasks_count > 0
 ORDER BY wait_time_ms DESC;
 ```
 ---
+
 [Back to top](#table-of-contents)
+
 ---
 **[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
 ---
