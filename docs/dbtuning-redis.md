@@ -51,6 +51,8 @@ This comprehensive guide provides expert-level Redis performance tuning strategi
 [Back to top](#table-of-contents)
 
 ---
+
+---
 ## 🔐Minimum Permissions
 
 ### Redis Server Permissions
