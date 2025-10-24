@@ -1,4 +1,5 @@
 #  PostgreSQL Installation and Configuration Guide
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
 *Complete installation and configuration guide for PostgreSQL 16 across multiple platforms*
 
