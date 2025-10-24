@@ -1948,8 +1948,9 @@ psql -c "DROP DATABASE old_database;"
 - **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
 - **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
 ---
-## Trademarks
-All product names, logos, and brands are property of their respective owners.
-Use of these names is for identification purposes only and does not imply endorsement or affiliation.
+Trademarks[^tm]
+
+[^tm]: All product names and brands are property of their respective owners; use is for identification only and does not imply endorsement.
+
 
 ---
