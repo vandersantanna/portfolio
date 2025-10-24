@@ -1,6 +1,6 @@
 # Docker for DBRE / DBA / DataOps — Extended Portfolio Guide
 
-A curated, hands-on portfolio page showing how I apply Docker to database reliability, operations, and data engineering workflows. Each section includes a short explanation and three concise, copy-ready examples (Dockerfiles, Compose snippets, CLI, CI, checklists).
+
 
 ---
 
@@ -40,6 +40,9 @@ A curated, hands-on portfolio page showing how I apply Docker to database reliab
 ---
 
 ## 1. Executive Summary & Value Proposition
+
+>A curated, hands-on portfolio page showing how I apply Docker to database reliability, operations, and data engineering workflows. Each section includes a short explanation and three concise, copy-ready examples (Dockerfiles, Compose snippets, CLI, CI, checklists).
+
 Containerization accelerates DBRE/DBA/DataOps workflows by standardizing environments, reducing drift, and enabling reproducible builds, tests, and operations. This guide demonstrates practical patterns for secure images, persistent storage, observability, CI/CD for schema changes, and disaster recovery testing—all with minimal toil and maximum reliability.
 
 **Examples**
