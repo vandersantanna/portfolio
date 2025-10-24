@@ -1,10 +1,5 @@
-# Microsoft Azure — Data Platform & DBRE Portfolio
-
-
-**Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
-Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn: [linkedin.com/in/vandersantanna](https://linkedin.com/in/vandersantanna) • GitHub: [github.com/vandersantanna](https://github.com/vandersantanna)
-
-*Last updated: October 14, 2025*
+# Azure Database Engineering Manual
+*Practical patterns for Microsoft Azure—HA/DR, Terraform + OIDC, observability, and SLOs.*
 
 ## Table of Contents
 - [Executive Summary](#executive-summary)
