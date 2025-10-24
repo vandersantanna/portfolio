@@ -1,9 +1,7 @@
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
+
 # Redis – Complete Installation and Configuration Guide
-## High‑Performance In‑Memory Cache for Modern Applications
-
----
-
----
+*High‑Performance In‑Memory Cache for Modern Applications*
 
 ## 📋 Table of Contents
 
@@ -1565,73 +1563,60 @@ echo
 echo "--- Keyspace Information ---"
 redis-cli info keyspace
 ```
-
----
-
-## 📚 Additional Resources
-
-### 🔗 Official Links
-
-- **[Redis.io](https://redis.io/)** – Official website  
-- **[Documentation](https://redis.io/documentation)** – Complete docs  
-- **[Commands Reference](https://redis.io/commands)** – Command reference  
-- **[Redis Modules](https://redis.io/modules)** – Official modules  
-- **[GitHub](https://github.com/redis/redis)** – Source code
-
-### 📖 Specialized Docs
-
-- **[Redis Sentinel](https://redis.io/topics/sentinel)** – High availability  
-- **[Redis Cluster](https://redis.io/topics/cluster-tutorial)** – Clustering  
-- **[Redis Persistence](https://redis.io/topics/persistence)** – RDB and AOF  
-- **[Redis Security](https://redis.io/topics/security)** – Security  
-- **[Redis Benchmarks](https://redis.io/topics/benchmarks)** – Performance
-
-### 🛠️ Useful Tools
-
-- **[Redis Desktop Manager](https://resp.app/)** – GUI client  
-- **[RedisInsight](https://redis.com/redis-enterprise/redis-insight/)** – Official tool  
-- **[redis-cli](https://redis.io/topics/rediscli)** – Command‑line client  
-- **[Redis Commander](https://github.com/joeferner/redis-commander)** – Web UI
-
-### 📊 Monitoring
-
-- **[Redis Exporter](https://github.com/oliver006/redis_exporter)** – Prometheus  
-- **[Grafana Dashboards](https://grafana.com/grafana/dashboards/?search=redis)** – Dashboards  
-- **[DataDog Redis](https://docs.datadoghq.com/integrations/redisdb/)** – DataDog integration  
-- **[New Relic Redis](https://docs.newrelic.com/docs/infrastructure/host-integrations/host-integrations-list/redis-monitoring-integration/)** – New Relic
-
-### 🎓 Learning
-
-- **[Redis University](https://university.redis.com/)** – Official courses  
-- **[Try Redis](https://try.redis.io/)** – Interactive tutorial  
-- **[Redis Labs](https://redis.com/try-free/)** – Trial environment
-
-### 📚 Recommended Books
-
-- **"Redis in Action"** – Josiah Carlson  
-- **"The Little Redis Book"** – Karl Seguin  
-- **"Redis Essentials"** – Maxwell Dayvson Da Silva
-
 ---
 
 ## 🎯 Conclusion
 
 This guide provides a solid foundation for installing, configuring, and operating Redis in production environments. Redis is a powerful tool that, when properly tuned, can significantly improve application performance.
 
-### ✅ Next Steps
-
-1. **Implement continuous monitoring**  
-2. **Configure automated backups**  
-3. **Test disaster recovery** regularly  
-4. **Tune configuration** based on usage patterns  
-5. **Keep Redis updated** with security patches
-
-### 🔄 Ongoing Maintenance
-
-- **Daily monitoring** of key metrics  
-- **Weekly backups** with restore tests  
-- **Monthly configuration review**  
-- **Quarterly upgrades** and patching  
-- **Annual security audit**
+---
+[Back to top](#table-of-contents)
 
 ---
+
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
+
