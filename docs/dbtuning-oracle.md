@@ -21,7 +21,7 @@
 - [💼 Real-World Case Studies](#-real-world-case-studies)
 - [📊 Performance Monitoring Tools](#-performance-monitoring-tools)
 - [🎯 Best Practices](#-best-practices)
-- [📚 References & Resources](#-references--resources)
+
 
 ---
 
@@ -82,6 +82,8 @@ WHERE cur.name = 'db block gets'
     AND con.name = 'consistent gets'
     AND phy.name = 'physical reads';
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -172,6 +174,8 @@ GRANT OML_DEVELOPER TO perf_monitor;
 GRANT SELECT ON cloud_autonomous_database_metrics TO perf_monitor;
 GRANT SELECT ON dba_cloud_config TO perf_monitor;
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -279,6 +283,8 @@ WHERE wait_class != 'Idle'
 ORDER BY time_waited_micro DESC
 FETCH FIRST 20 ROWS ONLY;
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -391,9 +397,11 @@ BEGIN
 END;
 /
 ```
-
 ---
 
+[Back to top](#table-of-contents)
+
+---
 ## 🖥️ On-Premise Tuning
 
 ### Hardware Optimization
@@ -522,6 +530,9 @@ WHERE cur.name = 'db block gets'
     AND con.name = 'consistent gets'
     AND phy.name = 'physical reads';
 ```
+---
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -689,6 +700,7 @@ FROM (
     FROM v$sgainfo
 );
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -892,6 +904,8 @@ FROM v$sysmetric
 WHERE metric_name = 'Database CPU Time Ratio';
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 📊 Monitoring & Bottleneck Identification
@@ -1058,6 +1072,8 @@ WHERE s.type = 'USER'
     AND s.wait_class != 'Idle'
 ORDER BY s.seconds_in_wait DESC;
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1262,6 +1278,8 @@ ORDER BY degradation_pct DESC;
 -- compared to their historical baseline. degradation_pct > 100% indicates significant
 -- performance regression requiring immediate investigation.
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1479,6 +1497,8 @@ BEGIN
 END;
 /
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1705,6 +1725,8 @@ END;
 /
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 💼 Real-World Case Studies
@@ -1847,8 +1869,9 @@ ALTER SYSTEM SET FAST_START_MTTR_TARGET = 60;
 - **Compliance**: 100% audit trail with row-level security
 - **Performance**: Sub-second response for critical patient lookups
 
----
+[Back to top](#table-of-contents)
 
+---
 ## 📊 Performance Monitoring Tools
 
 | **Tool Name** | **Type** | **Compatible With** | **Primary Functionality** |
@@ -1885,8 +1908,9 @@ ALTER SYSTEM SET FAST_START_MTTR_TARGET = 60;
 | **Oracle Audit Vault** | Commercial | Oracle Enterprise Edition | Centralized audit data management |
 | **Oracle Data Safe** | Cloud Service | Oracle Cloud | Security assessment and monitoring |
 
----
+[Back to top](#table-of-contents)
 
+---
 ## 🎯 Best Practices
 
 ### Database Design Best Practices
@@ -2086,51 +2110,6 @@ JOIN (
 ORDER BY usage_pct DESC;
 ```
 
----
-
-## 📚 References & Resources
-
-### Official Oracle Documentation
-- **Oracle Database Performance Tuning Guide**: https://docs.oracle.com/en/database/oracle/oracle-database/19/tgdba/
-- **Oracle Database Administrator's Guide**: https://docs.oracle.com/en/database/oracle/oracle-database/19/admin/
-- **Oracle Database SQL Tuning Guide**: https://docs.oracle.com/en/database/oracle/oracle-database/19/tgsql/
-- **Oracle Automatic Workload Repository (AWR)**: https://docs.oracle.com/en/database/oracle/oracle-database/19/refrn/automatic-workload-repository-awr-report.html
-- **Oracle Real Application Clusters (RAC)**: https://docs.oracle.com/en/database/oracle/oracle-database/19/racad/
-- **Oracle Exadata Documentation**: https://docs.oracle.com/en/engineered-systems/exadata/
-
-### Cloud Platform Documentation
-- **Oracle Cloud Infrastructure**: https://docs.oracle.com/en-us/iaas/database/
-- **AWS RDS for Oracle**: https://docs.aws.amazon.com/AmazonRDS/latest/UserGuide/CHAP_Oracle.html
-- **Azure Database for Oracle**: https://docs.microsoft.com/en-us/azure/architecture/databases/
-- **Google Cloud Oracle Solutions**: https://cloud.google.com/solutions/oracle
-
-### Performance Tuning Resources
-- **Oracle Database Performance and Tuning**: https://oracle-base.com/articles/misc/performance-tuning
-- **Oracle ACE Director Resources**: https://ace.oracle.com/
-- **Oracle Technology Network**: https://www.oracle.com/technical-resources/
-- **Quest Oracle Community**: https://www.quest.com/community/oracle/
-- **Oracle Learning Library**: https://docs.oracle.com/en/database/oracle/oracle-database/
-
-### Professional Certifications
-- **Oracle Database Administrator Certified Professional**: https://education.oracle.com/oracle-database-19c-administrator-certified-professional/trackp_DB19CDBACP
-- **Oracle Database Performance and Tuning Certification**: https://education.oracle.com/database/oracle-database/product_267
-- **Oracle Cloud Infrastructure Architect**: https://education.oracle.com/oracle-cloud-infrastructure-architect-associate/trackp_OCIAD
-- **AWS Database Specialty**: https://aws.amazon.com/certification/certified-database-specialty/
-- **Google Cloud Professional Database Engineer**: https://cloud.google.com/certification/cloud-database-engineer
-
-### Tools and Utilities
-- **Oracle SQL Developer**: https://www.oracle.com/database/technologies/appdev/sqldeveloper-landing.html
-- **Oracle Enterprise Manager**: https://www.oracle.com/enterprise-manager/
-- **Oracle Performance Analyzer**: https://docs.oracle.com/en/database/oracle/oracle-database/19/tgdba/optimizing-database-performance.html
-- **Toad for Oracle**: https://www.quest.com/products/toad-for-oracle/
-- **dbForge Studio for Oracle**: https://www.devart.com/dbforge/oracle/studio/
-
-### Community Resources
-- **Oracle Forums**: https://forums.oracle.com/
-- **Stack Overflow Oracle**: https://stackoverflow.com/questions/tagged/oracle
-- **Reddit r/Oracle**: https://www.reddit.com/r/oracle/
-- **Oracle User Groups**: https://www.oracle.com/corporate/citizenship/oracle-user-groups/
-- **LinkedIn Oracle Groups**: https://www.linkedin.com/groups/
 ---
 [Back to top](#table-of-contents)
 
