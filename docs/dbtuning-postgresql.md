@@ -1,12 +1,7 @@
-# 🐘 Complete PostgreSQL Performance Tuning Guide
-*Database Performance Optimization - Professional Portfolio*
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-[![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org/)
-[![AWS RDS](https://img.shields.io/badge/-AWS%20RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/rds/)
-[![Azure PostgreSQL](https://img.shields.io/badge/-Azure%20PostgreSQL-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/services/postgresql/)
-[![Google Cloud SQL](https://img.shields.io/badge/-Cloud%20SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white)](https://cloud.google.com/sql/)
-
-> **Expert-level PostgreSQL performance optimization for mission-critical production environments**, including advanced configuration, query analysis, index tuning, and scalable solutions implementation across on-premise and cloud platforms.
+# PostgreSQL Performance Engineering Guide
+*Plan stability, smart indexing (BTREE/GIN/BRIN), and evidence-driven optimization.*
 
 ---
 
@@ -23,11 +18,12 @@
 - [💼 Practical Cases](#-practical-cases)
 - [📊 Automated Monitoring](#-automated-monitoring)
 - [🛠️ Specialized Tools](#️-specialized-tools)
-- [📚 References](#-references)
 
 ---
 
 ## 🎯 Objectives
+
+> **Expert-level PostgreSQL performance optimization for mission-critical production environments**, including advanced configuration, query analysis, index tuning, and scalable solutions implementation across on-premise and cloud platforms.
 
 ### Performance Targets
 - **Latency**: < 100ms for 95% of queries
@@ -53,6 +49,7 @@ SELECT
     ) || '%' as value
 FROM pg_stat_user_tables;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -80,6 +77,7 @@ GRANT SELECT ON pg_stat_activity TO monitoring_user;
 -- For pg_stat_statements
 GRANT EXECUTE ON FUNCTION pg_stat_statements_reset() TO monitoring_user;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -194,6 +192,7 @@ SELECT
 FROM connection_stats
 ORDER BY connection_count DESC;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -253,6 +252,7 @@ CREATE INDEX idx_pending_orders ON orders (created_at) WHERE status = 'pending';
 CREATE INDEX idx_users_lower_email ON users (lower(email));
 CREATE INDEX idx_orders_month ON orders (date_trunc('month', created_at));
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -312,6 +312,7 @@ SELECT
     pg_size_pretty(effective_cache_size_bytes::bigint) as recommended_value
 FROM memory_calc;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -419,6 +420,7 @@ EOF
 # Huge pages
 echo 'vm.nr_hugepages = 8192' >> /etc/sysctl.conf  # For 16GB shared_buffers
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -534,9 +536,9 @@ resource "google_sql_database_instance" "postgres" {
   }
 }
 ```
+[Back to top](#table-of-contents)
 
 ---
-
 ## 🔧 Specialized Extensions
 
 ### 1. pg_stat_statements
@@ -666,6 +668,8 @@ pg_prewarm.autoprewarm = on
 pg_prewarm.autoprewarm_interval = 300
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 💼 Practical Cases
@@ -788,6 +792,8 @@ FROM pg_stat_user_tables;
 - **Isolation**: 100% between tenants
 - **Performance**: consistent regardless of tenant count
 - **Scaling**: support for 500+ active tenants
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1173,6 +1179,7 @@ if [ "${BASH_SOURCE[0]}" == "${0}" ]; then
     main "$@"
 fi
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1236,82 +1243,53 @@ fi
 | **pgModeler** | Modeling | Visual ERD modeling | Schema design |
 | **Flyway** | Migration | Schema version control | Database DevOps |
 | **Liquibase** | Change Management | Change management | Change control |
+---
+[Back to top](#table-of-contents)
 
 ---
 
-## 📚 References
-
-### Official Documentation
-- [PostgreSQL Documentation](https://www.postgresql.org/docs/) - Complete official documentation
-- [PostgreSQL Wiki](https://wiki.postgresql.org/) - Community wiki
-- [PostgreSQL Performance Tips](https://wiki.postgresql.org/wiki/Performance_Optimization) - Official performance tips
-
-### Specialized Books
-- **"PostgreSQL High Performance"** - Gregory Smith
-- **"PostgreSQL Administration Cookbook"** - Simon Riggs & Gianni Ciolli
-- **"Mastering PostgreSQL"** - Hans-Jürgen Schönig
-- **"PostgreSQL Query Optimization"** - Henrietta Dombrovskaya
-
-### Blogs and Technical Resources
-- [PostgreSQL Planet](https://planet.postgresql.org/) - Community blog aggregator
-- [2ndQuadrant Blog](https://www.2ndquadrant.com/en/blog/) - Specialized technical blog
-- [Percona PostgreSQL Blog](https://www.percona.com/blog/tag/postgresql/) - Performance and optimization
-- [Citus Data Blog](https://www.citusdata.com/blog/) - Scalability and distributed PostgreSQL
-
-### Tools and Utilities
-- [pgTune](https://pgtune.leopard.in.ua/) - Configuration generator
-- [EXPLAIN Visualizer](https://tatiyants.com/pev/) - Execution plan visualizer
-- [pgBadger](https://github.com/darold/pgbadger) - Log analyzer
-- [pg_activity](https://github.com/dalibo/pg_activity) - Real-time monitor
-
-### Community and Support
-- [PostgreSQL Mailing Lists](https://www.postgresql.org/list/) - Official discussion lists
-- [Stack Overflow PostgreSQL](https://stackoverflow.com/questions/tagged/postgresql) - Community Q&A
-- [Reddit r/PostgreSQL](https://www.reddit.com/r/PostgreSQL/) - Informal discussions
-- [PostgreSQL Slack](https://postgres-slack.herokuapp.com/) - Community chat
-
-### Certifications and Training
-- [PostgreSQL Certification](https://www.postgresql.org/about/policies/certification/) - Official program
-- [2ndQuadrant Training](https://www.2ndquadrant.com/en/training/) - Specialized training
-- [Percona Training](https://www.percona.com/training) - Performance courses
-- [pgDay/pgCon Conferences](https://www.postgresql.org/about/events/) - Technical conferences
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-## 👨‍💻 About the Author
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
 
-**PostgreSQL Performance Tuning Specialist** with expertise in:
+**Preferred name:** Vander  
 
-### Technical Expertise
-- **Database Administration**: 8+ years of PostgreSQL experience
-- **Performance Optimization**: Tuning critical environments (> 100TB data)
-- **Cloud Platforms**: AWS RDS, Azure Database, Google Cloud SQL
-- **High Availability**: Streaming replication, Patroni, pgBouncer
-- **Monitoring**: Prometheus, Grafana, pgWatch2, DataDog
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
 
-### Featured Projects
-- **E-commerce Platform**: Optimization from 15,000 TPS → 45,000 TPS
-- **Data Warehouse**: Query reduction from 4h → 15min
-- **Multi-tenant SaaS**: Per-tenant isolation implementation
-- **Oracle → PostgreSQL Migration**: 2TB data with zero downtime
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
 
-### Certifications
-- PostgreSQL Certified Professional
-- AWS Database Specialty
-- Google Cloud Professional Database Engineer
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
 
-### Technologies
-![PostgreSQL](https://img.shields.io/badge/-PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
-![Python](https://img.shields.io/badge/-Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![Bash](https://img.shields.io/badge/-Bash-4EAA25?style=flat-square&logo=gnu-bash&logoColor=white)
-![Docker](https://img.shields.io/badge/-Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/-Terraform-623CE4?style=flat-square&logo=terraform&logoColor=white)
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
 
----
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
 
-*This guide represents practical knowledge acquired in mission-critical production environments and is constantly updated as new versions and best practices emerge in the PostgreSQL community.*
+<details>
+  <summary><strong>Trademarks</strong></summary>
 
-**Last updated**: September 2025
-**PostgreSQL version**: 14, 15, 16
-**Tested environments**: On-premise, AWS RDS, Azure Database, Google Cloud SQL
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
