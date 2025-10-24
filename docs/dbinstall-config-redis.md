@@ -1,20 +1,7 @@
-# 🔴 Redis - Guia Completo de Instalação e Configuração
-## Cache em Memória de Alto Performance para Aplicações Modernas
+# Redis – Complete Installation and Configuration Guide
+## High‑Performance In‑Memory Cache for Modern Applications
 
 ---
-
-## 🏆 Badges Profissionais
-
-[![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/)
-[![Redis Stack](https://img.shields.io/badge/Redis_Stack-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/docs/stack/)
-[![Redis Cluster](https://img.shields.io/badge/Redis_Cluster-FF6600?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/topics/cluster-tutorial)
-[![Redis Sentinel](https://img.shields.io/badge/Redis_Sentinel-DC382D?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/topics/sentinel)
-[![Redis Modules](https://img.shields.io/badge/Redis_Modules-FF6600?style=for-the-badge&logo=redis&logoColor=white)](https://redis.io/modules)
-
-[![Documentation](https://img.shields.io/badge/Docs-Redis.io-blue?style=for-the-badge)](https://redis.io/documentation)
-[![Commands](https://img.shields.io/badge/Commands-Reference-green?style=for-the-badge)](https://redis.io/commands)
-[![Download](https://img.shields.io/badge/Download-Latest-red?style=for-the-badge)](https://redis.io/download)
-[![GitHub](https://img.shields.io/badge/GitHub-Repository-black?style=for-the-badge&logo=github)](https://github.com/redis/redis)
 
 ---
 
@@ -22,81 +9,81 @@
 
 1. [🎯 Overview](#-overview)
 2. [✅ Prerequisites](#-prerequisites)
-3. [🐧 Instalação no Linux](#-instalação-no-linux)
-4. [🍎 Instalação no macOS](#-instalação-no-macos)
-5. [🪟 Instalação no Windows](#-instalação-no-windows)
-6. [⚙️ Configuração Básica](#️-configuração-básica)
-7. [🔧 Configuração Avançada](#-configuração-avançada)
-8. [🔒 Segurança](#-segurança)
-9. [📊 Monitoramento](#-monitoramento)
+3. [🐧 Linux Installation](#-linux-installation)
+4. [🍎 macOS Installation](#-macos-installation)
+5. [🪟 Windows Installation](#-windows-installation)
+6. [⚙️ Basic Configuration](#️-basic-configuration)
+7. [🔧 Advanced Configuration](#-advanced-configuration)
+8. [🔒 Security](#-security)
+9. [📊 Monitoring](#-monitoring)
 10. [🚀 Performance](#-performance)
-11. [🔄 Backup e Recovery](#-backup-e-recovery)
+11. [🔄 Backup & Recovery](#-backup--recovery)
 12. [🌐 Redis Cluster](#-redis-cluster)
 13. [🛡️ Redis Sentinel](#️-redis-sentinel)
 14. [🐳 Docker](#-docker)
 15. [☁️ Cloud](#️-cloud)
-16. [🧪 Testes](#-testes)
+16. [🧪 Tests](#-tests)
 17. [❗ Troubleshooting](#-troubleshooting)
-18. [📚 Recursos Adicionais](#-recursos-adicionais)
+18. [📚 Additional Resources](#-additional-resources)
 
 ---
 
 ## 🎯 Overview
 
-O **Redis** (Remote Dictionary Server) é um banco de dados em memória de código aberto usado como cache, broker de mensagens e base de dados. É conhecido por sua velocidade excepcional e versatilidade.
+**Redis** (Remote Dictionary Server) is an open‑source in‑memory data store used as a cache, message broker, and database. It’s known for exceptional speed and versatility.
 
-### 🌟 Features Principais
+### 🌟 Key Features
 
-- **⚡ Performance Ultra-Rápida**: Operações em microssegundos
-- **🗂️ Estruturas de Dados Avançadas**: Strings, Lists, Sets, Hashes, Sorted Sets
-- **🔄 Persistência Configurável**: RDB snapshots e AOF logs
-- **🌐 Clustering**: Distribuição automática de dados
-- **🛡️ Alta Disponibilidade**: Redis Sentinel para failover
-- **📡 Pub/Sub**: Sistema de mensageria em tempo real
-- **🔍 Módulos**: Extensibilidade com RedisJSON, RedisSearch, etc.
-- **🐳 Container Ready**: Suporte completo ao Docker
-- **☁️ Cloud Native**: Integração com AWS, Azure, GCP
+- **⚡ Ultra‑Fast Performance**: Microsecond‑level operations  
+- **🗂️ Rich Data Structures**: Strings, Lists, Sets, Hashes, Sorted Sets  
+- **🔄 Configurable Persistence**: RDB snapshots and AOF logs  
+- **🌐 Clustering**: Automatic data sharding and distribution  
+- **🛡️ High Availability**: Redis Sentinel for failover  
+- **📡 Pub/Sub**: Real‑time messaging  
+- **🔍 Modules**: Extensibility via RedisJSON, RediSearch, etc.  
+- **🐳 Container Ready**: First‑class Docker support  
+- **☁️ Cloud Native**: Integrations with AWS, Azure, and GCP
 
-### 📈 Casos de Uso
+### 📈 Use Cases
 
-- **Cache de Aplicação**: Redução de latência
-- **Session Store**: Gerenciamento de sessões
-- **Message Broker**: Filas e pub/sub
-- **Real-time Analytics**: Contadores e métricas
-- **Leaderboards**: Rankings em tempo real
-- **Rate Limiting**: Controle de taxa de requisições
+- **Application Cache**: Lower latency and load on primary DB  
+- **Session Store**: Scalable session management  
+- **Message Broker**: Queues and pub/sub patterns  
+- **Real‑time Analytics**: Counters and metrics  
+- **Leaderboards**: Real‑time rankings  
+- **Rate Limiting**: Request throttle and quotas
 
 ---
 
 ## ✅ Prerequisites
 
-### 🖥️ Sistemas Operacionais Suportados
+### 🖥️ Supported Operating Systems
 
-| Sistema | Versões | Status | Notas |
-|---------|---------|--------|-------|
-| **Ubuntu** | 18.04+ | ✅ Oficial | Recomendado para produção |
-| **CentOS/RHEL** | 7+ | ✅ Oficial | Suporte empresarial |
-| **Debian** | 9+ | ✅ Oficial | Estável e confiável |
-| **Amazon Linux** | 2 | ✅ Oficial | Otimizado para AWS |
-| **macOS** | 10.14+ | ✅ Oficial | Via Homebrew |
-| **Windows** | 10/11 | ⚠️ Via WSL | Recomendado WSL2 |
-| **Docker** | Qualquer | ✅ Oficial | Multiplataforma |
+| System | Versions | Status | Notes |
+|-------|----------|--------|-------|
+| **Ubuntu** | 18.04+ | ✅ Official | Recommended for production |
+| **CentOS/RHEL** | 7+ | ✅ Official | Enterprise support |
+| **Debian** | 9+ | ✅ Official | Stable and reliable |
+| **Amazon Linux** | 2 | ✅ Official | Optimized for AWS |
+| **macOS** | 10.14+ | ✅ Official | Via Homebrew |
+| **Windows** | 10/11 | ⚠️ Via WSL | Prefer WSL2 |
+| **Docker** | Any | ✅ Official | Multi‑platform |
 
-### 🔧 Requisitos de Hardware
+### 🔧 Hardware Requirements
 
-#### **Mínimo (Desenvolvimento)**
-- **RAM**: 1GB
+#### **Minimum (Development)**
+- **RAM**: 1 GB
 - **CPU**: 1 core
-- **Storage**: 5GB
-- **Network**: 100Mbps
+- **Storage**: 5 GB
+- **Network**: 100 Mbps
 
-#### **Recomendado (Produção)**
-- **RAM**: 8GB+ (preferível SSD como swap)
+#### **Recommended (Production)**
+- **RAM**: 8 GB+ (SSD swap preferred)
 - **CPU**: 4+ cores
-- **Storage**: SSD NVMe
-- **Network**: 1Gbps+
+- **Storage**: NVMe SSD
+- **Network**: 1 Gbps+
 
-### 📦 Dependências de Sistema
+### 📦 System Dependencies
 
 ```bash
 # Ubuntu/Debian
@@ -110,148 +97,149 @@ sudo yum install -y tcl wget curl
 # macOS
 xcode-select --install
 ```
-## 🐧 Instalação no Linux
 
-### 📦 Método 1: Package Manager (Recomendado)
+## 🐧 Linux Installation
+
+### 📦 Method 1: Package Manager (Recommended)
 
 #### Ubuntu/Debian
 ```bash
-# Atualizar repositórios
+# Update repositories
 sudo apt update
 
-# Instalar Redis
+# Install Redis
 sudo apt install -y redis-server redis-tools
 
-# Verificar instalação
+# Verify installation
 redis-cli --version
 sudo systemctl status redis-server
 ```
 
 #### CentOS/RHEL 8+
 ```bash
-# Habilitar EPEL
+# Enable EPEL
 sudo dnf install -y epel-release
 
-# Instalar Redis
+# Install Redis
 sudo dnf install -y redis redis-tools
 
-# Iniciar e habilitar
+# Start and enable
 sudo systemctl start redis
 sudo systemctl enable redis
 ```
 
 #### CentOS/RHEL 7
 ```bash
-# Habilitar EPEL
+# Enable EPEL
 sudo yum install -y epel-release
 
-# Instalar Redis
+# Install Redis
 sudo yum install -y redis redis-tools
 
-# Iniciar e habilitar
+# Start and enable
 sudo systemctl start redis
 sudo systemctl enable redis
 ```
 
-### 🔧 Método 2: Compilação from Source
+### 🔧 Method 2: Build from Source
 
-#### Download e Compilação
+#### Download and Build
 ```bash
-# Criar diretório de trabalho
+# Create a working directory
 mkdir ~/redis-build && cd ~/redis-build
 
-# Download da versão estável
+# Download stable release
 wget http://download.redis.io/redis-stable.tar.gz
 tar xzf redis-stable.tar.gz
 cd redis-stable
 
-# Compilar
+# Compile
 make
 
-# Executar testes (opcional mas recomendado)
+# Run tests (optional but recommended)
 make test
 
-# Instalar
+# Install
 sudo make install
 
-# Criar diretórios
+# Create directories
 sudo mkdir -p /etc/redis
 sudo mkdir -p /var/lib/redis
 sudo mkdir -p /var/log/redis
 ```
 
-#### Configurar Usuário Redis
+#### Create Redis User
 ```bash
-# Criar usuário redis
+# Create redis user
 sudo useradd --system --home /var/lib/redis --shell /bin/false redis
 
-# Definir permissões
+# Set permissions
 sudo chown redis:redis /var/lib/redis
 sudo chown redis:redis /var/log/redis
 sudo chmod 750 /var/lib/redis
 sudo chmod 755 /var/log/redis
 ```
 
-### ⚙️ Configuração Inicial
+### ⚙️ Initial Configuration
 
-#### Arquivo de Configuração Principal
+#### Main Configuration File
 ```bash
-# Copiar configuração padrão
+# Copy default config
 sudo cp redis.conf /etc/redis/redis.conf
 
-# Backup da configuração original
+# Backup original config
 sudo cp /etc/redis/redis.conf /etc/redis/redis.conf.backup
 ```
 
-#### Configurações Essenciais
+#### Essential Settings
 ```bash
-# Editar configuração
+# Edit config
 sudo nano /etc/redis/redis.conf
 
-# Principais alterações:
+# Key changes:
 ```
 
 ```conf
 # /etc/redis/redis.conf
 
-# Bind para interface específica (segurança)
+# Bind to specific interfaces (security)
 bind 127.0.0.1 ::1
 
-# Porta padrão
+# Default port
 port 6379
 
-# Executar como daemon
+# Run as daemon
 daemonize yes
 
-# Arquivo PID
+# PID file
 pidfile /var/run/redis/redis-server.pid
 
 # Log level
 loglevel notice
 
-# Arquivo de log
+# Log file
 logfile /var/log/redis/redis-server.log
 
-# Diretório de trabalho
+# Working directory
 dir /var/lib/redis
 
-# Arquivo de dump RDB
+# RDB dump filename
 dbfilename dump.rdb
 
-# Configuração de memória
+# Memory settings
 maxmemory 2gb
 maxmemory-policy allkeys-lru
 
-# Configurações de rede
+# Networking
 timeout 0
 tcp-keepalive 300
 
-# Configurações de persistência RDB
+# RDB persistence
 save 900 1
 save 300 10
 save 60 10000
 
-# Configuração AOF
+# AOF configuration
 appendonly yes
 appendfilename "appendonly.aof"
 appendfsync everysec
@@ -259,7 +247,7 @@ appendfsync everysec
 
 ### 🔄 Systemd Service
 
-#### Criar arquivo de serviço
+#### Create service file
 ```bash
 sudo nano /etc/systemd/system/redis.service
 ```
@@ -282,185 +270,186 @@ LimitNOFILE=65535
 WantedBy=multi-user.target
 ```
 
-#### Habilitar e iniciar serviço
+#### Enable and start service
 ```bash
-# Recarregar systemd
+# Reload systemd
 sudo systemctl daemon-reload
 
-# Habilitar inicialização automática
+# Enable autostart
 sudo systemctl enable redis
 
-# Iniciar Redis
+# Start Redis
 sudo systemctl start redis
 
-# Verificar status
+# Check status
 sudo systemctl status redis
 
-# Ver logs
+# Tail logs
 sudo journalctl -u redis -f
 ```
 
-### 🧪 Verificação da Instalação
+### 🧪 Installation Verification
 
-#### Testes Básicos
+#### Basic Tests
 ```bash
-# Conectar ao Redis
+# Connect to Redis
 redis-cli
 
-# Dentro do redis-cli:
+# Inside redis-cli:
 127.0.0.1:6379> ping
-# Resposta: PONG
+# Response: PONG
 
 127.0.0.1:6379> set test "Hello Redis"
-# Resposta: OK
+# Response: OK
 
 127.0.0.1:6379> get test
-# Resposta: "Hello Redis"
+# Response: "Hello Redis"
 
 127.0.0.1:6379> info server
-# Mostra informações do servidor
+# Shows server info
 
 127.0.0.1:6379> exit
 ```
 
-#### Verificar Performance
+#### Check Performance
 ```bash
-# Benchmark básico
+# Basic benchmark
 redis-benchmark -q -n 100000
 
-# Benchmark específico
+# Specific benchmark
 redis-benchmark -t set,get -n 100000 -q
 
-# Teste de latência
+# Latency test
 redis-cli --latency-history -h 127.0.0.1 -p 6379
 ```
 
-## 🍎 Instalação no macOS
+## 🍎 macOS Installation
 
-### 🍺 Método 1: Homebrew (Recomendado)
+### 🍺 Method 1: Homebrew (Recommended)
 
 ```bash
-# Instalar Homebrew (se necessário)
+# Install Homebrew (if needed)
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# Atualizar Homebrew
+# Update Homebrew
 brew update
 
-# Instalar Redis
+# Install Redis
 brew install redis
 
-# Verificar instalação
+# Verify installation
 redis-server --version
 redis-cli --version
 ```
 
-### 🚀 Inicialização e Controle
+### 🚀 Start & Control
 
 ```bash
-# Iniciar Redis manualmente
+# Start Redis manually
 redis-server
 
-# Iniciar como serviço (background)
+# Run as a service (background)
 brew services start redis
 
-# Parar serviço
+# Stop service
 brew services stop redis
 
-# Reiniciar serviço
+# Restart service
 brew services restart redis
 
-# Status do serviço
+# Service status
 brew services list | grep redis
 ```
 
-### ⚙️ Configuração macOS
+### ⚙️ macOS Configuration
 
 ```bash
-# Localizar arquivo de configuração
+# Find configuration file
 find /usr/local -name "redis.conf" 2>/dev/null
-# ou
+# or
 find /opt/homebrew -name "redis.conf" 2>/dev/null
 
-# Editar configuração
+# Edit configuration
 nano /usr/local/etc/redis.conf
-# ou para Apple Silicon:
+# or on Apple Silicon:
 nano /opt/homebrew/etc/redis.conf
 ```
 
-### 🔧 Método 2: Compilação Manual
+### 🔧 Method 2: Manual Build
 
 ```bash
-# Instalar dependências
+# Install dependencies
 xcode-select --install
 
-# Download e compilação
+# Download and build
 curl -O http://download.redis.io/redis-stable.tar.gz
 tar xzf redis-stable.tar.gz
 cd redis-stable
 make
 
-# Instalar
+# Install
 sudo make install
 
-# Criar diretórios
+# Create directories
 sudo mkdir -p /usr/local/etc/redis
 sudo mkdir -p /usr/local/var/db/redis
 sudo mkdir -p /usr/local/var/log
 ```
-## 🪟 Instalação no Windows
 
-### 🐧 Método 1: WSL2 (Recomendado)
+## 🪟 Windows Installation
+
+### 🐧 Method 1: WSL2 (Recommended)
 
 ```powershell
-# Instalar WSL2
+# Install WSL2
 wsl --install
 
-# Reiniciar e configurar Ubuntu
+# Reboot and set up Ubuntu
 wsl --set-default-version 2
 wsl --install -d Ubuntu-22.04
 
-# Entrar no WSL
+# Enter WSL
 wsl
 ```
 
 ```bash
-# Dentro do WSL - seguir instalação Linux
+# Inside WSL – follow Linux install
 sudo apt update
 sudo apt install -y redis-server redis-tools
 
-# Iniciar Redis
+# Start Redis
 sudo service redis-server start
 
-# Verificar
+# Verify
 redis-cli ping
 ```
 
-### 🐳 Método 2: Docker Desktop
+### 🐳 Method 2: Docker Desktop
 
 ```powershell
-# Instalar Docker Desktop
+# Install Docker Desktop
 # Download: https://www.docker.com/products/docker-desktop
 
-# Executar Redis
+# Run Redis
 docker run --name redis-server -p 6379:6379 -d redis:latest
 
-# Conectar
+# Connect
 docker exec -it redis-server redis-cli
 ```
 
-### 📦 Método 3: Binários Nativos (Desenvolvimento)
+### 📦 Method 3: Native Binaries (Development)
 
 ```powershell
-# Download dos binários Windows
+# Download Windows binaries
 # https://github.com/microsoftarchive/redis/releases
 
-# Extrair para C:\Redis
-# Adicionar ao PATH do sistema
+# Extract to C:\Redis
+# Add to System PATH
 
-# Executar
+# Run
 redis-server.exe
 
-# Em outro terminal
+# In another terminal
 redis-cli.exe
 ```
 
@@ -468,9 +457,9 @@ redis-cli.exe
 
 ## 🐳 Docker
 
-### 🚀 Configuração Básica
+### 🚀 Basic Setup
 
-#### Docker Compose Simples
+#### Simple Docker Compose
 ```yaml
 # docker-compose.yml
 version: '3.8'
@@ -490,24 +479,24 @@ volumes:
   redis_data:
 ```
 
-#### Executar
+#### Run
 ```bash
-# Iniciar
+# Start
 docker-compose up -d
 
-# Verificar logs
+# View logs
 docker-compose logs -f redis
 
-# Conectar
+# Connect
 docker-compose exec redis redis-cli
 
-# Parar
+# Stop
 docker-compose down
 ```
 
-### 🔧 Configuração Avançada com Docker
+### 🔧 Advanced Docker Setup
 
-#### Docker Compose Completo
+#### Full Docker Compose
 ```yaml
 # docker-compose.yml
 version: '3.8'
@@ -560,7 +549,7 @@ networks:
     name: redis-network
 ```
 
-#### Configuração Redis para Docker
+#### Redis Config for Docker
 ```conf
 # redis.conf
 bind 0.0.0.0
@@ -610,91 +599,91 @@ aof-rewrite-incremental-fsync yes
 
 ---
 
-## ⚙️ Configuração Básica
+## ⚙️ Basic Configuration
 
-### 📝 Estrutura de Configuração
+### 📝 Configuration Structure
 
 ```conf
 # /etc/redis/redis.conf
 
 ################################## NETWORK #####################################
-# Interface de rede
+# Network interface
 bind 127.0.0.1 ::1
 
-# Porta
+# Port
 port 6379
 
-# Timeout de conexão inativa (0 = desabilitado)
+# Idle connection timeout (0 = disabled)
 timeout 0
 
 # TCP keepalive
 tcp-keepalive 300
 
 ################################# GENERAL #####################################
-# Executar como daemon
+# Run as daemon
 daemonize yes
 
-# Arquivo PID
+# PID file
 pidfile /var/run/redis/redis-server.pid
 
 # Log level: debug, verbose, notice, warning
 loglevel notice
 
-# Arquivo de log
+# Log file
 logfile /var/log/redis/redis-server.log
 
-# Número de databases
+# Number of databases
 databases 16
 
 ################################ SNAPSHOTTING  ################################
-# Salvar snapshot se:
-# - Pelo menos 1 key mudou em 900 segundos (15 min)
-# - Pelo menos 10 keys mudaram em 300 segundos (5 min)  
-# - Pelo menos 10000 keys mudaram em 60 segundos
+# Save snapshot if:
+# - At least 1 key changed in 900 seconds (15 min)
+# - At least 10 keys changed in 300 seconds (5 min)
+# - At least 10000 keys changed in 60 seconds
 save 900 1
 save 300 10
 save 60 10000
 
-# Parar escritas se snapshot falhar
+# Stop writes if snapshot fails
 stop-writes-on-bgsave-error yes
 
-# Comprimir snapshots RDB
+# Compress RDB snapshots
 rdbcompression yes
 
-# Checksum do RDB
+# RDB checksum
 rdbchecksum yes
 
-# Nome do arquivo RDB
+# RDB filename
 dbfilename dump.rdb
 
-# Diretório de trabalho
+# Working directory
 dir /var/lib/redis
 
 ################################# REPLICATION #################################
-# Configuração de replica (se aplicável)
+# Replica configuration (if applicable)
 # replicaof <masterip> <masterport>
 
-# Senha do master (se aplicável)
+# Master password (if applicable)
 # masterauth <master-password>
 
 ################################## SECURITY ###################################
 # Require password
 # requirepass yourpassword
 
-# Comandos perigosos
+# Dangerous commands
 # rename-command FLUSHDB ""
 # rename-command FLUSHALL ""
 # rename-command DEBUG ""
 
 ################################### CLIENTS ####################################
-# Máximo de clientes conectados
+# Max connected clients
 # maxclients 10000
 
 ############################## MEMORY MANAGEMENT #############################
-# Limite de memória
+# Memory limit
 maxmemory 2gb
 
-# Política quando limite é atingido
+# Policy when memory limit is reached
 maxmemory-policy allkeys-lru
 
 ############################# LAZY FREEING ####################################
@@ -707,70 +696,70 @@ replica-lazy-flush no
 oom-score-adj no
 
 ############################## APPEND ONLY MODE ###############################
-# Habilitar AOF
+# Enable AOF
 appendonly yes
 
-# Nome do arquivo AOF
+# AOF filename
 appendfilename "appendonly.aof"
 
-# Frequência de fsync
+# Fsync frequency
 appendfsync everysec
 
-# Não fazer fsync durante rewrite
+# Don’t fsync during rewrite
 no-appendfsync-on-rewrite no
 
-# Auto rewrite do AOF
+# Auto AOF rewrite
 auto-aof-rewrite-percentage 100
 auto-aof-rewrite-min-size 64mb
 
-# Carregar AOF truncado
+# Load truncated AOF
 aof-load-truncated yes
 
-# Usar RDB+AOF para persistence
+# Use RDB+AOF preamble
 aof-use-rdb-preamble yes
 
 ################################ LUA SCRIPTING  ###############################
-# Timeout para scripts Lua
+# Lua script timeout
 lua-time-limit 5000
 
 ################################## SLOW LOG ###################################
-# Log de comandos lentos (microssegundos)
+# Slow command log (microseconds)
 slowlog-log-slower-than 10000
 
-# Tamanho máximo do slow log
+# Slow log max length
 slowlog-max-len 128
 
 ################################ LATENCY MONITOR ##############################
-# Monitor de latência (microssegundos)
+# Latency monitor (microseconds)
 latency-monitor-threshold 100
 ```
 
-### 🔒 Configurações de Segurança Básica
+### 🔒 Basic Security Settings
 
 ```conf
-# Senha forte
+# Strong password
 requirepass "Sup3rS3cur3P@ssw0rd!"
 
-# Bind apenas interfaces necessárias
+# Bind only necessary interfaces
 bind 127.0.0.1 10.0.0.100
 
-# Desabilitar comandos perigosos
+# Disable dangerous commands
 rename-command FLUSHDB ""
 rename-command FLUSHALL ""
 rename-command DEBUG ""
 rename-command CONFIG "CONFIG_09f911029d74e35bd84156c5635688c0"
 
-# Modo protegido
+# Protected mode
 protected-mode yes
 
-# Timeout de cliente
+# Client timeout
 timeout 300
 ```
 
-### 📊 Configurações de Performance
+### 📊 Performance Settings
 
 ```conf
-# Otimizações de memória
+# Memory optimizations
 hash-max-ziplist-entries 512
 hash-max-ziplist-value 64
 list-max-ziplist-size -2
@@ -778,25 +767,26 @@ set-max-intset-entries 512
 zset-max-ziplist-entries 128
 zset-max-ziplist-value 64
 
-# Buffer de saída para clientes
+# Client output buffers
 client-output-buffer-limit normal 0 0 0
 client-output-buffer-limit replica 256mb 64mb 60
 client-output-buffer-limit pubsub 32mb 8mb 60
 
-# Frequency de operações de background
+# Background operation frequency
 hz 10
 
-# Rehashing ativo
+# Active rehashing
 activerehashing yes
 
 # AOF incremental fsync
 aof-rewrite-incremental-fsync yes
 ```
-## 🔧 Configuração Avançada
 
-### 🏗️ Redis Sentinel (Alta Disponibilidade)
+## 🔧 Advanced Configuration
 
-#### Configuração Master
+### 🏗️ Redis Sentinel (High Availability)
+
+#### Master Configuration
 ```conf
 # /etc/redis/redis-master.conf
 port 6379
@@ -805,7 +795,7 @@ requirepass "master-password"
 masterauth "master-password"
 ```
 
-#### Configuração Replica
+#### Replica Configuration
 ```conf
 # /etc/redis/redis-replica.conf
 port 6380
@@ -815,7 +805,7 @@ requirepass "replica-password"
 masterauth "master-password"
 ```
 
-#### Configuração Sentinel
+#### Sentinel Configuration
 ```conf
 # /etc/redis/sentinel.conf
 port 26379
@@ -828,7 +818,7 @@ sentinel failover-timeout mymaster 10000
 sentinel deny-scripts-reconfig yes
 ```
 
-#### Iniciar Sentinel
+#### Start Sentinel
 ```bash
 redis-sentinel /etc/redis/sentinel.conf
 ```
@@ -837,86 +827,86 @@ redis-sentinel /etc/redis/sentinel.conf
 
 ## 🌐 Redis Cluster
 
-### 🔧 Configuração de Cluster (6 Nós)
+### 🔧 Cluster Configuration (6 Nodes)
 
-#### Configuração Base para Cluster
+#### Base Cluster Config
 ```conf
-# /etc/redis/redis-cluster-700X.conf (para cada nó)
+# /etc/redis/redis-cluster-700X.conf (for each node)
 port 7001  # 7001, 7002, 7003, 7004, 7005, 7006
 bind 0.0.0.0
 cluster-enabled yes
-cluster-config-file nodes-7001.conf  # unique para cada nó
+cluster-config-file nodes-7001.conf  # unique per node
 cluster-node-timeout 15000
 appendonly yes
 ```
 
-#### Script de Inicialização do Cluster
+#### Cluster Bootstrap Script
 ```bash
 #!/bin/bash
 # cluster-setup.sh
 
-# Criar diretórios
+# Create directories
 for port in {7001..7006}; do
     mkdir -p /etc/redis/cluster/$port
     mkdir -p /var/lib/redis/cluster/$port
     mkdir -p /var/log/redis/cluster
 done
 
-# Copiar configurações
+# Copy configs
 for port in {7001..7006}; do
     sed "s/7001/$port/g" /etc/redis/redis-cluster-template.conf > /etc/redis/cluster/$port/redis.conf
 done
 
-# Iniciar nós
+# Start nodes
 for port in {7001..7006}; do
     redis-server /etc/redis/cluster/$port/redis.conf
 done
 
-# Criar cluster
+# Create cluster
 redis-cli --cluster create \
     127.0.0.1:7001 127.0.0.1:7002 127.0.0.1:7003 \
     127.0.0.1:7004 127.0.0.1:7005 127.0.0.1:7006 \
     --cluster-replicas 1
 ```
 
-#### Gerenciamento do Cluster
+#### Cluster Management
 ```bash
-# Verificar status
+# Check status
 redis-cli --cluster check 127.0.0.1:7001
 
-# Informações do cluster
+# Cluster info
 redis-cli -c -p 7001
 127.0.0.1:7001> CLUSTER NODES
 127.0.0.1:7001> CLUSTER INFO
 
-# Adicionar nó
+# Add node
 redis-cli --cluster add-node 127.0.0.1:7007 127.0.0.1:7001
 
-# Remover nó
+# Remove node
 redis-cli --cluster del-node 127.0.0.1:7001 <node-id>
 
-# Rebalancear
+# Rebalance
 redis-cli --cluster rebalance 127.0.0.1:7001
 ```
 
 ---
 
-## 🔒 Segurança
+## 🔒 Security
 
-### 🛡️ Configuração Avançada de Segurança
+### 🛡️ Advanced Security Configuration
 
 ```conf
 # /etc/redis/redis-secure.conf
 
-# Autenticação
+# Authentication
 requirepass "Sup3rS3cur3P@ssw0rd!2024"
 masterauth "Sup3rS3cur3P@ssw0rd!2024"
 
 # Network Security
 bind 127.0.0.1 10.0.0.100
 protected-mode yes
-port 0  # Desabilitar porta padrão
-tls-port 6380  # Usar TLS
+port 0  # Disable default port
+tls-port 6380  # Use TLS
 
 # TLS Configuration
 tls-cert-file /etc/redis/tls/redis.crt
@@ -939,23 +929,23 @@ user readonly on >readonly-password ~* &* +@read
 user app on >app-password ~app:* &* +@read +@write -@dangerous
 ```
 
-### 🔐 Configurar TLS/SSL
+### 🔐 Configure TLS/SSL
 
 ```bash
-# Gerar certificados
+# Generate certificates
 mkdir -p /etc/redis/tls
 cd /etc/redis/tls
 
-# CA privada
+# Private CA
 openssl genrsa -out ca.key 4096
 openssl req -x509 -new -nodes -key ca.key -sha256 -days 3650 -out ca.crt
 
-# Certificado do servidor
+# Server certificate
 openssl genrsa -out redis.key 4096
 openssl req -new -key redis.key -out redis.csr
 openssl x509 -req -in redis.csr -CA ca.crt -CAkey ca.key -CAcreateserial -out redis.crt -days 365 -sha256
 
-# Definir permissões
+# Permissions
 chown redis:redis /etc/redis/tls/*
 chmod 600 /etc/redis/tls/*.key
 chmod 644 /etc/redis/tls/*.crt
@@ -963,16 +953,16 @@ chmod 644 /etc/redis/tls/*.crt
 
 ---
 
-## 📊 Monitoramento
+## 📊 Monitoring
 
-### 📈 Ferramentas de Monitoramento
+### 📈 Monitoring Tools
 
 #### Redis INFO
 ```bash
-# Informações gerais
+# General info
 redis-cli info
 
-# Seções específicas
+# Specific sections
 redis-cli info memory
 redis-cli info stats
 redis-cli info replication
@@ -981,31 +971,31 @@ redis-cli info clients
 redis-cli info server
 ```
 
-#### Comandos de Monitoramento
+#### Monitoring Commands
 ```bash
-# Monitor em tempo real
+# Real-time monitor
 redis-cli monitor
 
-# Estatísticas de comandos
+# Command stats
 redis-cli --stat
 
-# Latência
+# Latency
 redis-cli --latency
 redis-cli --latency-history
 
 # Big keys
 redis-cli --bigkeys
 
-# Memória por chave
+# Memory per key
 redis-cli --memkeys
 
-# Scan de padrões
+# Pattern scan
 redis-cli --scan --pattern "user:*"
 ```
 
-### 📊 Scripts de Monitoramento
+### 📊 Monitoring Scripts
 
-#### Script de Métricas
+#### Metrics Script
 ```bash
 #!/bin/bash
 # redis-metrics.sh
@@ -1015,23 +1005,23 @@ DATE=$(date '+%Y-%m-%d %H:%M:%S')
 
 echo "=== Redis Metrics - $DATE ==="
 
-# Informações básicas
+# Basic info
 echo "--- Server Info ---"
 $REDIS_CLI info server | grep -E "(redis_version|uptime_in_days|process_id)"
 
-# Memória
+# Memory
 echo -e "\n--- Memory Usage ---"
 $REDIS_CLI info memory | grep -E "(used_memory_human|used_memory_peak_human|mem_fragmentation_ratio)"
 
-# Estatísticas
+# Stats
 echo -e "\n--- Stats ---"
 $REDIS_CLI info stats | grep -E "(total_connections_received|total_commands_processed|instantaneous_ops_per_sec)"
 
-# Clientes
+# Clients
 echo -e "\n--- Clients ---"
 $REDIS_CLI info clients | grep -E "(connected_clients|blocked_clients)"
 
-# Persistência
+# Persistence
 echo -e "\n--- Persistence ---"
 $REDIS_CLI info persistence | grep -E "(rdb_last_save_time|aof_enabled)"
 
@@ -1040,7 +1030,7 @@ echo -e "\n--- Keyspace ---"
 $REDIS_CLI info keyspace
 ```
 
-#### Alertas Básicos
+#### Basic Alerts
 ```bash
 #!/bin/bash
 # redis-alerts.sh
@@ -1049,7 +1039,7 @@ REDIS_CLI="redis-cli"
 MEMORY_THRESHOLD=80
 CLIENT_THRESHOLD=1000
 
-# Verificar uso de memória
+# Memory usage
 MEMORY_USAGE=$($REDIS_CLI info memory | grep used_memory_rss | cut -d: -f2 | tr -d '\r')
 MAX_MEMORY=$($REDIS_CLI config get maxmemory | tail -1)
 
@@ -1060,7 +1050,7 @@ if [ "$MAX_MEMORY" != "0" ]; then
     fi
 fi
 
-# Verificar número de clientes
+# Connected clients
 CLIENTS=$($REDIS_CLI info clients | grep connected_clients | cut -d: -f2 | tr -d '\r')
 if [ $CLIENTS -gt $CLIENT_THRESHOLD ]; then
     echo "ALERT: Too many clients connected: $CLIENTS (threshold: $CLIENT_THRESHOLD)"
@@ -1069,11 +1059,11 @@ fi
 
 ---
 
-## 🔄 Backup e Recovery
+## 🔄 Backup & Recovery
 
-### 💾 Backup RDB
+### 💾 RDB Backup
 
-#### Backup Manual
+#### Manual Backup
 ```bash
 #!/bin/bash
 # redis-backup.sh
@@ -1082,44 +1072,44 @@ BACKUP_DIR="/backup/redis"
 DATE=$(date +%Y%m%d_%H%M%S)
 REDIS_CLI="redis-cli"
 
-# Criar diretório de backup
+# Create backup dir
 mkdir -p $BACKUP_DIR
 
-# Forçar snapshot
+# Force snapshot
 $REDIS_CLI BGSAVE
 
-# Aguardar conclusão
+# Wait for completion
 while [ $($REDIS_CLI LASTSAVE) -eq $($REDIS_CLI LASTSAVE) ]; do
     sleep 1
 done
 
-# Copiar dump
+# Copy dump
 cp /var/lib/redis/dump.rdb $BACKUP_DIR/dump_$DATE.rdb
 
-# Comprimir
+# Compress
 gzip $BACKUP_DIR/dump_$DATE.rdb
 
-# Limpar backups antigos (manter 7 dias)
+# Clean old backups (keep 7 days)
 find $BACKUP_DIR -name "dump_*.rdb.gz" -mtime +7 -delete
 
 echo "Backup completed: dump_$DATE.rdb.gz"
 ```
 
-#### Backup Automático com Cron
+#### Automated Backup with Cron
 ```bash
-# Adicionar ao crontab
+# Add to crontab
 crontab -e
 
-# Backup diário às 2:00
+# Daily backup at 02:00
 0 2 * * * /scripts/redis-backup.sh
 
-# Backup de hora em hora durante horário comercial
+# Hourly backups during business hours
 0 9-18 * * 1-5 /scripts/redis-backup.sh
 ```
 
-### 📁 Backup AOF
+### 📁 AOF Backup
 
-#### Script de Backup AOF
+#### AOF Backup Script
 ```bash
 #!/bin/bash
 # redis-aof-backup.sh
@@ -1133,12 +1123,12 @@ mkdir -p $BACKUP_DIR
 # Rewrite AOF
 $REDIS_CLI BGREWRITEAOF
 
-# Aguardar conclusão
+# Wait for completion
 while [ $($REDIS_CLI info persistence | grep aof_rewrite_in_progress | cut -d: -f2 | tr -d '\r') -eq 1 ]; do
     sleep 1
 done
 
-# Copiar AOF
+# Copy AOF
 cp /var/lib/redis/appendonly.aof $BACKUP_DIR/appendonly_$DATE.aof
 gzip $BACKUP_DIR/appendonly_$DATE.aof
 
@@ -1147,7 +1137,7 @@ echo "AOF backup completed: appendonly_$DATE.aof.gz"
 
 ### 🔄 Recovery
 
-#### Recovery de RDB
+#### RDB Recovery
 ```bash
 #!/bin/bash
 # redis-restore-rdb.sh
@@ -1160,23 +1150,23 @@ if [ -z "$BACKUP_FILE" ]; then
     exit 1
 fi
 
-# Parar Redis
+# Stop Redis
 sudo systemctl stop redis
 
-# Backup atual
+# Current backup
 mv $REDIS_DATA_DIR/dump.rdb $REDIS_DATA_DIR/dump.rdb.backup.$(date +%s)
 
-# Restaurar backup
+# Restore backup
 gunzip -c $BACKUP_FILE > $REDIS_DATA_DIR/dump.rdb
 chown redis:redis $REDIS_DATA_DIR/dump.rdb
 
-# Iniciar Redis
+# Start Redis
 sudo systemctl start redis
 
 echo "Recovery completed from $BACKUP_FILE"
 ```
 
-#### Recovery de AOF
+#### AOF Recovery
 ```bash
 #!/bin/bash
 # redis-restore-aof.sh
@@ -1189,20 +1179,20 @@ if [ -z "$BACKUP_FILE" ]; then
     exit 1
 fi
 
-# Parar Redis
+# Stop Redis
 sudo systemctl stop redis
 
-# Backup atual
+# Current backup
 mv $REDIS_DATA_DIR/appendonly.aof $REDIS_DATA_DIR/appendonly.aof.backup.$(date +%s)
 
-# Restaurar backup
+# Restore backup
 gunzip -c $BACKUP_FILE > $REDIS_DATA_DIR/appendonly.aof
 chown redis:redis $REDIS_DATA_DIR/appendonly.aof
 
-# Verificar integridade
+# Integrity check
 redis-check-aof --fix $REDIS_DATA_DIR/appendonly.aof
 
-# Iniciar Redis
+# Start Redis
 sudo systemctl start redis
 
 echo "AOF recovery completed from $BACKUP_FILE"
@@ -1210,17 +1200,17 @@ echo "AOF recovery completed from $BACKUP_FILE"
 
 ## 🚀 Performance
 
-### ⚡ Otimização de Sistema Operacional
+### ⚡ Operating System Optimizations
 
-#### Configurações de Kernel
+#### Kernel Settings
 ```bash
 # /etc/sysctl.conf
-# Otimizações para Redis
+# Optimizations for Redis
 
 # Memory overcommit
 vm.overcommit_memory = 1
 
-# Transparent Huge Pages (desabilitar)
+# Transparent Huge Pages (disable)
 echo never > /sys/kernel/mm/transparent_hugepage/enabled
 echo never > /sys/kernel/mm/transparent_hugepage/defrag
 
@@ -1232,7 +1222,7 @@ net.ipv4.tcp_max_syn_backlog = 65535
 fs.file-max = 65535
 ```
 
-#### Configurações Permanentes
+#### Persistent Settings
 ```bash
 # /etc/security/limits.conf
 redis soft nofile 65535
@@ -1240,14 +1230,14 @@ redis hard nofile 65535
 redis soft nproc 65535
 redis hard nproc 65535
 
-# Aplicar configurações
+# Apply settings
 sudo sysctl -p
 sudo systemctl restart redis
 ```
 
-### 🔧 Tuning de Performance
+### 🔧 Performance Tuning
 
-#### Configurações Redis para Performance
+#### Redis Performance Config
 ```conf
 # /etc/redis/redis-performance.conf
 
@@ -1269,7 +1259,7 @@ save 900 1
 save 300 10
 save 60 10000
 rdbcompression yes
-rdbchecksum no  # Desabilitar para performance
+rdbchecksum no  # Disable for performance
 
 # AOF tuning
 appendonly yes
@@ -1305,7 +1295,7 @@ client-output-buffer-limit pubsub 32mb 8mb 60
 
 ### 📊 Benchmarking
 
-#### Scripts de Benchmark
+#### Benchmark Scripts
 ```bash
 #!/bin/bash
 # redis-benchmark-suite.sh
@@ -1313,22 +1303,22 @@ client-output-buffer-limit pubsub 32mb 8mb 60
 echo "=== Redis Performance Benchmark ==="
 date
 
-# Benchmark básico
+# Basic benchmark
 echo -e "\n--- Basic Operations ---"
 redis-benchmark -q -n 100000 -c 50 -t set,get,incr,lpush,rpush,lpop,rpop,sadd,hset,spop,zadd,zpopmin,lrange
 
-# Benchmark de pipeline
+# Pipeline benchmark
 echo -e "\n--- Pipeline Performance ---"
 redis-benchmark -q -n 100000 -c 50 -P 16 -t set,get
 
-# Benchmark de diferentes tamanhos de dados
+# Different data sizes
 echo -e "\n--- Data Size Performance ---"
 for size in 10 100 1000 10000; do
     echo "Data size: $size bytes"
     redis-benchmark -q -n 10000 -d $size -t set,get
 done
 
-# Benchmark específico por operação
+# Operation-specific
 echo -e "\n--- Detailed Operation Benchmark ---"
 redis-benchmark -n 100000 -t set
 redis-benchmark -n 100000 -t get
@@ -1347,11 +1337,11 @@ redis-benchmark -n 100000 -t lrange -r 100
 
 ---
 
-## 🧪 Testes
+## 🧪 Tests
 
-### 🔍 Scripts de Teste
+### 🔍 Test Scripts
 
-#### Teste de Funcionalidade
+#### Functional Test
 ```bash
 #!/bin/bash
 # redis-functional-test.sh
@@ -1361,7 +1351,7 @@ TEST_KEY="test:$(date +%s)"
 
 echo "=== Redis Functional Tests ==="
 
-# Teste de conectividade
+# Connectivity test
 echo -n "Testing connectivity... "
 if $REDIS_CLI ping | grep -q PONG; then
     echo "✅ PASSED"
@@ -1370,7 +1360,7 @@ else
     exit 1
 fi
 
-# Teste de operações básicas
+# Basic operations
 echo -n "Testing basic operations... "
 $REDIS_CLI set $TEST_KEY "test_value" > /dev/null
 if [ "$($REDIS_CLI get $TEST_KEY)" = "test_value" ]; then
@@ -1379,7 +1369,7 @@ else
     echo "❌ FAILED"
 fi
 
-# Teste de expiração
+# Expiration
 echo -n "Testing expiration... "
 $REDIS_CLI setex ${TEST_KEY}_exp 2 "expire_test" > /dev/null
 sleep 3
@@ -1389,7 +1379,7 @@ else
     echo "❌ FAILED"
 fi
 
-# Teste de estruturas de dados
+# Data structures
 echo -n "Testing data structures... "
 $REDIS_CLI lpush ${TEST_KEY}_list "item1" "item2" > /dev/null
 $REDIS_CLI sadd ${TEST_KEY}_set "member1" "member2" > /dev/null
@@ -1403,13 +1393,13 @@ else
     echo "❌ FAILED"
 fi
 
-# Limpeza
+# Cleanup
 $REDIS_CLI del $TEST_KEY ${TEST_KEY}_list ${TEST_KEY}_set ${TEST_KEY}_hash > /dev/null
 
 echo "All tests completed!"
 ```
 
-#### Teste de Carga
+#### Load Test
 ```bash
 #!/bin/bash
 # redis-load-test.sh
@@ -1422,11 +1412,11 @@ echo "=== Redis Load Test ==="
 echo "Clients: $CONCURRENT_CLIENTS"
 echo "Operations per client: $OPERATIONS_PER_CLIENT"
 
-# Função de teste por cliente
+# Per-client test function
 test_client() {
     local client_id=$1
     local prefix="load_test_${client_id}"
-    
+
     for i in $(seq 1 $OPERATIONS_PER_CLIENT); do
         $REDIS_CLI set "${prefix}_${i}" "value_${i}" > /dev/null
         $REDIS_CLI get "${prefix}_${i}" > /dev/null
@@ -1434,7 +1424,7 @@ test_client() {
     done
 }
 
-# Executar clientes em paralelo
+# Run clients in parallel
 echo "Starting load test..."
 start_time=$(date +%s)
 
@@ -1442,7 +1432,7 @@ for client in $(seq 1 $CONCURRENT_CLIENTS); do
     test_client $client &
 done
 
-# Aguardar conclusão
+# Wait for completion
 wait
 
 end_time=$(date +%s)
@@ -1457,190 +1447,61 @@ echo "Operations per second: $((total_ops / total_time))"
 
 ---
 
-## ☁️ Cloud
-
-### ☁️ AWS ElastiCache
-
-#### Configuração via AWS CLI
-```bash
-# Criar subnet group
-aws elasticache create-cache-subnet-group \
-    --cache-subnet-group-name my-redis-subnet-group \
-    --cache-subnet-group-description "Redis subnet group" \
-    --subnet-ids subnet-12345678 subnet-87654321
-
-# Criar cluster Redis
-aws elasticache create-cache-cluster \
-    --cache-cluster-id my-redis-cluster \
-    --engine redis \
-    --engine-version 7.0 \
-    --cache-node-type cache.t3.micro \
-    --num-cache-nodes 1 \
-    --cache-subnet-group-name my-redis-subnet-group \
-    --security-group-ids sg-12345678
-
-# Criar replication group
-aws elasticache create-replication-group \
-    --replication-group-id my-redis-rg \
-    --replication-group-description "Redis replication group" \
-    --primary-cluster-id my-redis-cluster \
-    --num-cache-clusters 3 \
-    --engine redis \
-    --engine-version 7.0 \
-    --cache-node-type cache.r6g.large \
-    --automatic-failover-enabled \
-    --multi-az-enabled
-```
-
-#### Terraform para ElastiCache
-```hcl
-# terraform/redis.tf
-resource "aws_elasticache_subnet_group" "redis" {
-  name       = "redis-subnet-group"
-  subnet_ids = var.private_subnet_ids
-}
-
-resource "aws_elasticache_replication_group" "redis" {
-  replication_group_id         = "redis-cluster"
-  description                  = "Redis cluster"
-  
-  node_type                    = "cache.r6g.large"
-  port                         = 6379
-  parameter_group_name         = "default.redis7"
-  
-  num_cache_clusters           = 2
-  automatic_failover_enabled   = true
-  multi_az_enabled            = true
-  
-  subnet_group_name           = aws_elasticache_subnet_group.redis.name
-  security_group_ids          = [aws_security_group.redis.id]
-  
-  at_rest_encryption_enabled  = true
-  transit_encryption_enabled  = true
-  auth_token                  = var.redis_auth_token
-  
-  apply_immediately           = false
-  
-  log_delivery_configuration {
-    destination      = aws_cloudwatch_log_group.redis.name
-    destination_type = "cloudwatch-logs"
-    log_format       = "text"
-    log_type         = "slow-log"
-  }
-  
-  tags = {
-    Name        = "redis-cluster"
-    Environment = var.environment
-  }
-}
-
-resource "aws_security_group" "redis" {
-  name_prefix = "redis-"
-  vpc_id      = var.vpc_id
-
-  ingress {
-    from_port   = 6379
-    to_port     = 6379
-    protocol    = "tcp"
-    cidr_blocks = [var.vpc_cidr]
-  }
-
-  egress {
-    from_port   = 0
-    to_port     = 0
-    protocol    = "-1"
-    cidr_blocks = ["0.0.0.0/0"]
-  }
-}
-```
-
-### 🔷 Azure Cache for Redis
-
-#### Azure CLI
-```bash
-# Criar resource group
-az group create --name rg-redis --location eastus
-
-# Criar Azure Cache for Redis
-az redis create \
-    --resource-group rg-redis \
-    --name my-redis-cache \
-    --location eastus \
-    --sku Premium \
-    --vm-size P1 \
-    --enable-non-ssl-port \
-    --redis-configuration maxmemory-policy=allkeys-lru
-```
-
-### 🌐 Google Cloud Memorystore
-
-#### gcloud CLI
-```bash
-# Criar instância Redis
-gcloud redis instances create my-redis-instance \
-    --size=1 \
-    --region=us-central1 \
-    --redis-version=redis_6_x \
-    --enable-auth
-```
-
----
-
 ## ❗ Troubleshooting
 
-### 🔍 Problemas Comuns
+### 🔍 Common Issues
 
 #### Performance Issues
 ```bash
-# Verificar slow queries
+# Inspect slow queries
 redis-cli slowlog get 10
 
-# Verificar memory usage
+# Check memory usage
 redis-cli info memory
 
-# Verificar latência
+# Check latency
 redis-cli --latency
 
-# Big keys que consomem memória
+# Big memory‑hungry keys
 redis-cli --bigkeys
 
-# Monitor em tempo real
+# Real‑time monitor
 redis-cli monitor
 ```
 
 #### Connection Issues
 ```bash
-# Verificar se Redis está rodando
+# Check if Redis is running
 systemctl status redis
 
-# Verificar portas
+# Check listening ports
 netstat -tlnp | grep 6379
 
-# Teste de conectividade
+# Connectivity test
 telnet localhost 6379
 
-# Verificar logs
+# Review logs
 tail -f /var/log/redis/redis-server.log
 
-# Verificar configuração
+# Validate configuration
 redis-cli config get "*"
 ```
 
 #### Memory Issues
 ```bash
-# Verificar uso de memória
+# Memory usage
 redis-cli info memory | grep used_memory_human
 
-# Verificar fragmentação
+# Fragmentation
 redis-cli info memory | grep mem_fragmentation_ratio
 
-# Limpar memória expirada
+# Purge expired memory
 redis-cli --eval "return redis.call('memory', 'purge')" 0
 ```
 
-### 🛠️ Scripts de Diagnóstico
+### 🛠️ Diagnostic Scripts
 
-#### Diagnóstico Completo
+#### Full Diagnostic
 ```bash
 #!/bin/bash
 # redis-diagnostic.sh
@@ -1649,7 +1510,7 @@ echo "=== Redis Diagnostic Report ==="
 date
 echo
 
-# Verificar processo
+# Process check
 echo "--- Process Status ---"
 if pgrep redis-server > /dev/null; then
     echo "✅ Redis process is running"
@@ -1659,7 +1520,7 @@ else
 fi
 echo
 
-# Verificar conectividade
+# Connectivity
 echo "--- Connectivity Test ---"
 if redis-cli ping | grep -q PONG; then
     echo "✅ Redis is responding"
@@ -1668,27 +1529,27 @@ else
 fi
 echo
 
-# Informações do servidor
+# Server info
 echo "--- Server Information ---"
 redis-cli info server | grep -E "(redis_version|uptime_in_days|os)"
 echo
 
-# Uso de memória
+# Memory
 echo "--- Memory Usage ---"
 redis-cli info memory | grep -E "(used_memory_human|used_memory_peak_human|mem_fragmentation_ratio)"
 echo
 
-# Estatísticas
+# Performance stats
 echo "--- Performance Stats ---"
 redis-cli info stats | grep -E "(total_commands_processed|instantaneous_ops_per_sec|keyspace_hits|keyspace_misses)"
 echo
 
-# Clientes conectados
+# Clients
 echo "--- Client Information ---"
 redis-cli info clients
 echo
 
-# Configuração crítica
+# Critical config
 echo "--- Critical Configuration ---"
 redis-cli config get maxmemory
 redis-cli config get maxmemory-policy
@@ -1707,70 +1568,70 @@ redis-cli info keyspace
 
 ---
 
-## 📚 Recursos Adicionais
+## 📚 Additional Resources
 
-### 🔗 Links Oficiais
+### 🔗 Official Links
 
-- **[Redis.io](https://redis.io/)** - Site oficial
-- **[Documentação](https://redis.io/documentation)** - Documentação completa
-- **[Commands Reference](https://redis.io/commands)** - Referência de comandos
-- **[Redis Modules](https://redis.io/modules)** - Módulos oficiais
-- **[GitHub](https://github.com/redis/redis)** - Código fonte
+- **[Redis.io](https://redis.io/)** – Official website  
+- **[Documentation](https://redis.io/documentation)** – Complete docs  
+- **[Commands Reference](https://redis.io/commands)** – Command reference  
+- **[Redis Modules](https://redis.io/modules)** – Official modules  
+- **[GitHub](https://github.com/redis/redis)** – Source code
 
-### 📖 Documentação Especializada
+### 📖 Specialized Docs
 
-- **[Redis Sentinel](https://redis.io/topics/sentinel)** - Alta disponibilidade
-- **[Redis Cluster](https://redis.io/topics/cluster-tutorial)** - Clustering
-- **[Redis Persistence](https://redis.io/topics/persistence)** - RDB e AOF
-- **[Redis Security](https://redis.io/topics/security)** - Segurança
-- **[Redis Benchmarks](https://redis.io/topics/benchmarks)** - Performance
+- **[Redis Sentinel](https://redis.io/topics/sentinel)** – High availability  
+- **[Redis Cluster](https://redis.io/topics/cluster-tutorial)** – Clustering  
+- **[Redis Persistence](https://redis.io/topics/persistence)** – RDB and AOF  
+- **[Redis Security](https://redis.io/topics/security)** – Security  
+- **[Redis Benchmarks](https://redis.io/topics/benchmarks)** – Performance
 
-### 🛠️ Ferramentas Úteis
+### 🛠️ Useful Tools
 
-- **[Redis Desktop Manager](https://resp.app/)** - GUI client
-- **[RedisInsight](https://redis.com/redis-enterprise/redis-insight/)** - Ferramenta oficial
-- **[redis-cli](https://redis.io/topics/rediscli)** - Cliente de linha de comando
-- **[Redis Commander](https://github.com/joeferner/redis-commander)** - Web UI
+- **[Redis Desktop Manager](https://resp.app/)** – GUI client  
+- **[RedisInsight](https://redis.com/redis-enterprise/redis-insight/)** – Official tool  
+- **[redis-cli](https://redis.io/topics/rediscli)** – Command‑line client  
+- **[Redis Commander](https://github.com/joeferner/redis-commander)** – Web UI
 
-### 📊 Monitoramento
+### 📊 Monitoring
 
-- **[Redis Exporter](https://github.com/oliver006/redis_exporter)** - Prometheus
-- **[Grafana Dashboards](https://grafana.com/grafana/dashboards/?search=redis)** - Dashboards
-- **[DataDog Redis](https://docs.datadoghq.com/integrations/redisdb/)** - Integração DataDog
-- **[New Relic Redis](https://docs.newrelic.com/docs/infrastructure/host-integrations/host-integrations-list/redis-monitoring-integration/)** - New Relic
+- **[Redis Exporter](https://github.com/oliver006/redis_exporter)** – Prometheus  
+- **[Grafana Dashboards](https://grafana.com/grafana/dashboards/?search=redis)** – Dashboards  
+- **[DataDog Redis](https://docs.datadoghq.com/integrations/redisdb/)** – DataDog integration  
+- **[New Relic Redis](https://docs.newrelic.com/docs/infrastructure/host-integrations/host-integrations-list/redis-monitoring-integration/)** – New Relic
 
-### 🎓 Aprendizado
+### 🎓 Learning
 
-- **[Redis University](https://university.redis.com/)** - Cursos oficiais
-- **[Try Redis](https://try.redis.io/)** - Tutorial interativo
-- **[Redis Labs](https://redis.com/try-free/)** - Ambiente de teste
+- **[Redis University](https://university.redis.com/)** – Official courses  
+- **[Try Redis](https://try.redis.io/)** – Interactive tutorial  
+- **[Redis Labs](https://redis.com/try-free/)** – Trial environment
 
-### 📚 Livros Recomendados
+### 📚 Recommended Books
 
-- **"Redis in Action"** - Josiah Carlson
-- **"The Little Redis Book"** - Karl Seguin
-- **"Redis Essentials"** - Maxwell Dayvson Da Silva
+- **"Redis in Action"** – Josiah Carlson  
+- **"The Little Redis Book"** – Karl Seguin  
+- **"Redis Essentials"** – Maxwell Dayvson Da Silva
 
 ---
 
-## 🎯 Conclusão
+## 🎯 Conclusion
 
-Este guia fornece uma base sólida para instalação, configuração e operação do Redis em ambientes de produção. Redis é uma ferramenta poderosa que, quando configurada corretamente, pode significativamente melhorar a performance de suas aplicações.
+This guide provides a solid foundation for installing, configuring, and operating Redis in production environments. Redis is a powerful tool that, when properly tuned, can significantly improve application performance.
 
-### ✅ Próximos Passos
+### ✅ Next Steps
 
-1. **Implementar monitoramento** contínuo
-2. **Configurar backup** automatizado
-3. **Testar disaster recovery** periodicamente
-4. **Otimizar configurações** baseado no uso
-5. **Manter Redis atualizado** com patches de segurança
+1. **Implement continuous monitoring**  
+2. **Configure automated backups**  
+3. **Test disaster recovery** regularly  
+4. **Tune configuration** based on usage patterns  
+5. **Keep Redis updated** with security patches
 
-### 🔄 Manutenção Contínua
+### 🔄 Ongoing Maintenance
 
-- **Monitoramento diário** de métricas
-- **Backup semanal** com teste de restore
-- **Review mensal** de configurações
-- **Atualização trimestral** de versões
-- **Auditoria anual** de segurança
+- **Daily monitoring** of key metrics  
+- **Weekly backups** with restore tests  
+- **Monthly configuration review**  
+- **Quarterly upgrades** and patching  
+- **Annual security audit**
 
 ---
