@@ -2378,7 +2378,8 @@ This comprehensive guide provides a complete installation and configuration fram
 
 ---
 ## Author & Maintainer
-**Vanderley Sant Anna (vsantanna)** — Senior Database Engineer (DBE) / Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer  
+**Vanderley Sant Anna** — Senior Database Engineer (DBE) / Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer  
+**Preferred name:** Vander  
 **Education:** B.Sc. in Software Engineering  
 **Certifications:** Oracle OCP; MongoDB University — M102: MongoDB for DBAs; IBM Certified Database Associate — DB2 9 Fundamentals  
 **Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
