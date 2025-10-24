@@ -2405,12 +2405,3 @@ This comprehensive guide provides a complete installation and configuration fram
   <small>All product names, logos, and brands are property of their respective owners. 
   Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
 </details>
-
----
-
----
-## Trademarks
-All product names, logos, and brands are property of their respective owners.
-Use of these names is for identification purposes only and does not imply endorsement or affiliation.
-
----
