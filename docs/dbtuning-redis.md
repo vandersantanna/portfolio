@@ -23,6 +23,7 @@
 - [Real-World Examples](#real-world-examples)
 - [Performance Architecture](#performance-architecture)
 
+---
 ## 🎯 Overview
 
 This comprehensive guide provides expert-level Redis performance tuning strategies for Database Administrators, Database Reliability Engineers, Data Engineers, and DataOps professionals. Redis, being an in-memory data structure store, requires specific tuning approaches that differ significantly from traditional disk-based databases.
