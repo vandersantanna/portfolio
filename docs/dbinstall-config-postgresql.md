@@ -1,4 +1,4 @@
-# PostgreSQL Installation and Configuration Guide
+# 🐘PostgreSQL Installation and Configuration Guide
 
 *Complete installation and configuration guide for PostgreSQL 16 across multiple platforms*
 
