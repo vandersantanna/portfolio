@@ -1330,26 +1330,19 @@ Contributions to improve this guide are welcome! Please:
 This guide is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
+---
 
-## 👤 Author
-
-**Vander**
-- 🌍 Location: Blumenau, SC - Brasil  
-- 💼 LinkedIn: [Your LinkedIn Profile]
-- 📧 Email: [your-email@domain.com]
-- 🌐 Portfolio: [Your Portfolio Website]
+[Back to top](#table-of-contents)
 
 ---
 
-## ⭐ Acknowledgments
-
-- MySQL Development Team
-- Cloud Providers (AWS, Azure, GCP) Documentation Teams
-- MySQL Community Contributors
-- Database Administration Best Practices Community
+**[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
 
 ---
-
-**Last updated**: September 2025  
-**MySQL version**: 8.0.35  
-**Tested environments**: RHEL 9/10, Ubuntu 22.04 LTS, Windows Server 2019/2022, AWS, Azure, GCP
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
+- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
