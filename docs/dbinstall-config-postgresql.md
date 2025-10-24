@@ -2,13 +2,6 @@
 
 *Complete installation and configuration guide for PostgreSQL 16 across multiple platforms*
 
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-16-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
-
 ---
 
 ## Table of Contents
@@ -1954,4 +1947,8 @@ psql -c "DROP DATABASE old_database;"
 - **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
 - **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
 - **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
+## Trademarks
+All product names, logos, and brands are property of their respective owners.
+Use of these names is for identification purposes only and does not imply endorsement or affiliation.
 ---
