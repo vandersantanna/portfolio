@@ -22,7 +22,6 @@
 15. [☁️ Cloud](#️-cloud)
 16. [🧪 Tests](#-tests)
 17. [❗ Troubleshooting](#-troubleshooting)
-18. [📚 Additional Resources](#-additional-resources)
 
 ---
 
