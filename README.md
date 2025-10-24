@@ -1,13 +1,13 @@
-# Professional Portfolio – Database Administration & Reliability
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-👋 Welcome!  
-This is my professional portfolio as a **Database Administrator and Reliability Engineer (DBA / DBRE)**, showcasing over 30 years of expertise in relational databases, cloud platforms, automation, and performance optimization.
+✨ Welcome!  
+This is my professional portfolio as a **Database Engineer, Database Administrator, Database Reliability Engineer (DBRE), and DataOps Engineer**, showcasing **30+ years** of expertise across **relational and NoSQL databases**, **cloud platforms**, **software development**, **automation**, and **performance engineering**.
 
 ---
 
 ## 🎯 Core Expertise
 
-- **Relational Databases**  
+- **🛢️Relational Databases**  
   - Oracle (30+ years)  
   - SQL Server (30+ years)  
   - PostgreSQL (20+ years)  
@@ -17,7 +17,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
   - MongoDB  
   - Redis  
 
-- **Cloud Platforms**  
+- **☁️Cloud Platforms**  
   - AWS (RDS, Aurora, DynamoDB, Redshift)  
   - Azure (Azure SQL, Cosmos DB)  
   - Google Cloud (PostgreSQL, BigQuery, DataOps pipelines)  
@@ -43,7 +43,7 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [MongoDB](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-mongodb.md)
 - [Redis](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-redis.md)
 
-### ⚙️ Database Reliability Engineering (DBRE) / SRE
+### 🎛️ Database Reliability Engineering (DBRE) / SRE
 - [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-oracle.md)
 - [SQL Server](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-sql-server.md)
 - [PostgreSQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-postgresql.md)
@@ -76,11 +76,11 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Bash Script](https://github.com/vandersantanna/portfolio/blob/main/docs/automation-bash-script.md)
 - [PowerShell Scripts](https://github.com/vandersantanna/portfolio/blob/main/docs/automation-powershell.md)
 
-### 🖥️ Operating Systems & Administration
+### 🛡️ Operating Systems & Administration
 - [Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/linux.md)
 - [Windows Server](https://github.com/vandersantanna/portfolio/blob/main/docs/windows-server.md)
 
-### 💻 Development
+### 🧮 Software Development
 - [Git, GitHub, GitLab](https://github.com/vandersantanna/portfolio/blob/main/docs/git-github-gitlab.md)
 - [Python Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-python.md)
 - [Rust Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-rust.md)
@@ -89,10 +89,51 @@ This is my professional portfolio as a **Database Administrator and Reliability 
 - [Best Practices & Guidelines](https://github.com/vandersantanna/portfolio/blob/main/docs/best-practices.md)
 
 ---
+[Back to top](#table-of-contents)
+
+---
+
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
 ## 📫 Contact
 - **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
-- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
-- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
-- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
----
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
