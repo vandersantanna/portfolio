@@ -789,15 +789,7 @@ SELECT
     recovery_model_desc AS RecoveryModel
 FROM sys.databases;
 ```
-
-## Additional Resources
-
-- [SQL Server Documentation](https://docs.microsoft.com/en-us/sql/)
-- [SQL Server Management Studio](https://docs.microsoft.com/en-us/sql/ssms/)
-- [Azure Data Studio](https://docs.microsoft.com/en-us/sql/azure-data-studio/)
-- [SQL Server on Linux](https://docs.microsoft.com/en-us/sql/linux/)
-- [SQL Server Docker Containers](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-docker-container-deployment)
-
+---
 ## Conclusion
 
 This guide provides a comprehensive overview of SQL Server installation and configuration across multiple platforms. Regular maintenance, monitoring, and security updates are essential for optimal performance and security. Always test configurations in a development environment before applying them to production systems.
@@ -817,4 +809,9 @@ This guide provides a comprehensive overview of SQL Server installation and conf
 - **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
 - **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
 - **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
+## Trademarks
+All product names, logos, and brands are property of their respective owners.
+Use of these names is for identification purposes only and does not imply endorsement or affiliation.
+
 ---
