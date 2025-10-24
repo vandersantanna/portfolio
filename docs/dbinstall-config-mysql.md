@@ -1,5 +1,5 @@
-# 🐬 MySQL Installation and Configuration Guide <img src="https://www.mysql.com/favicon.ico" alt="MySQL" height="24" style="vertical-align:middle;margin-right:8px;">
-
+# 🐬 MySQL Installation and Configuration Guide
+ <img src="https://www.mysql.com/favicon.ico" alt="MySQL" height="24" style="vertical-align:middle;margin-right:8px;">
 *Complete installation and configuration guide for MySQL 8.0 across multiple platforms*
 
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
