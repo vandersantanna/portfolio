@@ -1,13 +1,7 @@
-markdown
-# Windows Server Guide for SQL Server: DBA / DBRE / DataOps (2025 Edition)
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-**Version:** 2025-10-13  
-**Applies to:** Windows Server 2016/2019/2022/2025 (LTSC), Datacenter / Standard / Datacenter: Azure Edition; SQL Server 2016/2017/2019/2022
-
-> **Purpose**  
-> Practical, production-ready guidance to configure Windows Server for **SQL Server** workloads with a focus on **DBA**, **DBRE**, and **DataOps** roles: installation baselines, security hardening, storage & networking for performance, clustering & HA/DR, automation with PowerShell/DSC, observability, patching strategies (including **Hotpatch**), and CI/CD for database changes.
-
----
+# Windows Server Guide for SQL Server: DBE / DBRE / DBA / DataOps 
+*From clean OS build to resilient SQL Server on Windows—end to end.*
 
 ## Table of Contents
 
@@ -36,14 +30,16 @@ markdown
 - [23. Compliance & Auditing](#23-compliance--auditing)
 - [24. Checklists & Runbooks](#24-checklists--runbooks)
 - [25. Version-Specific Notes (Windows & SQL Server)](#25-version-specific-notes-windows--sql-server)
-- [26. References](#26-references)
 
 ---
 
 ## 1. Scope & Audience
 
+> **Purpose**  
+> Practical, production-ready guidance to configure Windows Server for **SQL Server** workloads with a focus on **DBA**, **DBRE**, and **DataOps** roles: installation baselines, security hardening, storage & networking for performance, clustering & HA/DR, automation with PowerShell/DSC, observability, patching strategies (including **Hotpatch**), and CI/CD for database changes.
+
 **Audience:**  
-- **DBA/DBRE** operating SQL Server on Windows Server (physical/VM/cloud).  
+- **DBE/DBA/DBRE** operating SQL Server on Windows Server (physical/VM/cloud).  
 - **DataOps** engineers automating database delivery and environment drift control.
 
 **Environments:** on-premises, virtualized (Hyper-V/VMware), and cloud (Azure, AWS, GCP).
@@ -413,27 +409,52 @@ flyway -locations=filesystem:sql -baselineOnMigrate=true migrate
 > **Coexistence tips:** Run mixed-version AGs only for migration windows; align client drivers with server version; verify TLS and cipher suites per driver.
 
 ---
-
-## 26. References
-
-- Windows Server **2025 lifecycle** (dates, LTSC): https://learn.microsoft.com/en-us/lifecycle/products/windows-server-2025  
-- Windows Server **release health / GA**: https://learn.microsoft.com/en-us/windows/release-health/status-windows-server-2025  
-- **What’s new** in Windows Server 2025: https://learn.microsoft.com/en-us/windows-server/get-started/whats-new-windows-server-2025  
-- **Hotpatch** overview (Azure Arc/Azure Edition): https://learn.microsoft.com/en-us/windows-server/get-started/hotpatch  
-- **Cluster-Aware Updating (CAU)**: https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-aware-updating  
-- **Rolling OS cluster upgrade**: https://learn.microsoft.com/en-us/windows-server/failover-clustering/cluster-operating-system-rolling-upgrade  
-- gMSA overview: https://learn.microsoft.com/en-us/windows-server/identity/ad-ds/manage/group-managed-service-accounts/group-managed-service-accounts/group-managed-service-accounts-overview  
-- Register **SPN** for SQL Server Kerberos: https://learn.microsoft.com/en-us/sql/database-engine/configure-windows/register-a-service-principal-name-for-kerberos-connections
+[Back to top](#table-of-contents)
 
 ---
 
-### Appendix: Useful Tools
-
-- **Sysinternals**: Process Explorer, RAMMap, Procmon.  
-- **DiskSpd**: synthetic I/O load generation for storage validation.  
-- **Windows Admin Center**: unified admin portal; extensions for clustering.  
-- **PAL**: Performance Analysis of Logs (PerfMon).
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-*End of document.*
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
