@@ -1,4 +1,4 @@
-> **Next steps**: plug these modules into Airflow/Prefect jobs, wrap with CI (pytest), and enable secrets via your target cloud. Extend with migrations (Alembic/Flyway), metrics exporters, and SLO dashboards.
+
 
 # Running Databases on Kubernetes — Engineering Playbook
 *Stateful done right: storage, scheduling, security, and operators—without the foot-guns, storage you can trust, failovers you can rehearse, operations you can automate.*
@@ -47,12 +47,11 @@
 
 ---
 
-> **Note**: Badges remain at the top for quick scanning, but the former “Badge Strip” section was removed as requested. Each topic below includes at least one code example.
-
----
-
 ## 1. Purpose & Audience
-This portfolio targets senior DBAs/DBREs/DataOps tasked with designing, deploying, and operating databases and data services on Kubernetes. It emphasizes GitOps, security, observability, SLO discipline, and audited automation across environments (on‑prem, hybrid, and multi‑cloud).
+
+> **Next steps**: plug these modules into Airflow/Prefect jobs, wrap with CI (pytest), and enable secrets via your target cloud. Extend with migrations (Alembic/Flyway), metrics exporters, and SLO dashboards.
+
+This portfolio targets senior Database Engineers, DBAs, DBREs and DataOps tasked with designing, deploying, and operating databases and data services on Kubernetes. It emphasizes GitOps, security, observability, SLO discipline, and audited automation across environments (on‑prem, hybrid, and multi‑cloud).
 
 **Checklist**
 - Clarify ownership (DBA vs. Platform vs. Security).
