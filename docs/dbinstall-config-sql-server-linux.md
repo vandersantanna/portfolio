@@ -1,4 +1,7 @@
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
+
 # SQL Server 2022 on Linux - Red Hat and Ubuntu Installation Guide
+*From first package to production-ready SQL Server on RHEL & Ubuntu.*
 
 ---
 ## Table of Contents
