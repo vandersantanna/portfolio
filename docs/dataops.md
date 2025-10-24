@@ -1,8 +1,7 @@
 <small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-# DataOps Professional Portfolio — Full Edition
-
----
+# The DataOps Field Guide
+*From ingestion to governance—reliable, observable, automatable.*
 
 ## Table of Contents
 - [1. Executive Summary & Value Proposition](#1-executive-summary--value-proposition)
