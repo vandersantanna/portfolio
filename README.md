@@ -7,7 +7,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 
 ## 🎯 Core Expertise
 
-- **🛢️Relational Databases**  
+- **🗂️Relational Databases**  
   - Oracle (30+ years)  
   - SQL Server (30+ years)  
   - PostgreSQL (20+ years)  
@@ -34,7 +34,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 
 ## 📂 Portfolio Structure
 
-### 🧮 Database Administration (DBA)
+### 🛢️ Database Administration (DBA)
 - [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-oracle.md)
 - [SQL Server Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-sql-server-linux.md)
 - [SQL Server Windows](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-sql-server-windows.md)
@@ -55,7 +55,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 - [Docker](https://github.com/vandersantanna/portfolio/blob/main/docs/docker.md)
 - [Kubernates](https://github.com/vandersantanna/portfolio/blob/main/docs/kubernates.md)
 
-### ☁️ Cloud
+### ☁️☁️☁️ Cloud
 - [AWS](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-aws.md)
 - [Azure](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-azure.md)
 - [GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-gcp.md)
