@@ -20,8 +20,7 @@
 - [Runbooks & Playbooks](#runbooks--playbooks)
 - [Sample Case Studies](#sample-case-studies)
 - [Checklists](#checklists)
-- [Links](#links)
-- [Contact](#contact)
+
 
 ## Executive Summary
     Enterprise-grade delivery for mission-critical data platforms on Microsoft Azure. Focus on **HA/DR**, **security**, **performance**, and **cost-efficiency** via **automation (IaC + GitOps)** and actionable **observability**.
@@ -201,15 +200,53 @@ az keyvault secret set --vault-name kv-portfolio --name "db-password" --value "R
     - [ ] Access recertification completed
     - [ ] Cost/right-sizing review; storage lifecycle tuning
     - [ ] Patch baseline updated; known CVEs reviewed
-## Links
 
-- **Multi-Cloud Landing:** `/portfolio-cloud/cloud-portfolio.md`
-- **Other Clouds:**  
-  - OCI → `/portfolio-cloud/cloud/oci.md`  
-  - AWS → `/portfolio-cloud/cloud/aws.md`  
-  - Azure → `/portfolio-cloud/cloud/azure.md`  
-  - GCP → `/portfolio-cloud/cloud/gcp.md`  
+---
+[Back to top](#table-of-contents)
 
-## Contact
-Available for remote consulting, migrations, HA/DR readiness reviews, performance tuning, cost optimization, and reliability audits.  
-Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)
+---
+
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
