@@ -1636,6 +1636,8 @@ ORDER BY wait_time_ms DESC;
 
 ---
 ## Author & Maintainer
+![Vanderley Sant Anna](https://github.com/vandersantanna.png?size=96)
+
 **Vanderley Sant Anna** — Senior Database Engineer (DBE) / Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer  
 **Preferred name:** Vander  
 **Education:** 
@@ -1661,6 +1663,9 @@ ORDER BY wait_time_ms DESC;
   <small>All product names, logos, and brands are property of their respective owners. 
   Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
 </details>
+
+---
+
 
 ---
 
