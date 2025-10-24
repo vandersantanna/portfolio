@@ -3,7 +3,7 @@
 # Redis Performance Engineering Guide
 *From slowlog/latency doctor to client buffers & I/O threads—measure, optimize, verify.*
 
-## 📋 Table of Contents
+## 📋Table of Contents
 
 - [Overview](#overview)
 - [Tuning Objectives](#tuning-objectives)
