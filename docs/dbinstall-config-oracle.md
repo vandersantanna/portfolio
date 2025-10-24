@@ -2368,13 +2368,6 @@ sudo -u oracle crontab -l
 /etc/sysctl.conf
 ```
 
-### Support Resources
-
-- **Oracle Documentation**: [Oracle Database 19c Documentation](https://docs.oracle.com/en/database/oracle/oracle-database/19/)
-- **Oracle Support**: [My Oracle Support](https://support.oracle.com)
-- **Oracle Community**: [Oracle Community Forums](https://community.oracle.com)
-- **Oracle University**: [Oracle Training and Certification](https://university.oracle.com)
-
 This comprehensive guide provides a complete installation and configuration framework for Oracle Database 19c with high availability features including RAC and Data Guard. Regular monitoring, maintenance, and testing ensure optimal database performance and availability.
 
 [Back to top](#table-of-contents)
