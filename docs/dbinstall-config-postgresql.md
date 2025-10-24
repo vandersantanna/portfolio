@@ -51,6 +51,8 @@ This comprehensive guide covers PostgreSQL 16 installation and configuration acr
 - **Security Enhancements**: Enhanced authentication and authorization
 - **Monitoring Improvements**: Better statistics and logging
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## Linux Installations
@@ -191,6 +193,8 @@ postgres=# \q
 - **Log files**: `/var/log/postgresql/`
 - **Service name**: `postgresql`
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## Windows Server Installation
@@ -275,6 +279,8 @@ Get-Service postgresql-x64-16 | Format-List
 - **Authentication**: `C:\Program Files\PostgreSQL\16\data\pg_hba.conf`
 - **Data directory**: `C:\Program Files\PostgreSQL\16\data\`
 - **Log files**: `C:\Program Files\PostgreSQL\16\data\log\`
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -509,6 +515,8 @@ chmod +x cloud_sql_proxy
 # Connect to PostgreSQL
 psql -h 127.0.0.1 -U postgres -d postgres
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -776,6 +784,8 @@ CREATE EXTENSION IF NOT EXISTS btree_gin;
 CREATE EXTENSION IF NOT EXISTS btree_gist;
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## Security Hardening
@@ -873,6 +883,8 @@ sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address
 sudo firewall-cmd --reload
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## Performance Tuning
@@ -967,6 +979,8 @@ SELECT
 FROM pg_stat_user_tables
 ORDER BY last_autovacuum DESC NULLS LAST;
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1147,6 +1161,8 @@ else
     fi
 fi
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1356,6 +1372,8 @@ sudo -u postgres /usr/pgsql-16/bin/pg_ctl -D $TEST_RESTORE_DIR stop
 # Cleanup
 rm -rf $TEST_RESTORE_DIR
 ```
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1677,6 +1695,8 @@ SELECT pg_reload_conf();
 EOF
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## Troubleshooting
@@ -1919,3 +1939,19 @@ psql -c "DROP DATABASE old_database;"
 - [ ] Analyze query performance trends
 - [ ] Update table statistics manually if needed
 - [ ] Check for PostgreSQL updates# PostgreSQL Installation and Configuration Guide
+---
+
+[Back to top](#table-of-contents)
+
+---
+
+**[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+
+---
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
+- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
