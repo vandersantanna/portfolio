@@ -1,4 +1,4 @@
-# 🐬 MySQL Installation and Configuration Guide 
+# 🐬 MySQL Installation and Configuration Guide <img src="https://www.mysql.com/favicon.ico" alt="MySQL" height="24" style="vertical-align:middle;margin-right:8px;">
 
 *Complete installation and configuration guide for MySQL 8.0 across multiple platforms*
 
