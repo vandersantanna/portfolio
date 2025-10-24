@@ -1,14 +1,7 @@
-# 🚀 Complete MySQL Performance Tuning Guide
-*Database Performance Optimization - Professional Portfolio*
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-[![MySQL](https://img.shields.io/badge/-MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)](https://www.mysql.com/)
-[![MariaDB](https://img.shields.io/badge/-MariaDB-003545?style=flat-square&logo=mariadb&logoColor=white)](https://mariadb.org/)
-[![Percona](https://img.shields.io/badge/-Percona-FF6600?style=flat-square&logo=percona&logoColor=white)](https://www.percona.com/)
-[![AWS](https://img.shields.io/badge/-AWS%20RDS-232F3E?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/rds/)
-[![Azure](https://img.shields.io/badge/-Azure%20MySQL-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/services/mysql/)
-[![GCP](https://img.shields.io/badge/-Cloud%20SQL-4285F4?style=flat-square&logo=google-cloud&logoColor=white)](https://cloud.google.com/sql/)
-
----
+# 🚀 MySQL Performance Engineering Guide
+*From parameters and indexing to workload baselines—measurable, Slow Query Log, and Performance Schema—diagnose, optimize, verify.*
 
 ## 📋 Table of Contents
 
@@ -26,7 +19,6 @@
 - [MySQL Forks](#-mysql-forks)
 - [Tuning Tools](#-tuning-tools)
 - [Real Examples](#-real-optimization-examples)
-- [References](#-references)
 
 ---
 
@@ -36,6 +28,7 @@ This comprehensive guide presents methodologies, techniques, and best practices 
 
 **Target Audience:** DBAs, Developers, Data Engineers, and DataOps professionals.
 
+[Back to top](#table-of-contents)
 ---
 
 ## 🎯 Tuning Objectives
@@ -71,6 +64,7 @@ graph TD
     E --> E1[Connection Reuse]
     E --> E2[Pool Optimization]
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -109,6 +103,7 @@ SHOW GRANTS FOR 'tuning_analyst'@'%';
 SELECT COUNT(*) FROM information_schema.tables;
 SELECT COUNT(*) FROM performance_schema.events_statements_summary_by_digest;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -167,6 +162,7 @@ slow_query_log_file = /var/log/mysql/slow.log
 long_query_time = 1
 log_queries_not_using_indexes = 1
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -230,6 +226,7 @@ graph LR
     style F fill:#90EE90
     style G fill:#FFB6C1
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -357,6 +354,8 @@ LIMIT 15;
 ```
 
 **How to use:** Queries with high percentage of disk temporary tables (pct_disk_tmp > 25%) need optimization or increase in `tmp_table_size`.
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -491,6 +490,7 @@ graph TD
     style D fill:#DDA0DD
     style E fill:#F0E68C
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -574,6 +574,7 @@ SELECT * FROM sales_data
 WHERE sale_date BETWEEN '2024-01-01' AND '2024-12-31';
 -- Accesses only p2024 partition
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -624,6 +625,7 @@ if (( $(echo "$BUFFER_HIT < 90" | bc -l) )); then
     # Send notification (Slack, email, etc.)
 fi
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -726,6 +728,7 @@ echo noop > /sys/block/nvme0n1/queue/scheduler
 echo 'mysql soft nofile 65535' >> /etc/security/limits.conf
 echo 'mysql hard nofile 65535' >> /etc/security/limits.conf
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -926,6 +929,7 @@ def create_custom_metric():
         name=project_name, metric_descriptor=descriptor
     )
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1058,6 +1062,7 @@ pt-table-checksum h=master --replicate=percona.checksums
 # PMM (Percona Monitoring and Management)
 pmm-admin add mysql mysql-main --host=localhost --port=3306
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1092,6 +1097,8 @@ pmm-admin add mysql mysql-main --host=localhost --port=3306
 | Amazon RDS Performance Insights | Cloud | AWS RDS | AWS native analysis |
 | Azure Database Insights | Cloud | Azure MySQL | Azure native analysis |
 | Google Cloud SQL Insights | Cloud | Cloud SQL | GCP native analysis |
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1351,81 +1358,53 @@ FROM performance_schema.events_statements_summary_by_digest
 ORDER BY sum_timer_wait DESC 
 LIMIT 10;
 ```
+---
+[Back to top](#table-of-contents)
 
 ---
 
-## 📚 References
-
-### Official Documentation
-- [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/) - Complete MySQL documentation
-- [MariaDB Knowledge Base](https://mariadb.com/kb/en/) - MariaDB documentation
-- [Percona Documentation](https://docs.percona.com/) - Percona Server guides
-
-### Recommended Books
-- **"High Performance MySQL"** - Baron Schwartz, Peter Zaitsev
-- **"MySQL Troubleshooting"** - Sveta Smirnova
-- **"Learning MySQL"** - Seyed Tahaghoghi, Hugh Williams
-- **"MySQL Cookbook"** - Paul DuBois
-
-### Online Tools
-- [MySQL Configuration Wizard](https://tools.percona.com/wizard) - Configuration generator
-- [MySQL Index Advisor](https://www.mysql.com/products/enterprise/advisor.html) - Index recommendations
-- [pt-online-schema-change](https://docs.percona.com/percona-toolkit/pt-online-schema-change.html) - DDL without downtime
-
-### Blogs and Resources
-- [MySQL Performance Blog](https://www.percona.com/blog/) - Percona Team
-- [Planet MySQL](https://planet.mysql.com/) - MySQL blog aggregator
-- [MySQL Server Team Blog](https://mysqlserverteam.com/) - Official MySQL team
-
-### Community
-- [MySQL Forums](https://forums.mysql.com/) - Official forums
-- [Reddit r/mysql](https://reddit.com/r/mysql) - Community discussions
-- [Stack Overflow - MySQL](https://stackoverflow.com/questions/tagged/mysql) - Q&A
-
-### Online Courses
-- **MySQL DBA Certification** - Oracle University
-- **MySQL for Developers** - PlanetScale
-- **Database Performance Tuning** - Coursera/edX
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-## 👨‍💻 About the Author
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
 
-**Database Performance Tuning Specialist**
-- 30+ years of database administration experience
-- Certifications: Oracle OCP, MySQL Professional, AWS Database Specialty
-- Expert in MySQL, MariaDB, Percona Server
-- Experience in high availability and big data environments
+**Preferred name:** Vander  
 
-### Professional Contact
-- **LinkedIn:** [linkedin.com/in/your-profile](https://linkedin.com/in/your-profile)
-- **GitHub:** [github.com/your-username](https://github.com/your-username)
-- **Email:** your.email@example.com
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
 
-### Related Projects
-- 🔧 [mysql-tuning-scripts](https://github.com/username/mysql-tuning-scripts) - Analysis and optimization scripts
-- 📊 [mysql-monitoring-dashboard](https://github.com/username/mysql-monitoring) - Grafana dashboards
-- 🛠️ [mysql-best-practices](https://github.com/username/mysql-practices) - Guides and templates
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
 
----
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
 
-## 📄 License and Usage
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
 
-This guide is available under **MIT License**. You can:
-- ✅ Use commercially
-- ✅ Modify and adapt
-- ✅ Distribute
-- ✅ Use in private projects
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
 
-**Attribution:** Please mention the original author when using this material.
+<details>
+  <summary><strong>Trademarks</strong></summary>
 
----
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
 
-*Last updated: December 2024*  
-*Version: 2.1.0*
-
-[![Stars](https://img.shields.io/github/stars/username/mysql-tuning-guide?style=social)](https://github.com/username/mysql-tuning-guide)
-[![Forks](https://img.shields.io/github/forks/username/mysql-tuning-guide?style=social)](https://github.com/username/mysql-tuning-guide)
-[![Issues](https://img.shields.io/github/issues/username/mysql-tuning-guide)](https://github.com/username/mysql-tuning-guide/issues)
-
-⭐ **If this guide was helpful, please consider starring the repository!**
