@@ -68,8 +68,6 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 - [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-mysql.md)
 - [MongoDB](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-mongodb.md)
 - [Redis](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-redis.md)
-- [SQL Tuning & Query Optimization](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-sql.md)
-
 
 ### 🤖 Automation
 - [Python](https://github.com/vandersantanna/portfolio/blob/main/docs/automation-python.md)
