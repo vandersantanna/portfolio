@@ -27,6 +27,8 @@ Microsoft SQL Server is a relational database management system developed by Mic
 - SQL Server Express (Free edition)
 - SQL Server Developer (Free for development)
 
+[Back to top](#table-of-contents)
+
 ## Prerequisites
 
 ### System Requirements
@@ -47,6 +49,8 @@ Microsoft SQL Server is a relational database management system developed by Mic
 - SUSE Linux Enterprise Server v12 SP2+
 - Ubuntu 16.04+ LTS
 - Docker Engine 1.8+
+
+[Back to top](#table-of-contents)
 
 ## Installation Methods
 
@@ -135,6 +139,8 @@ Setup.exe /Q /IACCEPTSQLSERVERLICENSETERMS /ACTION=Install ^
 /SQLSYSADMINACCOUNTS="Domain\User"  # Admin accounts
 ```
 
+[Back to top](#table-of-contents)
+
 ## Linux Installation
 
 ### Red Hat/CentOS Installation
@@ -199,6 +205,8 @@ echo 'export PATH="$PATH:/opt/mssql-tools/bin"' >> ~/.bashrc
 source ~/.bashrc
 ```
 
+[Back to top](#table-of-contents)
+
 ## Docker Installation
 
 ### Pull and Run SQL Server Container
@@ -257,6 +265,7 @@ docker-compose up -d
 # Stop services
 docker-compose down
 ```
+[Back to top](#table-of-contents)
 
 ## SQL Server Management Studio (SSMS)
 
@@ -291,6 +300,8 @@ sqlcmd -S localhost -U sa -P "YourPassword123!"
 # Exit
 1> EXIT
 ```
+
+[Back to top](#table-of-contents)
 
 ## Initial Configuration
 
@@ -341,6 +352,8 @@ EXEC xp_instance_regwrite
     REG_SZ, 
     N'C:\Logs\';
 ```
+
+[Back to top](#table-of-contents)
 
 ## Security Configuration
 
@@ -411,6 +424,8 @@ $tcp = Get-WmiObject -Namespace "root\Microsoft\SqlServer\ComputerManagement15" 
        -Filter "InstanceName='$instance' and ProtocolName='Tcp'"
 $tcp.SetEnable()
 ```
+
+[Back to top](#table-of-contents)
 
 ## Database Creation
 
@@ -498,6 +513,7 @@ INSERT INTO Employees (FirstName, LastName, Email, HireDate, Salary, DepartmentI
 ('Mike', 'Johnson', 'mike.johnson@company.com', '2023-03-10', 80000.00, 2),
 ('Sarah', 'Wilson', 'sarah.wilson@company.com', '2023-04-05', 70000.00, 4);
 ```
+[Back to top](#table-of-contents)
 
 ## Connection Testing
 
@@ -539,6 +555,8 @@ Server=server_name,1433;Database=database_name;User Id=username;Password=passwor
 // With encryption
 "Server=localhost;Database=CompanyDB;User Id=sa;Password=YourPassword123!;Encrypt=true;TrustServerCertificate=true;"
 ```
+
+[Back to top](#table-of-contents)
 
 ## Performance Optimization
 
@@ -587,6 +605,8 @@ UPDATE STATISTICS Departments;
 -- Recompile stored procedures if needed
 EXEC sp_recompile 'Employees';
 ```
+
+[Back to top](#table-of-contents)
 
 ## Backup and Recovery
 
@@ -640,6 +660,8 @@ WITH MOVE 'CompanyDB' TO 'C:\Data\CompanyDB_Restored.mdf',
      REPLACE;
 ```
 
+[Back to top](#table-of-contents)
+
 ## Monitoring and Maintenance
 
 ### System Monitoring Queries
@@ -690,6 +712,8 @@ DBCC CHECKDB('CompanyDB') WITH NO_INFOMSGS;
 -- Shrink database files if needed (use carefully)
 DBCC SHRINKDATABASE('CompanyDB', 10);
 ```
+
+[Back to top](#table-of-contents)
 
 ## Troubleshooting
 
@@ -777,3 +801,20 @@ FROM sys.databases;
 ## Conclusion
 
 This guide provides a comprehensive overview of SQL Server installation and configuration across multiple platforms. Regular maintenance, monitoring, and security updates are essential for optimal performance and security. Always test configurations in a development environment before applying them to production systems.
+
+---
+
+[Back to top](#table-of-contents)
+
+---
+
+**[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+
+---
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
+- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
+- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
