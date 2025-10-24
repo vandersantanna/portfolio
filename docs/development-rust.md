@@ -1,9 +1,7 @@
-# Professional Portfolio — Rust for Data Platforms
-**DBA • DBRE • DataOps • SRE • Data Engineering • Data Science**
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-> A production-oriented **Rust** cookbook for database connectivity, cloud integrations, performance, reliability, and operational patterns. Includes end‑to‑end examples for PostgreSQL, MySQL, SQLite, SQL Server, Oracle, MongoDB, Redis, IBM DB2 (via ODBC), plus AWS, Azure, GCP, and OCI.
-
----
+# Rust for Data Infrastructure
+*Safe concurrency, low-latency I/O, and production-grade ops for DBE/DBRE/DBA/DataOps.*
 
 ## Table of Contents
 
@@ -45,6 +43,9 @@
 ---
 
 ## 1. Executive Summary & Positioning
+
+> A production-oriented **Rust** cookbook for database connectivity, cloud integrations, performance, reliability, and operational patterns. Includes end‑to‑end examples for PostgreSQL, MySQL, SQLite, SQL Server, Oracle, MongoDB, Redis, IBM DB2 (via ODBC), plus AWS, Azure, GCP, and OCI.
+
 Rust brings **predictable performance**, **memory safety**, and **low-latency I/O** to data‑intensive systems. It fits roles across DBA/DBRE/DataOps/SRE/Data Eng/DS when you need:
 - High‑throughput ETL/ELT, CDC consumers, and near‑real‑time services.
 - Strong safety guarantees for long‑running daemons and infra tooling.
@@ -832,7 +833,50 @@ async fn main() {
 - For SQLx compile‑time checks without live DB, use `SQLX_OFFLINE=true` with `sqlx-data.json`.
 
 ---
-
-> Use this as a starting point for Rust‑based data services and connectors. Extend with your org’s conventions (authN/z, secret stores, SLO dashboards, and runbooks).
+[Back to top](#table-of-contents)
 
 ---
+
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
