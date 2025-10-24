@@ -1,14 +1,5 @@
 # SQL Server 2022 on Linux - Red Hat and Ubuntu Installation Guide
 
-![SQL Server 2022](https://img.shields.io/badge/SQL%20Server-2022-CC2927?logo=microsoftsqlserver&logoColor=white)
-![Linux](https://img.shields.io/badge/OS-Linux-333333?logo=linux&logoColor=white)
-![RHEL 9](https://img.shields.io/badge/RHEL-9-EE0000?logo=redhat&logoColor=white)
-![Ubuntu 24.04 LTS](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?logo=ubuntu&logoColor=white)
-![Ubuntu 22.04 LTS](https://img.shields.io/badge/Ubuntu-22.04%20LTS-E95420?logo=ubuntu&logoColor=white)
-![Shell: Bash](https://img.shields.io/badge/Shell-Bash-4EAA25?logo=gnubash&logoColor=white)
-![Shell: PowerShell](https://img.shields.io/badge/Shell-PowerShell-5391FE?logo=powershell&logoColor=white)
----
-
 ---
 ## Table of Contents
 - [Overview](#overview)
@@ -1645,4 +1636,9 @@ ORDER BY wait_time_ms DESC;
 - **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
 - **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
 - **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
+---
+## Trademarks
+All product names, logos, and brands are property of their respective owners.
+Use of these names is for identification purposes only and does not imply endorsement or affiliation.
+
 ---
