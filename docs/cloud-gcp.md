@@ -1,7 +1,7 @@
 <small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-# Google Cloud Platform (GCP) — Data Platform & DBRE Portfolio
-
+# Google Cloud Database Engineering Manual
+*SLO-driven reliability for Cloud SQL, AlloyDB, and Spanner—Terraform + WIF, HA/DR blueprints, and audit-ready ops.*
 
 ## Table of Contents
 - [Executive Summary](#executive-summary)
