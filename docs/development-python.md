@@ -1,9 +1,7 @@
-# Professional Portfolio — DBA • DBRE • DataOps • SRE • Data Engineer • Data Scientist  
-**Python Connectors, Cloud Integrations, and Operational Patterns**
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-> Curated, production-grade cookbook of Python code examples to connect with **Oracle, SQL Server, PostgreSQL, MySQL, MongoDB, Redis, IBM DB2, SQLite**, plus **AWS, Azure, GCP, OCI** integrations. Includes reliability, security, testing, CI/CD, and ops playbooks.
-
----
+# Professional Portfolio — Database Engineer • DBA • DBRE • DataOps
+*Python Connectors, Cloud Integrations, and Operational Patterns*
 
 ## Table of Contents
 
@@ -45,7 +43,10 @@
 ---
 
 ## 1. Executive Summary & Positioning
-- **DBA/DBRE**: Availability, performance, automation, HA/DR, robust backups and recoverability, schema management, capacity planning, secure-by-default.
+
+> Curated, production-grade cookbook of Python code examples to connect with **Oracle, SQL Server, PostgreSQL, MySQL, MongoDB, Redis, IBM DB2, SQLite**, plus **AWS, Azure, GCP, OCI** integrations. Includes reliability, security, testing, CI/CD, and ops playbooks.
+
+- **DBE/DBA/DBRE**: Availability, performance, automation, HA/DR, robust backups and recoverability, schema management, capacity planning, secure-by-default.
 - **DataOps**: Reproducible pipelines, CI/CD for data, observability, quality gates, lineage, IaC/PaC, change governance.
 - **SRE**: SLOs, error budgets, incident response, postmortems, chaos engineering, reliability tooling.
 - **Data Engineering**: Ingestion/CDC, batch/stream, transformations, modeling, optimization, scalable storage.
@@ -960,8 +961,52 @@ def healthz():
 - **Auth**: expired AAD/IAM tokens → refresh flow, short TTLs by design.
 - **Timeouts**: add connect/read timeouts; backoff retries; circuit breaker.
 
----
-
-> **Next steps**: plug these modules into Airflow/Prefect jobs, wrap with CI (pytest), and enable secrets via your target cloud. Extend with migrations (Alembic/Flyway), metrics exporters, and SLO dashboards.
+[Back to top](#table-of-contents)
 
 ---
+
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
