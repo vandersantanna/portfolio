@@ -17,7 +17,6 @@
 - [💼 Practical Cases](#-practical-cases)
 - [📊 Automated Monitoring](#-automated-monitoring)
 - [🛠️ Management Tools](#️-management-tools)
-- [📚 References](#-references)
 
 ---
 
