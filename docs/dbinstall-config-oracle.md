@@ -2387,7 +2387,7 @@ This comprehensive guide provides a complete installation and configuration fram
     </td>
     <td valign="top">
       <strong>Vanderley Sant Anna</strong><br>
-      Senior Database Engineer (DBE) / Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
     </td>
   </tr>
 </table>
