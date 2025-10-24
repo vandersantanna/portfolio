@@ -1,13 +1,8 @@
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
+
 # MySQL Installation and Configuration Guide
 
 *Complete installation and configuration guide for MySQL 8.0 across multiple platforms*
-
-![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![Windows](https://img.shields.io/badge/Windows%20Server-0078D6?style=for-the-badge&logo=windows&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Azure](https://img.shields.io/badge/Azure-0078D4?style=for-the-badge&logo=microsoft-azure&logoColor=white)
-![GCP](https://img.shields.io/badge/GCP-4285F4?style=for-the-badge&logo=google-cloud&logoColor=white)
 
 ---
 
@@ -1280,69 +1275,51 @@ mysql -u root -p -e "PURGE BINARY LOGS TO 'mysql-bin.000010';"
 
 ---
 
-## 📚 Additional Resources
-
-### Official Documentation
-
-- [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
-- [MySQL Installation Guide](https://dev.mysql.com/doc/refman/8.0/en/installing.html)
-- [MySQL Security Guide](https://dev.mysql.com/doc/refman/8.0/en/security.html)
-- [MySQL Performance Tuning](https://dev.mysql.com/doc/refman/8.0/en/optimization.html)
-
-### Cloud Provider Documentation
-
-- [AWS RDS for MySQL](https://docs.aws.amazon.com/rds/latest/userguide/CHAP_MySQL.html)
-- [Azure Database for MySQL](https://docs.microsoft.com/en-us/azure/mysql/)
-- [Google Cloud SQL for MySQL](https://cloud.google.com/sql/docs/mysql)
-
-### Tools and Utilities
-
-- [MySQL Workbench](https://dev.mysql.com/downloads/workbench/) - GUI administration tool
-- [Percona Toolkit](https://www.percona.com/software/database-tools/percona-toolkit) - MySQL utilities
-- [mysqldumper](https://github.com/mysqldumper/mysqldumper) - Web-based MySQL backup
-- [phpMyAdmin](https://www.phpmyadmin.net/) - Web-based MySQL administration
-
-### Monitoring Solutions
-
-- [Percona Monitoring and Management (PMM)](https://www.percona.com/software/database-tools/percona-monitoring-and-management)
-- [MySQL Enterprise Monitor](https://www.mysql.com/products/enterprise/monitor.html)
-- [Zabbix MySQL Templates](https://www.zabbix.com/integrations/mysql)
-- [Nagios MySQL Plugins](https://exchange.nagios.org/directory/Plugins/Databases/MySQL)
-
----
-
-## 🤝 Contributing
-
-Contributions to improve this guide are welcome! Please:
-
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Make your changes
-4. Add tests if applicable
-5. Commit your changes (`git commit -am 'Add new feature'`)
-6. Push to the branch (`git push origin feature/improvement`)
-7. Create a Pull Request
-
----
-
-## 📄 License
-
-This guide is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
----
-
 [Back to top](#table-of-contents)
 
 ---
 
-**[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
 ## 📫 Contact
 - **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
 - **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
-- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)  
-- **Location & Timezone:** Blumenau, SC, Brazil — GMT-3
-- **Availability:** Remote — Americas & Europe • Contract (B2B / Independent Contractor) — also open to full-time remote  
----
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
