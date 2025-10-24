@@ -1,6 +1,7 @@
 <small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-# PowerShell Automation Portfolio — SQL Server DBA/DBRE (+ DataOps)
+# SQL Server Platform Automation with PowerShell
+*Hardened runbooks, drift control, and performance at scale.*
 
 ## Table of Contents
 
