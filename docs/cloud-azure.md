@@ -1,9 +1,7 @@
-# Microsoft Azure — Data Platform & DBRE Portfolio
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-**Vander Sant Anna — Senior DBA / DBRE — Remote — US/Canada/EU/Latin America time zones**  
-Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn: [linkedin.com/in/vandersantanna](https://linkedin.com/in/vandersantanna) • GitHub: [github.com/vandersantanna](https://github.com/vandersantanna)
-
-> Last updated: October 14, 2025
+#Azure Database Engineering Manual
+*Practical patterns for Microsoft Azure—HA/DR, Terraform + OIDC, observability, and SLOs.*
 
 ## Table of Contents
 - [Executive Summary](#executive-summary)
@@ -24,6 +22,7 @@ Email: [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com) • LinkedIn:
 - [Checklists](#checklists)
 - [Links](#links)
 - [Contact](#contact)
+
 ## Executive Summary
     Enterprise-grade delivery for mission-critical data platforms on Microsoft Azure. Focus on **HA/DR**, **security**, **performance**, and **cost-efficiency** via **automation (IaC + GitOps)** and actionable **observability**.
 
