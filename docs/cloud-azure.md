@@ -1,6 +1,6 @@
 <small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-#Azure Database Engineering Manual
+# Azure Database Engineering Manual
 *Practical patterns for Microsoft Azure—HA/DR, Terraform + OIDC, observability, and SLOs.*
 
 ## Table of Contents
