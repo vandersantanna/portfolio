@@ -1,15 +1,7 @@
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
+
 # 🔶 Oracle Database Performance Tuning - Professional Portfolio
 *Advanced Database Performance Optimization & Cloud Administration*
-
-[![Oracle Database](https://img.shields.io/badge/-Oracle%20Database-F80000?style=flat-square&logo=oracle&logoColor=white)](https://www.oracle.com/database/)
-[![AWS RDS](https://img.shields.io/badge/-AWS%20RDS-FF9900?style=flat-square&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/rds/)
-[![Oracle Cloud](https://img.shields.io/badge/-Oracle%20Cloud-F80000?style=flat-square&logo=oracle&logoColor=white)](https://cloud.oracle.com/)
-[![Azure Database](https://img.shields.io/badge/-Azure%20Database-0078D4?style=flat-square&logo=microsoft-azure&logoColor=white)](https://azure.microsoft.com/)
-[![Google Cloud SQL](https://img.shields.io/badge/-Google%20Cloud-4285F4?style=flat-square&logo=google-cloud&logoColor=white)](https://cloud.google.com/sql/)
-[![Terraform](https://img.shields.io/badge/-Terraform-623CE4?style=flat-square&logo=terraform&logoColor=white)](https://terraform.io/)
-[![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?style=flat-square&logo=kubernetes&logoColor=white)](https://kubernetes.io/)
-
-> **Expert-level Oracle Database performance optimization for enterprise-scale production environments**, including advanced tuning methodologies, cloud-native database administration, Infrastructure as Code (IaC), and comprehensive monitoring strategies across on-premise and multi-cloud platforms.
 
 ---
 
@@ -30,7 +22,6 @@
 - [📊 Performance Monitoring Tools](#-performance-monitoring-tools)
 - [🎯 Best Practices](#-best-practices)
 - [📚 References & Resources](#-references--resources)
-- [👨‍💼 Professional Profile](#-professional-profile)
 
 ---
 
@@ -2140,149 +2131,53 @@ ORDER BY usage_pct DESC;
 - **Reddit r/Oracle**: https://www.reddit.com/r/oracle/
 - **Oracle User Groups**: https://www.oracle.com/corporate/citizenship/oracle-user-groups/
 - **LinkedIn Oracle Groups**: https://www.linkedin.com/groups/
+---
+[Back to top](#table-of-contents)
 
 ---
 
-## 👨‍💼 Professional Profile
-
-### About the Author
-
-**Senior Database Administrator & Cloud Architect**  
-*15+ Years of Oracle Database Expertise*
-
-### Professional Experience & Expertise
-
-#### Core Competencies
-- **Database Administration**: Oracle 11g through 23c, RAC, Data Guard, GoldenGate
-- **Cloud Platforms**: Oracle Cloud Infrastructure (OCI), AWS RDS, Azure Database, Google Cloud SQL
-- **Performance Tuning**: SQL optimization, index strategies, system architecture
-- **High Availability**: RAC clusters, Active Data Guard, automatic failover solutions
-- **Security & Compliance**: TDE, VPD, audit mechanisms, GDPR/HIPAA compliance
-- **Automation & DevOps**: Terraform, Ansible, CI/CD pipelines, Infrastructure as Code
-
-#### Professional Achievements
-
-**Performance Optimization Results**:
-- Achieved 70-95% performance improvements across 200+ production databases
-- Reduced infrastructure costs by 40-60% through cloud optimization strategies
-- Implemented 99.99% availability solutions for mission-critical systems
-- Successfully migrated 50+ TB of data to cloud platforms with zero downtime
-
-**Industry Experience**:
-- **Financial Services**: Investment banking, trading systems, risk management platforms
-- **Healthcare**: Hospital management systems, patient data platforms, HIPAA compliance
-- **E-commerce**: High-volume transaction systems, real-time analytics platforms
-- **Manufacturing**: ERP systems, supply chain management, IoT data processing
-
-**Team Leadership**:
-- Led database teams of 5-15 engineers across multiple geographic locations
-- Mentored 25+ junior DBAs and data engineers
-- Established database standards and best practices for enterprise organizations
-- Designed and implemented disaster recovery procedures for Fortune 500 companies
-
-#### Certifications & Training
-
-**Oracle Certifications**:
-- Oracle Database 19c Administrator Certified Professional
-- Oracle Database Performance and Tuning Certified Expert
-- Oracle Cloud Infrastructure Architect Associate
-- Oracle Real Application Clusters (RAC) Specialist
-
-**Cloud Certifications**:
-- AWS Certified Database - Specialty
-- Microsoft Azure Database Administrator Associate
-- Google Cloud Professional Database Engineer
-- Oracle Cloud Infrastructure Database Specialist
-
-**Additional Qualifications**:
-- Certified Information Systems Security Professional (CISSP)
-- ITIL Foundation Certification
-- Project Management Professional (PMP)
-
-#### Technical Skills Matrix
-
-| **Technology** | **Experience Level** | **Years** |
-|----------------|---------------------|-----------|
-| Oracle Database Administration | Expert | 15+ |
-| SQL Performance Tuning | Expert | 15+ |
-| Oracle RAC & Data Guard | Expert | 12+ |
-| Oracle Cloud Infrastructure | Advanced | 5+ |
-| AWS RDS & Aurora | Advanced | 8+ |
-| Azure Database Services | Advanced | 6+ |
-| Google Cloud SQL | Intermediate | 4+ |
-| Terraform & Infrastructure as Code | Advanced | 5+ |
-| Python & Shell Scripting | Advanced | 10+ |
-| Docker & Kubernetes | Intermediate | 4+ |
-
-#### Professional Projects Portfolio
-
-**Project Highlights**:
-
-1. **Global Bank Database Modernization**
-   - Migrated 200TB trading platform from on-premise to OCI Exadata Cloud
-   - Achieved 99.995% uptime with 40% cost reduction
-   - Implemented real-time replication across 3 continents
-
-2. **Healthcare System Cloud Migration**
-   - Designed HIPAA-compliant database architecture on AWS
-   - Implemented row-level security for 50M+ patient records
-   - Achieved sub-second response times for critical patient lookups
-
-3. **E-commerce Platform Optimization**
-   - Optimized Oracle database handling 100M+ daily transactions
-   - Reduced page load times from 8 seconds to 200ms
-   - Implemented auto-scaling solutions supporting 10x traffic spikes
-
-#### Contact Information
-
-📧 **Professional Email**: [database.expert@email.com]  
-🔗 **LinkedIn**: [linkedin.com/in/oracle-database-expert]  
-🐙 **GitHub**: [github.com/oracle-performance-expert]  
-📝 **Technical Blog**: [oracle-performance-blog.com]  
-🎤 **Speaking**: Available for conferences and technical presentations  
-
-#### Professional Services
-
-**Consulting Services Available**:
-- Database performance audits and optimization
-- Cloud migration strategy and implementation
-- High availability and disaster recovery design
-- Security assessment and compliance implementation
-- Team training and knowledge transfer
-
-**Client Testimonials**:
-*"Exceptional expertise in Oracle performance tuning. Achieved remarkable results that exceeded our expectations and delivered significant cost savings."* - CTO, Fortune 500 Financial Services
-
-*"Professional, knowledgeable, and results-driven. The database optimization project delivered measurable improvements that transformed our application performance."* - VP Engineering, Healthcare Technology
+**[🏠 Back to Main Portfolio](../README.md#top)**
 
 ---
 
-### 🏆 Portfolio Highlights
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
 
-This repository demonstrates comprehensive expertise in:
+**Preferred name:** Vander  
 
-✅ **Enterprise-Scale Database Administration**  
-✅ **Advanced Performance Tuning Methodologies**  
-✅ **Multi-Cloud Database Architecture**  
-✅ **Infrastructure as Code Implementation**  
-✅ **High Availability and Disaster Recovery**  
-✅ **Security and Compliance Best Practices**  
-✅ **Automation and DevOps Integration**  
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
 
----
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
 
-**Repository Statistics**:
-- **Lines of Code**: 5,000+ SQL and configuration examples
-- **Real-World Cases**: 3 detailed implementation studies
-- **Performance Queries**: 25+ production-ready monitoring scripts
-- **Cloud Platforms**: Complete coverage of OCI, AWS, Azure, GCP
-- **Documentation**: Comprehensive technical documentation and best practices
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
 
----
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
 
-*This portfolio represents a commitment to database excellence and continuous learning in the rapidly evolving landscape of database technologies and cloud platforms.*
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
 
-**Last Updated**: September 2025  
-**Oracle Database Versions**: 11g, 12c, 18c, 19c, 21c, 23c  
-**Cloud Platforms**: OCI, AWS, Azure, GCP  
-**Deployment Models**: On-premise, Hybrid, Multi-cloud
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
