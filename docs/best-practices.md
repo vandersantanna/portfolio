@@ -625,9 +625,6 @@ migrate:
 [Back to top](#table-of-contents)
 
 ---
-[Back to top](#table-of-contents)
-
----
 
 **[🏠 Back to Main Portfolio](../README.md#top)**
 
