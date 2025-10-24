@@ -61,6 +61,8 @@ FROM sys.dm_os_performance_counters
 WHERE counter_name = 'Batch Requests/sec';
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 🔐 Required Permissions
@@ -84,9 +86,9 @@ GRANT SELECT ON sys.dm_os_performance_counters TO [monitoring_user];
 -- Query Store permissions
 ALTER ROLE [db_datareader] ADD MEMBER [monitoring_user];
 ```
+[Back to top](#table-of-contents)
 
 ---
-
 ## 🔍 Performance Analysis
 
 ### Top Slow Queries Analysis
@@ -265,6 +267,8 @@ CROSS APPLY sys.dm_exec_sql_text(qs.sql_handle) as qt
 ORDER BY qs.total_logical_reads DESC;
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 📊 SQL Server Index Types
@@ -376,6 +380,7 @@ WHERE CONTAINS(ProductName, '"SQL Server" OR "Database"');
 -- - Supports linguistic searches
 -- - Regular population schedule needed
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -477,6 +482,7 @@ SELECT
     @RecommendedMAXDOP
 FROM sys.configurations WHERE name = 'max degree of parallelism';
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -603,6 +609,7 @@ END
 CLOSE index_cursor;
 DEALLOCATE index_cursor;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -732,6 +739,7 @@ SELECT
 FROM sys.dm_exec_sessions
 WHERE is_user_process = 1;
 ```
+[Back to top](#table-of-contents)
 
 ---
 
@@ -935,6 +943,8 @@ LEFT JOIN sys.availability_groups ag ON ar.group_id = ag.group_id
 ORDER BY ag.name, role_desc DESC;
 ```
 
+[Back to top](#table-of-contents)
+
 ---
 
 ## 💼 Practical Cases
@@ -1078,6 +1088,8 @@ ALTER DATABASE [HospitalDB] SET ENCRYPTION ON;
 - **Compliance**: Full audit trail and data encryption
 - **Performance**: Sub-second response for critical patient lookups
 - **Security**: Row-level access control implemented
+
+[Back to top](#table-of-contents)
 
 ---
 
@@ -1479,8 +1491,9 @@ EXEC dbo.sp_add_jobserver
     @job_name = N'Database Maintenance - Update Statistics';
 ```
 
----
+[Back to top](#table-of-contents)
 
+---
 ## 🛠️ Management Tools
 
 | **Tool** | **Purpose** | **Platform** | **Free/Paid** |
