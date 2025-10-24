@@ -2396,7 +2396,15 @@ This comprehensive guide provides a complete installation and configuration fram
 [Back to top](#table-of-contents)
 
 ---
+[← Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)
+---
 **[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
+---
+<p align="center"><a href="https://github.com/vandersantanna/portfolio/blob/main/README.md">← Back to Main Portfolio</a></p>
+---
+[![Back to Main Portfolio](https://img.shields.io/badge/Back_to_Main_Portfolio-000?logo=github&logoColor=white)](https://github.com/vandersantanna/portfolio/blob/main/README.md)
+---
+[🏠 Portfolio Home](https://github.com/vandersantanna/portfolio/blob/main/README.md) › This Page
 ---
 ## 📫 Contact
 - **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
