@@ -1627,15 +1627,6 @@ WHERE waiting_tasks_count > 0
 ORDER BY wait_time_ms DESC;
 ```
 ---
-
-[Back to top](#table-of-contents)
-
----
-
-**[🏠 Back to Main Portfolio](https://github.com/vandersantanna/portfolio/blob/main/README.md)**
-
----
----
 [Back to top](#table-of-contents)
 
 ---
@@ -1684,10 +1675,6 @@ ORDER BY wait_time_ms DESC;
   <small>All product names, logos, and brands are property of their respective owners. 
   Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
 </details>
-
----
-
-
 
 ---
 
