@@ -34,7 +34,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 
 ## 📂 Portfolio Structure
 
-### 🗄️ Database Administration (DBA)
+### 🧮 Database Administration (DBA)
 - [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-oracle.md)
 - [SQL Server Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-sql-server-linux.md)
 - [SQL Server Windows](https://github.com/vandersantanna/portfolio/blob/main/docs/dbinstall-config-sql-server-windows.md)
