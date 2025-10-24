@@ -1,18 +1,7 @@
+<small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
 # Linux for DBRE - Portfolio Guide
-
-*Linux Configuration Guide for DBA and DBRE*
-
-![RHEL 9](https://img.shields.io/badge/RHEL-9-EE0000?style=for-the-badge&logo=redhat&logoColor=white)
-![Ubuntu 24.04 LTS](https://img.shields.io/badge/Ubuntu-24.04%20LTS-E95420?style=for-the-badge&logo=ubuntu&logoColor=white)
-![Debian 12](https://img.shields.io/badge/Debian-12-A81D33?style=for-the-badge&logo=debian&logoColor=white)
-![Fedora](https://img.shields.io/badge/Fedora-294172?style=for-the-badge&logo=fedora&logoColor=white)
-![openSUSE](https://img.shields.io/badge/openSUSE-73BA25?style=for-the-badge&logo=opensuse&logoColor=white)
-![Oracle Linux 9](https://img.shields.io/badge/Oracle%20Linux-9-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![Rocky Linux 9](https://img.shields.io/badge/Rocky%20Linux-9-10B981?style=for-the-badge&logo=rockylinux&logoColor=white)
-![AlmaLinux 9](https://img.shields.io/badge/AlmaLinux-9-2E95EA?style=for-the-badge&logo=almalinux&logoColor=white)
-
----
+*Linux Configuration Guide for DBE, DBRE, DBA and DataOps*
 
 ## Table of Contents
 
@@ -1235,19 +1224,63 @@ echo "Escalation: DBA Manager"
 echo "=== Emergency Contacts ==="
 cat ~/on-call/contacts.txt
 ```
-
 ---
 
 ## Conclusion
 
 This guide provides essential Linux knowledge for Database Reliability Engineers managing production database environments on Red Hat Enterprise Linux. The commands and practices outlined here form the foundation for reliable database operations, efficient troubleshooting, and effective incident response.
 
-DBREs should regularly practice these commands, maintain up-to-date runbooks, and continuously improve automation to reduce manual intervention. Combining strong Linux fundamentals with database-specific expertise ensures high availability, optimal performance, and rapid recovery during incidents.
+DBEs, DBREs, DBAs and DataOps should regularly practice these commands, maintain up-to-date runbooks, and continuously improve automation to reduce manual intervention. Combining strong Linux fundamentals with database-specific expertise ensures high availability, optimal performance, and rapid recovery during incidents.
 
-**For questions or contributions, please refer to the repository issues section.**
+---
+[Back to top](#table-of-contents)
 
 ---
 
-**Repository:** [Your GitHub Profile]  
-**License:** MIT  
-**Last Updated:** October 2025
+**[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## Author & Maintainer
+<table>
+  <tr>
+    <td width="96" valign="top">
+      <img src="https://github.com/vandersantanna.png?size=160" alt="Vanderley Sant Anna" width="96" height="96">
+    </td>
+    <td valign="top">
+      <strong>Vanderley Sant Anna</strong><br>
+      Senior Database Engineer (DBE) / Senior Database Reliability Engineer (DBRE) / Senior DBA / DataOps Engineer
+    </td>
+  </tr>
+</table>
+
+**Preferred name:** Vander  
+
+**Education:**  
+- B.Sc. in Software Engineering — Centro Universitário de Maringá (UniCesumar) — *UniCesumar University Center*, Maringá, Brazil (2020)  
+- Postgraduate Specialization (Lato Sensu) in Software Project Engineering — Universidade do Sul de Santa Catarina (UNISUL) — *Southern Santa Catarina University*, Florianópolis, Brazil (2008)  
+- Technologist in Data Processing (*Tecnólogo em Processamento de Dados*) — Universidade do Estado de Santa Catarina (UDESC) — *Santa Catarina State University*, Joinville, Brazil (1995)  
+
+**Certifications:**  
+- Oracle OCP  
+- MongoDB University — M102: MongoDB for DBAs  
+- IBM Certified Database Associate — DB2 9 Fundamentals  
+
+**Location & Timezone:** Blumenau, SC, Brazil (UTC−3) • **Availability:** Remote (Americas & Europe)
+
+**Last Updated:** 2025-10-24 • **Status:** Actively maintained
+
+## 📫 Contact
+- **Email (primary):** [vandersantanna@gmail.com](mailto:vandersantanna@gmail.com)  
+- **LinkedIn:** [linkedin.com/in/vandersantanna](https://www.linkedin.com/in/vandersantanna)  
+- **GitHub:** [github.com/vandersantanna](https://github.com/vandersantanna)
+
+<details>
+  <summary><strong>Trademarks</strong></summary>
+
+  <small>All product names, logos, and brands are property of their respective owners. 
+  Use of these names is for identification purposes only and does not imply endorsement or affiliation.</small>
+</details>
+
+
+
