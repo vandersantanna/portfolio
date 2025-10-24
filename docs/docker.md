@@ -34,7 +34,7 @@
 - [27. Checklists (Security, Backup/DR, Perf, Observability)](#27-checklists-security-backupdr-perf-observability)
 - [28. FAQ & Anti-Patterns](#28-faq--anti-patterns)
 - [29. Roadmap & Next Steps](#29-roadmap--next-steps)
-- [30. Contact & Links](#30-contact--links)
+
 
 ---
 
@@ -690,16 +690,6 @@ Iterate from portable labs to production-grade orchestrations; add policy-as-cod
 1) Add OPA Gatekeeper policies for image provenance and resource limits.  
 2) Integrate disaster-recovery drills into CI (spin up restore envs per release).  
 3) Expand exporters coverage (Oracle, SQL Server, MongoDB) with standardized dashboards.
-
----
-
-## 30. Contact & Links
-Let’s talk about bringing these patterns to your environment, from quick wins to full-scale DBRE/DataOps transformations.
-
-**Examples**
-1) GitHub (portfolio & labs): `https://github.com/vandersantanna`  
-2) LinkedIn (networking): `https://linkedin.com/in/vandersantanna`  
-3) Email: `vandersantanna@gmail.com`
 
 ---
 
