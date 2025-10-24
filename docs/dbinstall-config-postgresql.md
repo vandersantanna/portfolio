@@ -1951,4 +1951,5 @@ psql -c "DROP DATABASE old_database;"
 ## Trademarks
 All product names, logos, and brands are property of their respective owners.
 Use of these names is for identification purposes only and does not imply endorsement or affiliation.
+
 ---
