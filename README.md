@@ -13,7 +13,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
   - PostgreSQL (20+ years)  
   - MySQL (20+ years)  
   
-- **NoSQL & Modern Data Stores**  
+- **📦NoSQL & Modern Data Stores**  
   - MongoDB  
   - Redis  
 
@@ -23,7 +23,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
   - Google Cloud (PostgreSQL, BigQuery, DataOps pipelines)  
   - Oracle Cloud (OCI, Autonomous Database)  
 
-- **Specialized Skills**  
+- **⚙️Specialized Skills**  
   - Advanced **SQL Tuning & Performance Optimization**  
   - **High Availability & Disaster Recovery** (Oracle RAC, Data Guard, AlwaysOn, Replication)  
   - **Automation & Scripting** with Python and Bash (monitoring, backups, CI/CD for databases)  
@@ -61,7 +61,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 - [GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-gcp.md)
 - [OCI](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-oci.md)
 
-### 🚀 SQL Tuning - Optimization Cases & Best Practices
+### 🔧 SQL Tuning - Optimization Cases & Best Practices
 - [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-oracle.md)
 - [SQL Server](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-sql-server.md)
 - [PostgreSQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-postgresql.md)
@@ -80,7 +80,7 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 - [Linux](https://github.com/vandersantanna/portfolio/blob/main/docs/linux.md)
 - [Windows Server](https://github.com/vandersantanna/portfolio/blob/main/docs/windows-server.md)
 
-### 🧮 Software Development
+### 💻 Software Development
 - [Git, GitHub, GitLab](https://github.com/vandersantanna/portfolio/blob/main/docs/git-github-gitlab.md)
 - [Python Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-python.md)
 - [Rust Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-rust.md)
