@@ -1,4 +1,4 @@
-#  <img src="https://www.postgresql.org/favicon.ico" alt="PostgreSQL" height="24" style="vertical-align:middle;margin-right:8px;"> PostgreSQL Installation and Configuration Guide
+#  PostgreSQL Installation and Configuration Guide
 
 *Complete installation and configuration guide for PostgreSQL 16 across multiple platforms*
 
