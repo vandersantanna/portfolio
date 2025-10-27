@@ -185,51 +185,31 @@ relevant to the theme.
 
 ### 1.1 Purpose & Audience
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 1.2 What “DBRE on AWS” Means
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 1.3 Portfolio Highlights & Outcomes
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 1.4 How to Navigate this Document
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -243,13 +223,8 @@ relevant to the theme.
 
 ### 2.1 Reference Architectures (Single-Region, Multi-AZ, Multi-Region)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -319,37 +294,22 @@ cur.close(); cnx.close()
 
 ### 2.2 Data Plane vs. Control Plane (AWS Services Map)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 2.3 Workload Taxonomy (OLTP, Analytics, Streaming, Caching)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 2.4 Reliability, Security, Cost as First-Class Concerns
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -415,13 +375,8 @@ relevant to the theme.
 
 ### 3.1 Multi-Account Strategy (Organizations, SCPs, Guardrails)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -477,25 +432,15 @@ cur.close(); cnx.close()
 
 ### 3.2 Networking (VPC, Subnets, TGW, PrivateLink, DX/VPN, IPv6)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 3.3 Identity & Access (IAM Roles, SSO, Break-Glass)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -551,13 +496,8 @@ cur.close(); cnx.close()
 
 ### 3.4 Encryption & Key Management (KMS, MRKs, Key Rotation)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -629,13 +569,8 @@ cur.close(); cnx.close()
 
 ### 3.5 Secrets & Parameters (Secrets Manager, Parameter Store)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -717,99 +652,59 @@ relevant to the theme.
 
 ### 4.1 Amazon Aurora (MySQL/PostgreSQL)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.2 Amazon RDS (PostgreSQL, MySQL, SQL Server, Oracle)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.3 Amazon DynamoDB (On-Demand, GSIs, DAX)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.4 Amazon ElastiCache (Redis/Memcached)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.5 Amazon OpenSearch Service
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.6 Amazon Redshift & Lakehouse Adjacent (Glue, Athena, Lake Formation)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.7 Document & Graph (DocumentDB, Neptune)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 4.8 Self-Managed on EC2/EKS (when & why)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -823,51 +718,31 @@ relevant to the theme.
 
 ### 5.1 SLIs & SLOs per Service (Latency, Availability, Durability)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 5.2 Error Budgets & Release Policies
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 5.3 Incident Management (On-Call, Tiers, Escalations)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 5.4 Postmortems & Continuous Improvement
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -881,13 +756,8 @@ relevant to the theme.
 
 ### 6.1 Metrics, Logs, Traces (CloudWatch, X-Ray, OTEL)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -959,13 +829,8 @@ cur.close(); cnx.close()
 
 ### 6.2 Dashboards & Alarms (CW Dashboards, AMG/Grafana)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1037,13 +902,8 @@ cur.close(); cnx.close()
 
 ### 6.3 Query Performance Telemetry (Aurora/RDS Performance Insights)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1115,13 +975,8 @@ cur.close(); cnx.close()
 
 ### 6.4 Synthetics & Probes (CloudWatch Synthetics)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1193,13 +1048,8 @@ cur.close(); cnx.close()
 
 ### 6.5 Log Shipping & Search (OpenSearch, S3 + Athena)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1281,61 +1131,36 @@ relevant to the theme.
 
 ### 7.1 Boto3 SDK Foundations (Auth, Pagination, Retries)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 7.2 Idempotent Operations & Safe Rollbacks
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 7.3 Event-Driven Ops (EventBridge, Step Functions, Lambda)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 7.4 SSM Automation (Run Command, Documents, State Manager)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 7.5 Reusable Libraries (Provisioning, Backups, Failover, Compliance)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1415,25 +1240,15 @@ relevant to the theme.
 
 ### 8.1 Packaging & Environments (pip/poetry, venv, Docker)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 8.2 Configuration Management (env vars, Pydantic, SSM/Secrets)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1505,13 +1320,8 @@ cur.close(); cnx.close()
 
 ### 8.3 Retries, Backoff, Idempotency Keys
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1583,39 +1393,24 @@ cur.close(); cnx.close()
 
 ### 8.4 Structured Logging & Correlation IDs
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 8.5 Testing Strategy (unit/integration), CI Hooks
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 8.6 Distribution (Lambda layers, containers, wheels)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -1629,75 +1424,45 @@ relevant to the theme.
 
 ### 9.1 REST (requests/httpx), Auth (SigV4, OAuth2)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 9.2 GraphQL (client patterns, pagination)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 9.3 Webhooks & EventBridge Pipes
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 9.4 Rate Limiting, Circuit Breakers, Retries
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 9.5 Schema Validation (pydantic), Error Handling
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 9.6 Examples: ServiceNow/Jira/Slack, GitHub/GitLab, AWS Health API
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -1711,13 +1476,8 @@ relevant to the theme.
 
 ### 10.1 Common Patterns (pools, secrets, transactions, retries)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1789,73 +1549,43 @@ cur.close(); cnx.close()
 
 ### 10.2 PostgreSQL (psycopg 3: async, COPY, examples)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 10.3 MySQL (mysql-connector-python/PyMySQL)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 10.4 Oracle (oracledb/cx_Oracle, TCPS, wallets)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 10.5 SQL Server (pyodbc, Linux ODBC drivers)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 10.6 Cross-DB Abstraction (SQLAlchemy)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 10.7 Safety (dry-run, schema diffs, migration gating)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -1911,15 +1641,10 @@ cur.close(); cnx.close()
 
 ### 10.8 Throughput & Batching Patterns
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -1933,63 +1658,38 @@ relevant to the theme.
 
 ### 11.1 Terraform (Modules, Workspaces, Remote State)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 11.2 AWS CDK & CloudFormation (Stacks, StackSets)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 11.3 Policy as Code (SCPs, IAM, Config Rules)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 11.4 CI/CD (GitHub Actions/GitLab CI/CodePipeline)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 11.5 Drift Detection & Remediation
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -2003,13 +1703,8 @@ relevant to the theme.
 
 ### 12.1 Golden Patterns (Parameter Groups, Option Groups)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2081,13 +1776,8 @@ cur.close(); cnx.close()
 
 ### 12.2 Secure Bootstrapping (Networking, KMS, Secrets)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2159,39 +1849,24 @@ cur.close(); cnx.close()
 
 ### 12.3 User/Role Model & Least Privilege
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 12.4 Upgrades, Patching, Blue/Green (RDS Blue/Green)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 12.5 Decommissioning & Data Wipe Procedures
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -2205,13 +1880,8 @@ relevant to the theme.
 
 ### 13.1 Workload Characterization & Benchmarks
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2269,13 +1939,8 @@ cur.close(); cnx.close()
 
 ### 13.2 Aurora/RDS Tuning (Connections, Memory, IOPS, Storage Types)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2333,13 +1998,8 @@ cur.close(); cnx.close()
 
 ### 13.3 RDS Proxy & Connection Pooling
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2403,13 +2063,8 @@ cur.close(); cnx.close()
 
 ### 13.4 Read Scaling (Read Replicas, Global Database for Aurora)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2479,25 +2134,15 @@ cur.close(); cnx.close()
 
 ### 13.5 Caching Strategies (ElastiCache, Application Patterns)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 13.6 Query Tuning Playbook (Postgres/MySQL/SQL Server/Oracle)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2565,13 +2210,8 @@ relevant to the theme.
 
 ### 14.1 Multi-AZ vs. Multi-Region Trade-offs
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2641,25 +2281,15 @@ cur.close(); cnx.close()
 
 ### 14.2 RPO/RTO Objectives & Testing Cadence
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 14.3 Aurora Global Database & Cross-Region Replication
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2729,25 +2359,15 @@ cur.close(); cnx.close()
 
 ### 14.4 DynamoDB Global Tables & DAX HA
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 14.5 Backup Strategy (AWS Backup, Snapshots, PITR)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2809,13 +2429,8 @@ cur.close(); cnx.close()
 
 ### 14.6 DR Runbooks & Automated Failover
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2895,13 +2510,8 @@ relevant to the theme.
 
 ### 15.1 Discovery & Assessment (SCT, Workload Traces)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -2973,13 +2583,8 @@ cur.close(); cnx.close()
 
 ### 15.2 Online Migrations (DMS, CDC, Dual-Write Caution)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3035,13 +2640,8 @@ cur.close(); cnx.close()
 
 ### 15.3 Replatform vs. Refactor (Aurora, DynamoDB, Serverless)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3097,13 +2697,8 @@ cur.close(); cnx.close()
 
 ### 15.4 Data Validation & Cutover Plans
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3159,13 +2754,8 @@ cur.close(); cnx.close()
 
 ### 15.5 Post-Migration Hardening & Observability
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3247,25 +2837,15 @@ relevant to the theme.
 
 ### 16.1 Shared Responsibility Model (DBRE Lens)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 16.2 Network Segmentation, Private Access, Egress Controls
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3321,13 +2901,8 @@ cur.close(); cnx.close()
 
 ### 16.3 Encryption In-Transit/At-Rest (TLS, KMS, TDE)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3399,25 +2974,15 @@ cur.close(); cnx.close()
 
 ### 16.4 Vulnerability Management & Patch Strategy
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 16.5 Auditability (CloudTrail, Config, Detective Controls)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3473,13 +3038,8 @@ cur.close(); cnx.close()
 
 ### 16.6 Compliance Tooling (Security Hub, GuardDuty, Macie, Artifact)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3545,13 +3105,8 @@ relevant to the theme.
 
 ### 17.1 Cost Allocation (Tags, Accounts, CUR)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3607,13 +3162,8 @@ cur.close(); cnx.close()
 
 ### 17.2 Rightsizing (Instance Families, Graviton, Storage Classes)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3669,13 +3219,8 @@ cur.close(); cnx.close()
 
 ### 17.3 Savings Plans & RIs (Where It Fits Databases)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3731,13 +3276,8 @@ cur.close(); cnx.close()
 
 ### 17.4 S3 Lifecycle & Glacier for Backups/Logs
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3809,13 +3349,8 @@ cur.close(); cnx.close()
 
 ### 17.5 Performance vs. Cost Trade-off Patterns
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3883,25 +3418,15 @@ relevant to the theme.
 
 ### 18.1 Declarative Change Management (Liquibase/Flyway)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 18.2 Schema Migration Pipelines (CI/CD with Approvals)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -3957,13 +3482,8 @@ cur.close(); cnx.close()
 
 ### 18.3 Automated Tests (Unit, Integration, Migration Smoke)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4019,27 +3539,17 @@ cur.close(); cnx.close()
 
 ### 18.4 Feature Flags & Backward-Compatible Releases
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 18.5 Rollback & Hotfix Strategies
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -4053,25 +3563,15 @@ relevant to the theme.
 
 ### 19.1 Fault Injection (FIS) & Failure Modes
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 19.2 DR Drills & SLO Verification
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4141,25 +3641,15 @@ cur.close(); cnx.close()
 
 ### 19.3 Load & Soak Testing (Distributed Load Testing, Locust)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 19.4 Runbook Rehearsals & Time-to-Mitigate Metrics
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4241,13 +3731,8 @@ relevant to the theme.
 
 ### 20.1 Zero-Downtime Migration to Aurora
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4303,13 +3788,8 @@ cur.close(); cnx.close()
 
 ### 20.2 Cross-Region Read Replica Strategy for Analytics
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4379,37 +3859,22 @@ cur.close(); cnx.close()
 
 ### 20.3 DynamoDB Hot-Partition Remediation
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 20.4 Redis Latency Spike Investigation
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 20.5 Cost Downshift without SLO Regression
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4475,13 +3940,8 @@ relevant to the theme.
 
 ### 21.1 Backup/Restore (RDS/Aurora/DynamoDB/ElastiCache)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4543,13 +4003,8 @@ cur.close(); cnx.close()
 
 ### 21.2 Failover/Failback (Aurora Global, Route 53, App Changes)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4619,13 +4074,8 @@ cur.close(); cnx.close()
 
 ### 21.3 Performance Firefighting (DB-Specific)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4683,13 +4133,8 @@ cur.close(); cnx.close()
 
 ### 21.4 Security Incidents (Key Compromise, Secret Rotation)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4761,13 +4206,8 @@ cur.close(); cnx.close()
 
 ### 21.5 Capacity Emergencies (Burst Credit, Storage Auto-Scale)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4841,37 +4281,22 @@ relevant to the theme.
 
 ### 22.1 Production Readiness
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 22.2 Launch/Go-Live
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 22.3 Compliance & Audit Prep
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4927,13 +4352,8 @@ cur.close(); cnx.close()
 
 ### 22.4 Cost Review (Monthly/Quarterly)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -4989,13 +4409,8 @@ cur.close(); cnx.close()
 
 ### 22.5 DR Readiness (Quarterly)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5075,13 +4490,8 @@ relevant to the theme.
 
 ### 23.1 RDS/Aurora Provisioning & Parameterization
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5153,13 +4563,8 @@ cur.close(); cnx.close()
 
 ### 23.2 Automated Snapshots & PITR Restore
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5221,13 +4626,8 @@ cur.close(); cnx.close()
 
 ### 23.3 Cross-Account, Cross-Region Backup Copy
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5289,13 +4689,8 @@ cur.close(); cnx.close()
 
 ### 23.4 Read Replica & Global DB Management
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5365,27 +4760,17 @@ cur.close(); cnx.close()
 
 ### 23.5 DynamoDB Table Ops & Global Tables
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 23.6 ElastiCache Cluster Operations
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -5399,51 +4784,31 @@ relevant to the theme.
 
 ### 24.1 Module Layout & Standards
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 24.2 Example: Aurora PostgreSQL Production Module
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 24.3 Example: DynamoDB Global Tables Module
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 24.4 Example: Observability Baseline (CW, Alarms, Dashboards)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -5457,13 +4822,8 @@ relevant to the theme.
 
 ### 25.1 Least-Privilege Policies for DBRE Automation
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5519,25 +4879,15 @@ cur.close(); cnx.close()
 
 ### 25.2 Break-Glass Role with Session Controls
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 25.3 SCP Examples for Database Guardrails
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5603,37 +4953,22 @@ relevant to the theme.
 
 ### 26.1 GitHub Actions Templates (Terraform/Liquibase)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 26.2 GitLab CI & AWS CodePipeline Variants
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 26.3 Policy Checkers & Security Scanners (OPA, tfsec, cfn-nag)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 **Context-specific Python DB examples:**
 
@@ -5699,51 +5034,31 @@ relevant to the theme.
 
 ### 27.1 Postmortem Template
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 27.2 DR Plan Template
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 27.3 Architecture Decision Record (ADR)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 27.4 Risk Register & SLO Catalog
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ---
 
@@ -5757,25 +5072,15 @@ relevant to the theme.
 
 ### 28.1 Terms & Acronyms
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
 
-> _No code sample for this subtopic (conceptual/policy focus)._
+
+
 
 ### 28.2 Further Reading (AWS Docs, Whitepapers, Blogs)
 
-Design decisions here emphasize measurable reliability and reversible changes. The examples—when
-present—validate posture or outcomes intrinsic to this theme (e.g., encryption status, replica
-lag, backup evidence, or performance plans).
 
-If no code is shown, it is by design because the subtopic is explanatory or policy-oriented. In
-those cases, carry the reasoning forward into automation and tests that run adjacent to, rather
-than inside, the database.
+
 
 ---
 
