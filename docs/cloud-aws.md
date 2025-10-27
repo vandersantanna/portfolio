@@ -177,11 +177,7 @@
 
 ## 1. Executive Summary
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 1.1 Purpose & Audience
 
@@ -215,11 +211,7 @@ relevant to the theme.
 
 ## 2. Architecture Overview
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 2.1 Reference Architectures (Single-Region, Multi-AZ, Multi-Region)
 
@@ -367,11 +359,7 @@ cur.close(); cnx.close()
 
 ## 3. AWS Foundations
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 3.1 Multi-Account Strategy (Organizations, SCPs, Guardrails)
 
@@ -644,11 +632,7 @@ cur.close(); cnx.close()
 
 ## 4. Data Platform Services on AWS
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 4.1 Amazon Aurora (MySQL/PostgreSQL)
 
@@ -710,11 +694,7 @@ relevant to the theme.
 
 ## 5. Reliability Engineering (SLIs/SLOs & Operations)
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 5.1 SLIs & SLOs per Service (Latency, Availability, Durability)
 
@@ -748,11 +728,7 @@ relevant to the theme.
 
 ## 6. Observability
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 6.1 Metrics, Logs, Traces (CloudWatch, X-Ray, OTEL)
 
@@ -1123,11 +1099,7 @@ cur.close(); cnx.close()
 
 ## 7. Automation Frameworks (Python-First)
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 7.1 Boto3 SDK Foundations (Auth, Pagination, Retries)
 
@@ -1232,11 +1204,7 @@ cur.close(); cnx.close()
 
 ## 8. Python Integration for Automation (Foundations)
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 8.1 Packaging & Environments (pip/poetry, venv, Docker)
 
@@ -1416,11 +1384,7 @@ cur.close(); cnx.close()
 
 ## 9. API Integrations in Python (AWS & Third-Party)
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 9.1 REST (requests/httpx), Auth (SigV4, OAuth2)
 
@@ -1468,11 +1432,7 @@ relevant to the theme.
 
 ## 10. Python Database Connectivity for Automation
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 10.1 Common Patterns (pools, secrets, transactions, retries)
 
@@ -1650,11 +1610,7 @@ cur.close(); cnx.close()
 
 ## 11. Infrastructure as Code & GitOps
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 11.1 Terraform (Modules, Workspaces, Remote State)
 
@@ -1695,11 +1651,7 @@ relevant to the theme.
 
 ## 12. Database Provisioning & Lifecycle
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 12.1 Golden Patterns (Parameter Groups, Option Groups)
 
@@ -1872,11 +1824,7 @@ cur.close(); cnx.close()
 
 ## 13. Performance Engineering
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 13.1 Workload Characterization & Benchmarks
 
@@ -2202,11 +2150,7 @@ cur.close(); cnx.close()
 
 ## 14. High Availability & Disaster Recovery
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 14.1 Multi-AZ vs. Multi-Region Trade-offs
 
@@ -2502,11 +2446,7 @@ cur.close(); cnx.close()
 
 ## 15. Migrations & Modernization
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 15.1 Discovery & Assessment (SCT, Workload Traces)
 
@@ -2829,11 +2769,7 @@ cur.close(); cnx.close()
 
 ## 16. Security & Compliance
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 16.1 Shared Responsibility Model (DBRE Lens)
 
@@ -3097,11 +3033,7 @@ cur.close(); cnx.close()
 
 ## 17. Cost Optimization
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 17.1 Cost Allocation (Tags, Accounts, CUR)
 
@@ -3410,11 +3342,7 @@ cur.close(); cnx.close()
 
 ## 18. Continuous Delivery for Database Changes
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 18.1 Declarative Change Management (Liquibase/Flyway)
 
@@ -3555,11 +3483,7 @@ cur.close(); cnx.close()
 
 ## 19. GameDays, Chaos & Validation
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 19.1 Fault Injection (FIS) & Failure Modes
 
@@ -3723,11 +3647,7 @@ cur.close(); cnx.close()
 
 ## 20. Case Studies & Patterns
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 20.1 Zero-Downtime Migration to Aurora
 
@@ -3932,11 +3852,7 @@ cur.close(); cnx.close()
 
 ## 21. Operational Runbooks & Playbooks
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 21.1 Backup/Restore (RDS/Aurora/DynamoDB/ElastiCache)
 
@@ -4273,11 +4189,7 @@ cur.close(); cnx.close()
 
 ## 22. Checklists
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 22.1 Production Readiness
 
@@ -4482,11 +4394,7 @@ cur.close(); cnx.close()
 
 ## 23. Appendix A — Python (boto3) Automation Library
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 23.1 RDS/Aurora Provisioning & Parameterization
 
@@ -4776,11 +4684,7 @@ cur.close(); cnx.close()
 
 ## 24. Appendix B — Terraform/CDK Modules
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 24.1 Module Layout & Standards
 
@@ -4814,11 +4718,7 @@ relevant to the theme.
 
 ## 25. Appendix C — IAM & Security Artifacts
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 25.1 Least-Privilege Policies for DBRE Automation
 
@@ -4945,11 +4845,7 @@ cur.close(); cnx.close()
 
 ## 26. Appendix D — CI/CD Pipelines
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 26.1 GitHub Actions Templates (Terraform/Liquibase)
 
@@ -5026,11 +4922,7 @@ cur.close(); cnx.close()
 
 ## 27. Appendix E — Templates & Records
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 27.1 Postmortem Template
 
@@ -5064,11 +4956,7 @@ relevant to the theme.
 
 ## 28. Glossary & References
 
-We retain the extended narrative and ensure every SQL example aligns with the topic’s intent. When
-a subtopic is conceptual (introductions, checklists, templates, glossary), code is intentionally
-omitted. Where operationally meaningful, each subtopic provides four targeted Python examples
-(Oracle, PostgreSQL, MySQL, SQL Server) that verify posture, performance, availability, or safety
-relevant to the theme.
+
 
 ### 28.1 Terms & Acronyms
 
