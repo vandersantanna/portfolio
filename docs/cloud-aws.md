@@ -1,9 +1,7 @@
 <small align="right">Contact: <a href="mailto:vandersantanna@gmail.com">Email</a> · <a href="https://www.linkedin.com/in/vandersantanna">LinkedIn</a> · <a href="https://github.com/vandersantanna">GitHub</a></small>
 
-```markdown
-# AWS Database Reliability Engineering (DBRE) — Super-Extended Portfolio
-
-_Every topic and subtopic includes explanations and Python DB connection examples, following your original index exactly._
+# AWS Database Reliability Engineering (DBRE) 
+*DBRE on AWS: automate, observe, and ship without downtime.*
 
 ## 📚 Table of Contents
 
