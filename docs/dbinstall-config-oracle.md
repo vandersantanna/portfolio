@@ -56,9 +56,6 @@ Oracle Database 19c provides enterprise-grade database capabilities with advance
 **SUSE Linux Enterprise Server:**
 - SLES 12 SP4+ or 15.1+
 
-**Ubuntu (Limited Support):**
-- Ubuntu 18.04+ LTS
-
 ### Hardware Requirements
 
 **Minimum Requirements:**
