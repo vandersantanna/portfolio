@@ -23,9 +23,11 @@
 
 ## Overview
 
--> Oracle installation and configuration is quite unique. It's impossible not to compare it to other databases, but in reality, the comparison ends there. There are several prerequisites and steps that, if not followed, will generally lead to one or more errors and future configuration problems. For this reason, it's good to plan before installing and follow a guide that leads through the correct steps. I hope this is the guide for you.
+> Oracle installation and configuration is quite unique. It's impossible not to compare it to other databases, but in reality, the comparison ends there. There are several prerequisites and steps that, if not followed, will generally lead to one or more errors and future configuration problems. For this reason, it's good to plan before installing and follow a guide that leads through the correct steps. I hope this is the guide for you.
 
-Oracle Database 19c is Oracle's current long-term release, providing enterprise-grade database capabilities with advanced high availability features. This guide covers installation and configuration including Real Application Clusters (RAC) and Data Guard for maximum availability and disaster recovery.
+> Oracle Database 19c is not the most recent version. We can mention 23ai and 26ai. But Oracle Database 19c is still an extremely popular version, and for this reason, I focused on this version. One step at a time.
+
+O 19c provides enterprise-grade database capabilities with advanced high availability features. This guide covers installation and configuration including Real Application Clusters (RAC) and Data Guard for maximum availability and disaster recovery. Let's move on.
 
 **Key Features:**
 - Automatic Storage Management (ASM)
