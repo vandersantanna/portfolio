@@ -77,8 +77,8 @@ SWAP_SPACE="RAM * 1.5 (up to 32GB)"
 NETWORK_INTERFACES="2 (public and private for RAC)"
 ```
 
-**Production Recommendations:**
-```bash
+**Production Minimum Recommendations:**
+ ```bash
 # For RAC environments
 CPU_CORES_RAC="8+ per node"
 RAM_RAC="32 GB+ per node"
