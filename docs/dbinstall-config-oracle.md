@@ -659,7 +659,7 @@ sudo -u oracle dbca -silent -createDatabase \
     -redoLogFileSize 100 \
     -emConfiguration NONE \
     -nodeinfo rac1,rac2
-```bash
+```
 
 # Verify RAC database
 ```bash
