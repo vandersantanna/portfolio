@@ -224,7 +224,7 @@ umask 022
 EOF
 ```
 
-# Grid user environment
+### Grid user environment
 ```bash
 sudo -u grid tee /home/grid/.bash_profile << 'EOF'
 # Grid Infrastructure Environment
@@ -317,7 +317,7 @@ multipaths {
 EOF
 ```
 
-# Restart multipath service
+### Restart multipath service
 ```bash
 sudo systemctl restart multipathd
 sudo systemctl enable multipathd
@@ -378,13 +378,13 @@ DECLINE_SECURITY_UPDATES=true
 EOF
 ```
 
-# Run silent installation
+### Run silent installation
 ```bash
 sudo -u oracle /u01/app/oracle/product/19.3.0/dbhome_1/runInstaller -silent \
     -responseFile /tmp/db_install.rsp
 ```
 
-# Run root scripts after installation completes
+### Run root scripts after installation completes
 ```bash
 sudo /u01/app/oraInventory/orainstRoot.sh
 sudo /u01/app/oracle/product/19.3.0/dbhome_1/root.sh
@@ -674,13 +674,13 @@ sudo -u oracle srvctl add service -d RACDB -s READ_ONLY_SERVICE \
     -e SELECT -m BASIC -z 180 -w 5
 ```
 
-# Start services
+### Start services
 ```bash
 sudo -u oracle srvctl start service -d RACDB -s READ_WRITE_SERVICE
 sudo -u oracle srvctl start service -d RACDB -s READ_ONLY_SERVICE
 ```
 
-# Check service status
+### Check service status
 ```bash
 sudo -u oracle srvctl status service -d RACDB
 ```
@@ -694,10 +694,9 @@ sudo -u oracle srvctl status service -d RACDB
 ```bash
 # Configure primary database for Data Guard
 sudo -u oracle sqlplus / as sysdba
-```
 
 -- Enable archive log mode
-```sql
+
 SHUTDOWN IMMEDIATE;
 STARTUP MOUNT;
 ALTER DATABASE ARCHIVELOG;
@@ -754,7 +753,7 @@ STANDBY =
 EOF
 ```
 
-# Test connectivity
+### Test connectivity
 ```bash
 sudo -u oracle tnsping PRIMARY
 sudo -u oracle tnsping STANDBY
@@ -767,7 +766,7 @@ sudo -u oracle tnsping STANDBY
 sudo -u oracle mkdir -p /u01/app/oracle/admin/STANDBY/adump
 ```
 
-# Modify init parameter file for standby
+### Modify init parameter file for standby
 ```bash
 sudo -u oracle tee /tmp/initSTANDBY.ora << 'EOF'
 *.audit_file_dest='/u01/app/oracle/admin/STANDBY/adump'
@@ -800,14 +799,14 @@ sudo -u oracle tee /tmp/initSTANDBY.ora << 'EOF'
 EOF
 ```
 
-# Start standby instance in nomount mode
+### Start standby instance in nomount mode
 ```bash
 sudo -u oracle sqlplus / as sysdba
 STARTUP NOMOUNT PFILE='/tmp/initSTANDBY.ora';
 EXIT;
 ```bash
 
-# Duplicate database using RMAN
+### Duplicate database using RMAN
 ```bash
 sudo -u oracle rman
 
