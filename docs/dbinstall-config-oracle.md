@@ -222,8 +222,10 @@ alias envo='env | grep ORACLE'
 
 umask 022
 EOF
+```
 
-# Grid user environment  
+# Grid user environment
+```bash
 sudo -u grid tee /home/grid/.bash_profile << 'EOF'
 # Grid Infrastructure Environment
 export ORACLE_BASE=/u01/app/grid
