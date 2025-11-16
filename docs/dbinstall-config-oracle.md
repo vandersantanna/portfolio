@@ -964,7 +964,7 @@ SHOW PDBS;
 ### Custom Database Creation Script
 
 ```bash
-# Create custom database creation script
+#### Create custom database creation script
 sudo -u oracle tee /u01/app/oracle/scripts/create_db.sql << 'EOF'
 -- Custom Oracle 19c Database Creation Script
 
@@ -1006,8 +1006,10 @@ CONNECT system/Oracle123
 -- Create SPFILE
 CREATE SPFILE FROM PFILE;
 EOF
+```
 
-# Create init.ora file
+#### Create init.ora file
+```bash
 sudo -u oracle tee /u01/app/oracle/product/19.3.0/dbhome_1/dbs/initORCL.ora << 'EOF'
 db_name='ORCL'
 memory_target=4G
@@ -1300,9 +1302,6 @@ sudo firewall-cmd --permanent --add-port=42424/tcp   # Grid Infrastructure Manag
 sudo firewall-cmd --permanent --add-service=nfs
 sudo firewall-cmd --reload
 
-# Ubuntu firewall
-sudo ufw allow 1521/tcp
-sudo ufw allow 5500/tcp
 ```
 
 [Back to top](#table-of-contents)
