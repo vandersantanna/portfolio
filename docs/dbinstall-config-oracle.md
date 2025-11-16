@@ -661,7 +661,7 @@ sudo -u oracle dbca -silent -createDatabase \
     -nodeinfo rac1,rac2
 ```
 
-# Verify RAC database
+### Verify RAC database
 ```bash
 sudo -u oracle srvctl status database -d RACDB
 sudo -u oracle srvctl config database -d RACDB
@@ -767,7 +767,7 @@ sudo -u oracle tnsping STANDBY
 
 ### Physical Standby Creation
 
-# On standby server - create directories
+### On standby server - create directories
 ```bash
 sudo -u oracle mkdir -p /u01/app/oracle/admin/STANDBY/adump
 ```
