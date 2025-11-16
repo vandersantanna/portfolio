@@ -41,7 +41,7 @@ Oracle Database 19c provides enterprise-grade database capabilities with advance
 - **RAC**: Clustered database for scalability and availability
 - **Data Guard**: Disaster recovery and data protection
 - **ASM**: Automatic storage management
-- **Grid Infrastructure**: Cluster management foundation
+- **structure**: Cluster management foundation
 
 [Back to top](#table-of-contents)
 
@@ -70,7 +70,7 @@ RAM_RECOMMENDED="16 GB or more"
 
 # Storage
 DISK_SPACE_DATABASE="12 GB minimum"
-DISK_SPACE_GRID="8 GB for Grid Infrastructure"
+DISK_SPACE_GRID="8 GB for structure"
 SWAP_SPACE="RAM * 1.5 (up to 32GB)"
 
 # Network
@@ -583,16 +583,22 @@ oracle.install.asm.monitorPassword=Oracle123
 SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
 DECLINE_SECURITY_UPDATES=true
 EOF
+```
 
-# Install Grid Infrastructure on first node
+### Install Grid Infrastructure on first node
+```bash
 sudo -u grid /u01/app/grid/product/19.3.0/grid/runInstaller -silent \
     -responseFile /tmp/grid_rac_install.rsp
+```bash
 
-# Run root scripts on first node
+### Run root scripts on first node
+```bash
 sudo /u01/app/oraInventory/orainstRoot.sh
 sudo /u01/app/grid/product/19.3.0/grid/root.sh
+```
 
-# Run root script on second node
+### Run root script on second node
+```bash
 ssh rac2 "sudo /u01/app/grid/product/19.3.0/grid/root.sh"
 ```
 
