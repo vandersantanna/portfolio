@@ -315,8 +315,10 @@ multipaths {
     }
 }
 EOF
+```
 
 # Restart multipath service
+```bash
 sudo systemctl restart multipathd
 sudo systemctl enable multipathd
 
@@ -374,12 +376,16 @@ oracle.install.db.OSRACDBA_GROUP=racdba
 SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
 DECLINE_SECURITY_UPDATES=true
 EOF
+```
 
 # Run silent installation
+```bash
 sudo -u oracle /u01/app/oracle/product/19.3.0/dbhome_1/runInstaller -silent \
     -responseFile /tmp/db_install.rsp
+```
 
 # Run root scripts after installation completes
+```bash
 sudo /u01/app/oraInventory/orainstRoot.sh
 sudo /u01/app/oracle/product/19.3.0/dbhome_1/root.sh
 ```
@@ -612,12 +618,16 @@ oracle.install.db.OSRACDBA_GROUP=racdba
 SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
 DECLINE_SECURITY_UPDATES=true
 EOF
+```
 
 # Install RAC database software
+```bash
 sudo -u oracle /u01/app/oracle/product/19.3.0/dbhome_1/runInstaller -silent \
     -responseFile /tmp/db_rac_install.rsp
+```
 
 # Run root scripts on all nodes
+```bash
 sudo /u01/app/oracle/product/19.3.0/dbhome_1/root.sh
 ssh rac2 "sudo /u01/app/oracle/product/19.3.0/dbhome_1/root.sh"
 ```
@@ -643,16 +653,18 @@ sudo -u oracle dbca -silent -createDatabase \
     -redoLogFileSize 100 \
     -emConfiguration NONE \
     -nodeinfo rac1,rac2
+```bash
 
 # Verify RAC database
+```bash
 sudo -u oracle srvctl status database -d RACDB
 sudo -u oracle srvctl config database -d RACDB
 ```
 
 ### RAC Services Configuration
 
-```bash
 # Create application services for load balancing
+```bash
 sudo -u oracle srvctl add service -d RACDB -s READ_WRITE_SERVICE \
     -r RACDB1,RACDB2 -P BASIC \
     -e SELECT -m BASIC -z 180 -w 5
@@ -660,12 +672,16 @@ sudo -u oracle srvctl add service -d RACDB -s READ_WRITE_SERVICE \
 sudo -u oracle srvctl add service -d RACDB -s READ_ONLY_SERVICE \
     -r RACDB2 -a RACDB1 -P BASIC \
     -e SELECT -m BASIC -z 180 -w 5
+```
 
 # Start services
+```bash
 sudo -u oracle srvctl start service -d RACDB -s READ_WRITE_SERVICE
 sudo -u oracle srvctl start service -d RACDB -s READ_ONLY_SERVICE
+```
 
 # Check service status
+```bash
 sudo -u oracle srvctl status service -d RACDB
 ```
 
@@ -678,14 +694,18 @@ sudo -u oracle srvctl status service -d RACDB
 ```bash
 # Configure primary database for Data Guard
 sudo -u oracle sqlplus / as sysdba
+```
 
 -- Enable archive log mode
+```sql
 SHUTDOWN IMMEDIATE;
 STARTUP MOUNT;
 ALTER DATABASE ARCHIVELOG;
 ALTER DATABASE OPEN;
+```
 
 -- Configure Data Guard parameters
+```sql
 ALTER SYSTEM SET LOG_ARCHIVE_CONFIG='DG_CONFIG=(PRIMARY,STANDBY)' SCOPE=BOTH;
 ALTER SYSTEM SET LOG_ARCHIVE_DEST_1='LOCATION=+FRA VALID_FOR=(ALL_LOGFILES,ALL_ROLES) DB_UNIQUE_NAME=PRIMARY' SCOPE=BOTH;
 ALTER SYSTEM SET LOG_ARCHIVE_DEST_2='SERVICE=STANDBY LGWR ASYNC VALID_FOR=(ONLINE_LOGFILES,PRIMARY_ROLE) DB_UNIQUE_NAME=STANDBY' SCOPE=BOTH;
@@ -697,6 +717,7 @@ ALTER SYSTEM SET LOG_ARCHIVE_MAX_PROCESSES=30 SCOPE=BOTH;
 ALTER SYSTEM SET STANDBY_FILE_MANAGEMENT=AUTO SCOPE=BOTH;
 ALTER SYSTEM SET DB_FILE_NAME_CONVERT='+DATA/STANDBY/','+DATA/PRIMARY/' SCOPE=SPFILE;
 ALTER SYSTEM SET LOG_FILE_NAME_CONVERT='+FRA/STANDBY/','+FRA/PRIMARY/' SCOPE=SPFILE;
+```
 
 -- Add standby redo logs
 ALTER DATABASE ADD STANDBY LOGFILE GROUP 4 ('+FRA') SIZE 100M;
@@ -710,8 +731,8 @@ CREATE PFILE='/tmp/initSTANDBY.ora' FROM SPFILE;
 
 ### Network Configuration for Data Guard
 
-```bash
 # Configure TNS entries on both primary and standby servers
+```bash
 sudo -u oracle tee -a $ORACLE_HOME/network/admin/tnsnames.ora << 'EOF'
 PRIMARY =
   (DESCRIPTION =
@@ -731,19 +752,23 @@ STANDBY =
     )
   )
 EOF
+```
 
 # Test connectivity
+```bash
 sudo -u oracle tnsping PRIMARY
 sudo -u oracle tnsping STANDBY
 ```
 
 ### Physical Standby Creation
 
-```bash
 # On standby server - create directories
+```bash
 sudo -u oracle mkdir -p /u01/app/oracle/admin/STANDBY/adump
+```
 
 # Modify init parameter file for standby
+```bash
 sudo -u oracle tee /tmp/initSTANDBY.ora << 'EOF'
 *.audit_file_dest='/u01/app/oracle/admin/STANDBY/adump'
 *.audit_trail='db'
@@ -773,13 +798,17 @@ sudo -u oracle tee /tmp/initSTANDBY.ora << 'EOF'
 *.db_file_name_convert='+DATA/PRIMARY/','+DATA/STANDBY/'
 *.log_file_name_convert='+FRA/PRIMARY/','+FRA/STANDBY/'
 EOF
+```
 
 # Start standby instance in nomount mode
+```bash
 sudo -u oracle sqlplus / as sysdba
 STARTUP NOMOUNT PFILE='/tmp/initSTANDBY.ora';
 EXIT;
+```bash
 
 # Duplicate database using RMAN
+```bash
 sudo -u oracle rman
 
 CONNECT TARGET sys/Oracle123@PRIMARY;
