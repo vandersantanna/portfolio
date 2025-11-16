@@ -1927,8 +1927,11 @@ ALTER USER HR IDENTIFIED BY hr ACCOUNT UNLOCK;
 -- Check HTTPS port
 SELECT DBMS_XDB_CONFIG.GETHTTPSPORT() FROM DUAL;
 SQL_EOF
+```bash
 
-# Access Database Express at: https://hostname:5500/em
+#### Oracle Enterprise Manager Database Express (EM Express)
+```bash
+Access Oracle Enterprise Manager at: https://hostname:5500/em
 ```
 
 [Back to top](#table-of-contents)
