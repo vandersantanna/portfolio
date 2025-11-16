@@ -620,13 +620,13 @@ DECLINE_SECURITY_UPDATES=true
 EOF
 ```
 
-# Install RAC database software
+### Install RAC database software
 ```bash
 sudo -u oracle /u01/app/oracle/product/19.3.0/dbhome_1/runInstaller -silent \
     -responseFile /tmp/db_rac_install.rsp
 ```
 
-# Run root scripts on all nodes
+### Run root scripts on all nodes
 ```bash
 sudo /u01/app/oracle/product/19.3.0/dbhome_1/root.sh
 ssh rac2 "sudo /u01/app/oracle/product/19.3.0/dbhome_1/root.sh"
@@ -663,7 +663,7 @@ sudo -u oracle srvctl config database -d RACDB
 
 ### RAC Services Configuration
 
-# Create application services for load balancing
+### Create application services for load balancing
 ```bash
 sudo -u oracle srvctl add service -d RACDB -s READ_WRITE_SERVICE \
     -r RACDB1,RACDB2 -P BASIC \
