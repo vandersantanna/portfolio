@@ -1358,8 +1358,8 @@ ALTER DATABASE DROP LOGFILE GROUP 3;
 
 ### Database Performance Monitoring
 
+#### Create performance monitoring script
 ```bash
-# Create performance monitoring script
 sudo -u oracle tee /u01/app/oracle/scripts/perf_monitor.sh << 'EOF'
 #!/bin/bash
 
@@ -1370,8 +1370,10 @@ TIMESTAMP=$(date '+%Y-%m-%d %H:%M:%S')
 LOG_FILE=/u01/app/oracle/admin/perf_monitor.log
 
 echo "[$TIMESTAMP] Performance Monitoring Report" >> $LOG_FILE
+```
 
-# Database performance metrics
+#### Database performance metrics
+```bash
 sqlplus -s / as sysdba << 'SQL_EOF' >> $LOG_FILE
 SET PAGESIZE 50 FEEDBACK OFF
 SELECT 'Database Status: ' || status FROM v$instance;
@@ -1413,10 +1415,12 @@ SQL_EOF
 echo "[$TIMESTAMP] Performance monitoring completed" >> $LOG_FILE
 echo "" >> $LOG_FILE
 EOF
+```
 
 chmod +x /u01/app/oracle/scripts/perf_monitor.sh
 
-# Add to crontab
+#### Add to crontab
+```bash
 (crontab -u oracle -l 2>/dev/null; echo "*/15 * * * * /u01/app/oracle/scripts/perf_monitor.sh") | crontab -u oracle -
 ```
 
