@@ -732,7 +732,7 @@ CREATE PFILE='/tmp/initSTANDBY.ora' FROM SPFILE;
 
 ### Network Configuration for Data Guard
 
-# Configure TNS entries on both primary and standby servers
+#### Configure TNS entries on both primary and standby servers
 ```bash
 sudo -u oracle tee -a $ORACLE_HOME/network/admin/tnsnames.ora << 'EOF'
 PRIMARY =
@@ -755,7 +755,7 @@ STANDBY =
 EOF
 ```
 
-### Test connectivity
+#### Test connectivity
 ```bash
 sudo -u oracle tnsping PRIMARY
 sudo -u oracle tnsping STANDBY
@@ -763,12 +763,12 @@ sudo -u oracle tnsping STANDBY
 
 ### Physical Standby Creation
 
-### On standby server - create directories
+#### On standby server - create directories
 ```bash
 sudo -u oracle mkdir -p /u01/app/oracle/admin/STANDBY/adump
 ```
 
-### Modify init parameter file for standby
+#### Modify init parameter file for standby
 ```bash
 sudo -u oracle tee /tmp/initSTANDBY.ora << 'EOF'
 *.audit_file_dest='/u01/app/oracle/admin/STANDBY/adump'
@@ -801,7 +801,7 @@ sudo -u oracle tee /tmp/initSTANDBY.ora << 'EOF'
 EOF
 ```
 
-### Start standby instance in nomount mode
+#### Start standby instance in nomount mode
 ```bash
 sudo -u oracle sqlplus / as sysdba
 STARTUP NOMOUNT PFILE='/tmp/initSTANDBY.ora';
@@ -830,7 +830,7 @@ DUPLICATE TARGET DATABASE
 EXIT;
 ```
 
-### Start Data Guard Broker
+#### Start Data Guard Broker
 
 ```bash
 # Enable Data Guard Broker on primary database
