@@ -589,7 +589,7 @@ EOF
 ```bash
 sudo -u grid /u01/app/grid/product/19.3.0/grid/runInstaller -silent \
     -responseFile /tmp/grid_rac_install.rsp
-```bash
+```
 
 ### Run root scripts on first node
 ```bash
