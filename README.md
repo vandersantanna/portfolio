@@ -75,7 +75,6 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 ### 💻 Software Development
 - [Git, GitHub, GitLab](https://github.com/vandersantanna/portfolio/blob/main/docs/git-github-gitlab.md)
 - [Python Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-python.md)
-- [Rust Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/development-rust.md)
 
 ### 📏 Standards
 - [Best Practices & Guidelines](https://github.com/vandersantanna/portfolio/blob/main/docs/best-practices.md)
