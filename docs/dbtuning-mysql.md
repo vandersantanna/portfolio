@@ -17,7 +17,7 @@
 - [On-Premise Tuning](#️-on-premise-tuning)
 - [Cloud Tuning](#☁️-cloud-tuning)
 - [MySQL Forks](#-mysql-forks)
-- [Tuning Tools](#-Tuning-Tools)
+- [Tuning Tools](#🛠️-Tuning-Tools)
 - [What to Monitor for Performance Bottlenecks](#-What-to-Monitor-for-Performance-Bottlenecks)
 
 ---
