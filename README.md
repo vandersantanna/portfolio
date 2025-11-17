@@ -55,12 +55,6 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 - [Docker](https://github.com/vandersantanna/portfolio/blob/main/docs/docker.md)
 - [Kubernates](https://github.com/vandersantanna/portfolio/blob/main/docs/kubernates.md)
 
-### ☁️☁️☁️ Cloud
-- [AWS](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-aws.md)
-- [Azure](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-azure.md)
-- [GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-gcp.md)
-- [OCI](https://github.com/vandersantanna/portfolio/blob/main/docs/cloud-oci.md)
-
 ### 🔧 SQL Tuning - Optimization Cases & Best Practices
 - [Oracle](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-oracle.md)
 - [SQL Server](https://github.com/vandersantanna/portfolio/blob/main/docs/dbtuning-sql-server.md)
