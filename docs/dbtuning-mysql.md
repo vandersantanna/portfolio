@@ -17,6 +17,7 @@
 - [On-Premise Tuning](#️-on-premise-tuning)
 - [Cloud Tuning](#☁️-cloud-tuning)
 - [MySQL Forks](#-mysql-forks)
+- [Performance Monitoring Tools](#-performance-monitoring-tools)
 - [Tuning Tools](#-tuning-tools)
 - [What to Monitor for Performance Bottlenecks](#-What-to-Monitor-for-Performance-Bottlenecks)
 
@@ -1066,7 +1067,7 @@ pmm-admin add mysql mysql-main --host=localhost --port=3306
 
 ---
 
-## 🛠️ Tuning Tools
+## 🛠️ Performance Monitoring Tools
 
 | Tool Name | Type | Compatible with | Main Functionality |
 |-----------|------|----------------|-------------------|
