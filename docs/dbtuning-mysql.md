@@ -1067,7 +1067,7 @@ pmm-admin add mysql mysql-main --host=localhost --port=3306
 
 ---
 
-## 🛠️ Performance Monitoring Tools
+## Performance Monitoring Tools
 
 | Tool Name | Type | Compatible with | Main Functionality |
 |-----------|------|----------------|-------------------|
