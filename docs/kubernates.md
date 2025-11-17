@@ -49,9 +49,7 @@
 
 ## 1. Purpose & Audience
 
-> **Next steps**: plug these modules into Airflow/Prefect jobs, wrap with CI (pytest), and enable secrets via your target cloud. Extend with migrations (Alembic/Flyway), metrics exporters, and SLO dashboards.
-
-This portfolio targets senior Database Engineers, DBAs, DBREs and DataOps tasked with designing, deploying, and operating databases and data services on Kubernetes. It emphasizes GitOps, security, observability, SLO discipline, and audited automation across environments (on‑prem, hybrid, and multi‑cloud).
+> This portfolio targets senior Database Engineers, DBAs, DBREs and DataOps tasked with designing, deploying, and operating databases and data services on Kubernetes. It emphasizes GitOps, security, observability, SLO discipline, and audited automation across environments (on‑prem, hybrid, and multi‑cloud).
 
 **Checklist**
 - Clarify ownership (DBA vs. Platform vs. Security).
