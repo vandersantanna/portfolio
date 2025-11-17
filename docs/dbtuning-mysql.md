@@ -1068,6 +1068,7 @@ pmm-admin add mysql mysql-main --host=localhost --port=3306
 
 ## 🛠️ Tuning Tools
 
+
 | Tool Name | Type | Compatible with | Main Functionality |
 |-----------|------|----------------|-------------------|
 | MySQL Workbench | GUI | MySQL, MariaDB | Complete IDE with Performance Dashboard |
