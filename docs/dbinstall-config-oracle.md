@@ -430,16 +430,16 @@ cd /u01/app/oracle/product/19.3.0/dbhome_1
 
 
 #### Follow GUI prompts:
-- 1. Configure Security Updates
-- 2. Installation Option: Install database software only
-- 3. Database Installation Options: Single instance
-- 4. Database Edition: Enterprise Edition
-- 5. Installation Location: /u01/app/oracle/product/19.3.0/dbhome_1
-- 6. Create Inventory: /u01/app/oraInventory
-- 7. Operating System Groups: Use created groups
-- 8. Prerequisite Checks: Fix any issues
-- 9. Summary: Review and install
-- 10. Execute Configuration Scripts as root
+1. Configure Security Updates
+2. Installation Option: Install database software only
+3. Database Installation Options: Single instance
+4. Database Edition: Enterprise Edition
+5. Installation Location: /u01/app/oracle/product/19.3.0/dbhome_1
+6. Create Inventory: /u01/app/oraInventory
+7. Operating System Groups: Use created groups
+8. Prerequisite Checks: Fix any issues
+9. Summary: Review and install
+10. Execute Configuration Scripts as root
 
 [Back to top](#table-of-contents)
 
