@@ -447,16 +447,18 @@ cd /u01/app/oracle/product/19.3.0/dbhome_1
 
 ### Grid Infrastructure Installation
 
-```bash
-# Download Grid Infrastructure software
-# File needed: LINUX.X64_193000_grid_home.zip
+- Download Grid Infrastructure software
+- File needed: LINUX.X64_193000_grid_home.zip
 
-# Extract Grid Infrastructure
+### Extract Grid Infrastructure
+```bash
 sudo -u grid mkdir -p /u01/app/grid/product/19.3.0/grid
 cd /u01/app/grid/product/19.3.0/grid
 sudo -u grid unzip -q /path/to/LINUX.X64_193000_grid_home.zip
+```
 
-# Create response file for Grid Infrastructure
+#### Create response file for Grid Infrastructure
+```bash
 sudo -u grid tee /tmp/grid_install.rsp << 'EOF'
 oracle.install.option=HA_CONFIG
 INVENTORY_LOCATION=/u01/app/oraInventory
@@ -488,26 +490,34 @@ oracle.install.crs.config.networkInterfaceList=eth0:10.0.1.0:1,eth1:192.168.1.0:
 SECURITY_UPDATES_VIA_MYORACLESUPPORT=false
 DECLINE_SECURITY_UPDATES=true
 EOF
+```
 
-# Install Grid Infrastructure
+#### Install Grid Infrastructure
+```bash
 sudo -u grid /u01/app/grid/product/19.3.0/grid/runInstaller -silent \
     -responseFile /tmp/grid_install.rsp
+```
 
-# Run configuration scripts as root
+#### Run configuration scripts as root
+```
 sudo /u01/app/oraInventory/orainstRoot.sh
 sudo /u01/app/grid/product/19.3.0/grid/root.sh
 ```
 
 ### ASM Disk Group Configuration
 
+#### Switch to grid user
 ```bash
-# Switch to grid user
 sudo su - grid
+```
 
-# Start ASM instance
+#### Start ASM instance
+```bash
 asmcmd
+```
 
 # Create additional disk groups
+```sql
 sqlplus / as sysasm
 
 -- Create FRA disk group
