@@ -18,6 +18,7 @@
 - [Cloud Tuning](#☁️-cloud-tuning)
 - [MySQL Forks](#-mysql-forks)
 - [Tuning Tools](#-tuning-tools)
+- [What to Monitor for Performance Bottlenecks](#-What-to-Monitor-for-Performance-Bottlenecks)
 
 ---
 
@@ -1100,6 +1101,96 @@ pmm-admin add mysql mysql-main --host=localhost --port=3306
 [Back to top](#table-of-contents)
 
 **[🏠 Back to Main Portfolio](../README.md#top)**
+
+---
+
+## 🎯 What to Monitor for Performance Bottlenecks
+
+### Diagnostic Flow
+
+```mermaid
+graph TD
+    A[Performance Issue] --> B{Response Time > SLA?}
+    B -->|Yes| C[Check System Resources]
+    B -->|No| Z[Monitor Trends]
+    
+    C --> D{CPU > 80%?}
+    D -->|Yes| E[Analyze Query Load]
+    D -->|No| F{Memory Issues?}
+    
+    E --> E1[Check Slow Queries]
+    E --> E2[Review Connection Count]
+    E --> E3[Analyze Index Usage]
+    
+    F -->|Yes| G[Check Buffer Pool]
+    F -->|No| H{I/O Bottleneck?}
+    
+    G --> G1[Increase Buffer Pool]
+    G --> G2[Review Query Memory Usage]
+    
+    H -->|Yes| I[Optimize Queries]
+    H -->|No| J[Network Analysis]
+    
+    I --> I1[Add Missing Indexes]
+    I --> I2[Rewrite Inefficient Queries]
+    
+    style E1 fill:#FFB6C1
+    style G1 fill:#90EE90
+    style I1 fill:#87CEEB
+```
+
+### Critical Metrics by Category
+
+#### 1. Operating System
+```bash
+# CPU and Load Average
+top -p $(pgrep mysqld)
+iostat -x 1
+
+# Memory
+free -h
+cat /proc/$(pgrep mysqld)/status | grep -E "(VmRSS|VmSize)"
+
+# I/O
+iotop -p $(pgrep mysqld)
+```
+
+#### 2. MySQL Internal
+```sql
+-- Connections and threads
+SELECT 
+    (SELECT VARIABLE_VALUE FROM performance_schema.global_status WHERE VARIABLE_NAME = 'Threads_connected') as connected,
+    (SELECT VARIABLE_VALUE FROM performance_schema.global_variables WHERE VARIABLE_NAME = 'max_connections') as max_conn,
+    (SELECT VARIABLE_VALUE FROM performance_schema.global_status WHERE VARIABLE_NAME = 'Threads_running') as running;
+
+-- InnoDB Status
+SELECT 
+    VARIABLE_NAME,
+    VARIABLE_VALUE
+FROM performance_schema.global_status 
+WHERE VARIABLE_NAME IN (
+    'Innodb_buffer_pool_read_requests',
+    'Innodb_buffer_pool_reads',
+    'Innodb_row_lock_waits',
+    'Innodb_deadlocks'
+);
+```
+
+#### 3. Query Performance
+```sql
+-- Top queries by total time
+SELECT 
+    LEFT(digest_text, 80) as query_preview,
+    count_star as executions,
+    ROUND(avg_timer_wait/1000000000000, 3) as avg_seconds,
+    ROUND(sum_timer_wait/1000000000000, 3) as total_seconds,
+    ROUND((sum_timer_wait/1000000000000) / (SELECT SUM(sum_timer_wait)/1000000000000 FROM performance_schema.events_statements_summary_by_digest) * 100, 2) as pct_total_time
+FROM performance_schema.events_statements_summary_by_digest 
+ORDER BY sum_timer_wait DESC 
+LIMIT 10;
+```
+
+[Back to top](#table-of-contents)
 
 ---
 
