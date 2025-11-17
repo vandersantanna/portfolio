@@ -1731,6 +1731,14 @@ END;
 
 ## 💼 Real-World Case Studies
 
+### About These Case Studies
+
+> To protect client confidentiality, all case studies in this portfolio are anonymized.
+- Company names and personal names have been changed.
+- Certain technical details, timelines and metrics are obfuscated or generalized, while keeping the technical challenges and my role accurate.
+- Some examples are composite or hypothetical, combining patterns from multiple real-world projects.
+The goal is to demonstrate how I think and work as a DBA/DBRE/Database Engineer, without exposing any sensitive or proprietary information from past clients or employers.
+
 ### Case Study 1: E-commerce Platform Optimization
 
 **Challenge**: Major e-commerce platform experiencing 5-second page load times during peak shopping periods, with 50M+ daily transactions.
