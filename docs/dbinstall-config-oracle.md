@@ -111,15 +111,17 @@ net.ipv4.conf.default.rp_filter = 2
 fs.aio-max-nr = 1048576
 net.ipv4.ip_local_port_range = 9000 65500
 EOF
+```
 
-# Apply kernel parameters
+#### Apply kernel parameters
+```bash
 sudo sysctl -p
 ```
 
 ### System Limits
 
+#### Configure system limits for Oracle users
 ```bash
-# Configure system limits for Oracle users
 sudo tee -a /etc/security/limits.conf << 'EOF'
 # Oracle Database limits
 oracle   soft   nofile    1024
@@ -161,12 +163,16 @@ sudo groupadd -g 54327 asmdba
 sudo groupadd -g 54328 asmoper
 sudo groupadd -g 54329 asmadmin
 sudo groupadd -g 54330 racdba
+```
 
-# Create Oracle users
+### Create Oracle users
+```bash
 sudo useradd -u 54321 -g oinstall -G dba,asmdba,backupdba,dgdba,kmdba,racdba oracle
 sudo useradd -u 54322 -g oinstall -G asmadmin,asmdba,asmoper,dba grid
+```
 
-# Set passwords
+### Set passwords
+```bash
 sudo passwd oracle
 sudo passwd grid
 ```
@@ -194,8 +200,8 @@ sudo chmod -R 775 /u01/app
 
 ### Environment Configuration
 
+#### Oracle user environment
 ```bash
-# Oracle user environment
 sudo -u oracle tee /home/oracle/.bash_profile << 'EOF'
 # Oracle Environment
 export ORACLE_BASE=/u01/app/oracle
@@ -247,11 +253,14 @@ EOF
 ### Package Installation
 
 **Oracle Linux / RHEL:**
-```bash
-# Install Oracle preinstall package
-sudo yum install -y oracle-database-preinstall-19c
 
-# Or install packages manually
+#### Install Oracle preinstall package
+```bash
+sudo yum install -y oracle-database-preinstall-19c
+```
+
+#### Or install packages manually
+```bash
 sudo yum install -y binutils compat-libcap1 compat-libstdc++-33 \
     gcc gcc-c++ glibc glibc-devel ksh libaio libaio-devel \
     libgcc libstdc++ libstdc++-devel libXi libXtst make \
@@ -259,11 +268,14 @@ sudo yum install -y binutils compat-libcap1 compat-libstdc++-33 \
 ```
 
 **Additional RAC Requirements:**
-```bash
-# Install cluster verification utility prerequisites
-sudo yum install -y cvuqdisk
 
-# Install additional packages for RAC
+### Install cluster verification utility prerequisites
+```bash
+sudo yum install -y cvuqdisk
+```
+
+### Install additional packages for RAC
+```bash
 sudo yum install -y nfs-utils smartmontools
 ```
 
@@ -283,11 +295,12 @@ sudo chown -R oracle:oinstall /u01/app/oracle/admin
 ```
 
 **For RAC (Shared Storage):**
-```bash
-# Configure shared storage (example using multipath)
-# This assumes shared SAN storage is available
 
-# Configure multipath
+- Configure shared storage (example using multipath)
+- This assumes shared SAN storage is available
+
+### Configure multipath
+```bash
 sudo tee /etc/multipath.conf << 'EOF'
 defaults {
     user_friendly_names yes
