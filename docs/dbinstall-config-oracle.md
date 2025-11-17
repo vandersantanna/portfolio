@@ -318,18 +318,23 @@ EOF
 ```
 
 ### Restart multipath service
+
 ```bash
 sudo systemctl restart multipathd
 sudo systemctl enable multipathd
+```
 
-# Configure udev rules for ASM disks
+#### Configure udev rules for ASM disks
+```bash
 sudo tee /etc/udev/rules.d/99-oracle-asmdevices.rules << 'EOF'
 KERNEL=="dm-*", SUBSYSTEM=="block", PROGRAM=="/usr/lib/udev/scsi_id -g -u -d /dev/$name", RESULT=="36000000000000001", OWNER="grid", GROUP="asmadmin", MODE="0660", NAME="asm-disk1"
 KERNEL=="dm-*", SUBSYSTEM=="block", PROGRAM=="/usr/lib/udev/scsi_id -g -u -d /dev/$name", RESULT=="36000000000000002", OWNER="grid", GROUP="asmadmin", MODE="0660", NAME="asm-disk2"
 KERNEL=="dm-*", SUBSYSTEM=="block", PROGRAM=="/usr/lib/udev/scsi_id -g -u -d /dev/$name", RESULT=="36000000000000003", OWNER="grid", GROUP="asmadmin", MODE="0660", NAME="asm-disk3"
 EOF
+```
 
-# Reload udev rules
+#### Reload udev rules
+```bash
 sudo udevadm control --reload-rules
 sudo udevadm trigger
 ```
