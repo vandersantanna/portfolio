@@ -50,6 +50,9 @@ This is my professional portfolio as a **Database Engineer, Database Administrat
 - [MySQL](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-mysql.md)
 - [Cloud OCI, AWS, Azure, GCP](https://github.com/vandersantanna/portfolio/blob/main/docs/dbre-oci-aws-azure-gcp.md)
 
+### 🎛️ Database Engineering & Reliability – Case Studies & Projects
+- [Case Studies & Projects](https://github.com/vandersantanna/portfolio/blob/main/docs/case-studies.md)
+
 ### 🔄 DataOps
 - [DataOps Field Guide](https://github.com/vandersantanna/portfolio/blob/main/docs/dataops.md)
 - [Docker](https://github.com/vandersantanna/portfolio/blob/main/docs/docker.md)
