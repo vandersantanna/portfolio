@@ -115,11 +115,11 @@ postgres=# \q
 ```
 
 #### Configuration File Locations (RHEL)
-- **Main config**: `/var/lib/pgsql/16/data/postgresql.conf`
-- **Authentication**: `/var/lib/pgsql/16/data/pg_hba.conf`
-- **Data directory**: `/var/lib/pgsql/16/data/`
-- **Log files**: `/var/lib/pgsql/16/data/log/`
-- **Service name**: `postgresql-16`
+- **Main config**: `/var/lib/pgsql/data/postgresql.conf`
+- **Authentication**: `/var/lib/pgsql/data/pg_hba.conf`
+- **Data directory**: `/var/lib/pgsql/data/`
+- **Log files**: `/var/lib/pgsql/data/log/`
+- **Service name**: `postgres`
 
 ### Ubuntu 22.04 LTS
 
