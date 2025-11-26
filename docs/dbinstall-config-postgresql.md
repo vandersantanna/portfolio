@@ -158,6 +158,7 @@ sudo apt install -y postgresql-16 postgresql-client-16 postgresql-contrib-16
 # Start and enable service
 sudo systemctl start postgresql
 sudo systemctl enable postgresql
+sudo systemctl status postgresql
 ```
 
 #### Ubuntu-Specific Configuration
