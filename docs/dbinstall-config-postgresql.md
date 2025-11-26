@@ -84,6 +84,8 @@ sudo dnf module list postgresql
 
 # Install PostgreSQL from AppStream (older version)
 sudo dnf module install postgresql:15 -y
+# Or 
+sudo dnf module install postgresql:16 -y
 
 # Initialize database
 sudo postgresql-setup --initdb
